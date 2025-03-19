@@ -1,0 +1,134 @@
+.scroll_deb_container {
+background:url(../../asset/dark_bg.png);
+background-size:cover;
+background-position: center;
+background-repeat: no-repeat;
+height:140vh;
+
+}
+
+
+.scroll_deb_container_real{
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width:95%;
+    padding:5rem  3rem;
+}
+
+.scroll_deb_container_real h1{
+    color:#CAC5CD;
+    text-align: start!important;
+    font-family: General Sans;
+font-weight: 700;
+font-size: 48px;
+line-height: 100%;
+letter-spacing: -0.5px;
+vertical-align: middle;
+text-transform: uppercase;
+
+}
+
+.scroll_deb_container_real p{
+    font-family: Plus Jakarta Sans;
+font-weight: 500;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0px;
+color:#AEA9B1;
+}
+
+.inner_bg{
+    width:100%;
+    height:90vh;
+    background:#080808;
+    border-radius:40px;
+   padding-right: 2.5rem;
+   padding-left:2.5rem;
+   padding-top:2.5rem;
+   padding-bottom:10px;
+   margin-top: 3rem!important;
+
+}
+
+.scroll_deb {
+    width: 100%;
+    height: 100%; 
+    overflow-y: scroll; 
+    gap:1.3rem;
+    background-color: transparent; 
+}
+
+.scroll_deb::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll_deb {
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+}
+
+.scroll_deb {
+    scrollbar-width: none; 
+}
+
+
+.content_list{
+    justify-content:center;
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+}
+
+
+.content_list .content_box{
+    background:#0D1405;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding-top:3rem;
+    padding-right:3rem;
+    padding-left:3rem;
+    height:320px;
+    width:100%;
+    border-radius:40px;
+}
+
+
+.content_list .content_box img{
+    width:50%;
+    display:block;
+
+}
+
+.content_typo{
+    display:flex;
+    align-items:center;
+    justify-content:start;
+
+flex-direction:column;
+
+}
+
+
+.content_typo .content_title{
+    font-family: General Sans;
+font-weight: 600;
+font-size: 32px;
+line-height: 100%;
+letter-spacing: -0.5px;
+vertical-align: middle;
+text-transform: uppercase;
+color:#CAC5CD;
+}
+
+.content_typo .content_paragraph{
+    font-family: Plus Jakarta Sans;
+font-weight: 500;
+font-size: 24px;
+line-height: 150%;
+text-align: start;
+letter-spacing: 0px;
+color:#AEA9B1;
+}

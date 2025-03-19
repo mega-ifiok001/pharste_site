@@ -1,0 +1,182 @@
+.hero-container {
+    height: auto;
+    border-radius: 1rem;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.bg_img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.hero {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background: url(../../asset/hero_img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 62vh;
+    border-radius: 2rem;
+    width: 98%;
+    margin: auto;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 50vh; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        height: 40vh; /* Adjust height for extra small screens */
+    }
+}
+.pharste-phone {
+    position: absolute;
+    bottom: 0;
+    width: 25%;
+    transform: translateY(100%);
+    transition: transform 1s ease-in-out;
+}
+
+.pharste-phone.appear {
+    transform: translateY(0%);
+}
+ 
+.trade-img {
+    position: absolute;
+    top: 21%;
+    right:28%;
+    width: 15%;
+    transform: scale(0);
+    transition: transform 1s ease-in-out;
+}
+
+
+
+
+.trade-img.show_trade {
+    transform: scale(1);
+}
+
+
+.digi-img{
+    position: absolute;
+    bottom: 10%;
+    left:28%;
+    width: 15%;
+    transform: scale(0);
+    transition: transform 1s ease-in-out;
+
+}
+
+.digi-img.show_digi {
+    transform: scale(1);
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        top: 8%;
+    }
+    50% {
+        top: 5%;
+    }
+}
+
+.nig-img {
+    position: absolute;
+    top: 8%;
+    left: 13%;
+    width: 10%;
+    opacity: 0;
+    transition: opacity .6s ease;
+}
+
+.nig-img.show_nig {
+    opacity: 1;
+    animation: moveUpDown 2s infinite;
+}
+
+
+
+@keyframes cad {
+    0%, 100% {
+        top: 8%;
+    }
+    50% {
+        top: 5%;
+    }
+}
+
+
+.cad-img{
+    position: absolute;
+    top: 8%;
+    right:13%;
+    opacity: 0;
+    width: 8%;
+    transition: opacity .6s ease;
+}
+.cad-img.show_cad{
+    opacity:1;
+    animation: cad 2s infinite;
+}
+
+
+
+@keyframes ghs {
+    0%, 100% {
+        bottom: 8%;
+    }
+    50% {
+        bottom: 5%;
+    }
+}
+
+.ghs-img{
+    position: absolute;
+    bottom: 0%;
+    opacity: 0;
+    left:19%;
+    transition: opacity .6s ease;
+    width: 8%;
+}
+
+.ghs-img.show_ghs{
+    opacity:1;
+    animation: ghs 2s infinite;
+}
+
+
+
+
+@keyframes xof {
+    0%, 100% {
+        bottom: 8%;
+    }
+    50% {
+        bottom: 5%;
+    }
+}
+
+.xof-img{
+    position: absolute;
+    transition: opacity .6s ease;
+    bottom: 20%;
+    opacity: 0;
+    right:23%;
+    width: 8%;
+}
+
+.xof-img.show_xof{
+    opacity:1;
+    animation: xof 2s infinite;
+}
+

@@ -2,6 +2,7 @@ import React from 'react';
 import './header.css';
 import Logo from '../../asset/logo.png';
 import Ear from '../../asset/ear.png';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -12,12 +13,12 @@ function Header() {
             <img className='logo' src={Logo} alt="Company Logo" />
           
           <ul className=" d-flex align-items-center justify-content-center gap-4">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Help</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/features">Features</Link></li>
+            <li><Link to="/pricing">Pricing</Link></li>
+            <li><Link to="/blog">Blog</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/help">Help</Link></li>
           </ul>
           <div className="nav-end d-flex align-items-center justify-content-center">
             <img src={Ear} alt="Ear Plug" />

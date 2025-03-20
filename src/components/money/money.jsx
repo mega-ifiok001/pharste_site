@@ -1,6 +1,6 @@
 import React from 'react';
 import './money.css';
-import google from '../../asset/google.png'
+import google from '../../asset/google.png';
 import apple from '../../asset/apple.png';
 import globe from '../../asset/globe.png';
 import dollar from '../../asset/dollar-lock.png';
@@ -9,7 +9,7 @@ import fees from '../../asset/Fees.png';
 import woman from '../../asset/woman.png';
 import bell from '../../asset/Notification.png';
 import bank from '../../asset/bank.png';
-import ScrollDep from '../../pages/scroll_deb/scroll_deb';
+import ScrollDep from '../scroll_deb/scroll_deb';
 import Banner from '../banner/banner';
 function Money(){
 

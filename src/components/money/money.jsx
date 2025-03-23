@@ -9,8 +9,10 @@ import fees from '../../asset/Fees.png';
 import woman from '../../asset/woman.png';
 import bell from '../../asset/Notification.png';
 import bank from '../../asset/bank.png';
-import ScrollDep from '../../pages/scroll_deb/scroll_deb';
+import ScrollDep from '../../components/scroll_deb/scroll_deb';
 import Banner from '../banner/banner';
+import SliderComp from '../slider/slider';
+
 function Money(){
 
     return(
@@ -153,7 +155,9 @@ function Money(){
             <Banner/>
           </section>
 
-        
+        <section>
+        <SliderComp/>
+        </section>
         </>
     )
 

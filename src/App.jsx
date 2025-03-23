@@ -1,18 +1,19 @@
-import React from 'react'
-import './App.css'
-import Header from '../src/pages/header/header'
-import Hero from '../src/pages/hero-section/hero'
-import Money from '../src/pages/money/money';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Home from '../src/pages/home';
+import About from './pages/About';
+import Features from './pages/features';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 function App() {
-  return (
-    <div className="App">
-       <Header/>
-       <Hero/>
-       <Money/>
-    </div>
-  );
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/features" element={<Features />} />
+            </Routes>
+        </Router>
+    );
 }
 
-export default App
+export default App;

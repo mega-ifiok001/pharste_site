@@ -1,0 +1,234 @@
+.about_hero{
+    background:url(../../asset/about-hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column!important;
+    margin-top:2rem;
+    /* border:1px solid red; */
+}
+
+.box_{
+    margin-bottom:4rem!important;
+    flex-direction: column;
+}
+
+.about_hero .title{
+    font-family: General Sans;
+font-weight: 600;
+font-size: 64px;
+line-height: 130%;
+letter-spacing: -2px;
+text-align: center;
+vertical-align: middle;
+color:#070A45;
+}
+
+.about_hero .paragraph{
+    font-family: Plus Jakarta Sans;
+font-weight: 500;
+font-size: 24px;
+line-height: 150%;
+letter-spacing: 0px;
+text-align: center;
+color:#605D64;
+}
+
+
+.about_typo{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:3rem;
+    background:url(../../asset/P_P.png);
+    background-size:cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    min-height:100vh;
+    width:100%;
+}
+
+.about_typo .title{
+    font-family: Plus Jakarta Sans;
+font-weight: 500;
+font-size: 17.47px;
+line-height: 25.96px;
+letter-spacing: 0%;
+vertical-align: middle;
+color:#8592AD;
+}
+
+.typo_content{
+    font-family: Plus Jakarta Sans;
+font-weight: 500;
+font-size: 24px;
+line-height: 174%;
+letter-spacing: 0%;
+color:#070A45;
+}
+
+.title_1{
+    font-family: Plus Jakarta Sans;
+font-weight: 600;
+font-size: 24px;
+line-height: 36.35px;
+letter-spacing: 0%;
+vertical-align: middle;
+color:#070A45;
+}
+
+.typo_content_1{
+    font-family: Plus Jakarta Sans;
+font-weight: 500;
+font-size: 20px;
+line-height: 36.35px;
+letter-spacing: 0%;
+vertical-align: middle;
+color:#697A9B;
+}
+
+.core {
+    display:flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    margin: 4rem auto;
+    width:100%;
+    padding:3rem;
+}
+
+.core h1{
+    font-family: Plus Jakarta Sans;
+font-weight: 700;
+font-size: 48px;
+line-height: 100%;
+letter-spacing: -0.5px;
+vertical-align: middle;
+text-transform: uppercase;
+color:#070A45;
+}
+
+
+.core p{
+    font-family: Plus Jakarta Sans;
+font-weight: 500;
+font-size: 24px;
+line-height: 150%;
+letter-spacing: 0px;
+color:#605D64;
+}
+
+.panel{
+    border:1px solid red;
+    width:100%;
+    position: relative;
+min-height:30vh;
+    background:#F8F8F8;
+}
+
+
+.panel img{
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:100%;
+}
+
+
+
+.banner_content{
+    display:flex;
+    flex-direction: column;
+    align-items:start;
+    padding:1rem;
+    background:#F8F8F8;
+    border-radius:40px;
+    position:relative;
+    width:100%;
+    min-height:50vh;
+    overflow:hidden;
+}
+
+.banner_content .banner_content_title{
+    font-family: General Sans;
+font-weight: 600;
+font-size: 32px;
+line-height: 100%;
+letter-spacing: -0.5px;
+vertical-align: middle;
+text-transform: uppercase;
+color:#070A45;
+}
+
+.banner_content .banner_content_paragraph{
+    font-family: General Sans;
+font-weight: 500;
+text-align: start;
+font-size: 24px;
+line-height: 150%;
+letter-spacing: 0px;
+color:#322F35;
+}
+
+.banner_content img{
+    width:35%;
+    position:absolute;
+    bottom:0;
+    right:0%;
+    object-fit:cover;
+}
+
+
+
+.impact_banner{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:auto;
+    margin:3rem auto;
+    width: 95%;
+}
+
+.impact_content{
+    display:flex;
+    align-items: start;
+    justify-content:center;
+    background:#F0F2F5;
+border-radius:40px;
+padding:4rem;
+width:100%;
+
+}
+
+.impact_title{
+   font-family: General Sans;
+font-weight: 600;
+text-align: start;
+font-size: 48px;
+line-height: 64px;
+letter-spacing: -1px;
+vertical-align: middle;
+color:#070A45;
+
+}
+
+
+.impact_paragraph{
+    font-family: General Sans;
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+text-align: start;
+letter-spacing: -0.15px;
+color:#363F52;
+}
+
+
+.impact_content img{
+    width:90%;
+    border-radius:40px;
+}

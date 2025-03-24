@@ -79,14 +79,14 @@ const FAQs = () => {
             <div className="faq-item">
                 <div className="d-flex  align-items-center justify-content-space-around">
                     <img src={dash} className="timer" alt="" />
-                <h2 onClick={() => toggleFAQ(0)}>What is Termii?</h2>
+                <h2 onClick={() => toggleFAQ(1)}>What is Termii?</h2>
                 </div>
                 {activeIndex === 0 && <p className="faq-content">Termii is a platform that provides messaging and verification services...</p>}
             </div>
             <div className="faq-item">
                 <div className="d-flex  align-items-center justify-content-space-around">
                     <img src={dash} className="timer" alt="" />
-                <h2 onClick={() => toggleFAQ(0)}>What is Termii?</h2>
+                <h2 onClick={() => toggleFAQ(2)}>What is Termii?</h2>
                 </div>
                 {activeIndex === 0 && <p className="faq-content">Termii is a platform that provides messaging and verification services...</p>}
             </div>

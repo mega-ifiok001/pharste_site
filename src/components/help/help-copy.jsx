@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './help.css';
 import Footer from '../footer/footer';
 import dash from '../../asset/minus-circle.png';
+import plus from '../../asset/plus.png';
+
 const TermsAndConditions = () => (
     <div className="Terms">
         <h1>Terms and Conditions</h1>
@@ -68,38 +70,137 @@ const FAQs = () => {
 
     return (
         <div>
-            <h1>FAQs</h1>
-            <div className="faq-item">
-                <div className="d-flex  align-items-center justify-content-space-around">
-                    <img src={dash} className="timer" alt="" />
-                <h2 onClick={() => toggleFAQ(0)}>What is Termii?</h2>
+            <h1> Frequently Asked Questions</h1>
+            <div className={`faq-item ${activeIndex === 0 ? 'active' : ''}`} onClick={() => toggleFAQ(0)}>
+                <div className="d-flex align-items-center justify-content-space-around">
+                    <img src={activeIndex === 0 ? dash : plus} className="toggle-icon" alt="" />
+                    <h2>Is there a free trial available?</h2>
                 </div>
-                {activeIndex === 0 && <p className="faq-content">Termii is a platform that provides messaging and verification services...</p>}
+                {activeIndex === 0 && <p className="faq-content">Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you
+                     up and running as soon as possible.</p>}
             </div>
-            <div className="faq-item">
-                <div className="d-flex  align-items-center justify-content-space-around">
-                    <img src={dash} className="timer" alt="" />
-                <h2 onClick={() => toggleFAQ(1)}>What is Termii?</h2>
+            <div className={`faq-item ${activeIndex === 1 ? 'active' : ''}`} onClick={() => toggleFAQ(1)}>
+                <div className="d-flex align-items-center justify-content-space-around">
+                    <img src={activeIndex === 1 ? dash : plus} className="toggle-icon" alt="" />
+                    <h2>Do you change my plan later</h2>
                 </div>
-                {activeIndex === 0 && <p className="faq-content">Termii is a platform that provides messaging and verification services...</p>}
+                {activeIndex === 1 && <p className="faq-content">Our API is organized around using HTTP verbs and REST...</p>}
             </div>
-            <div className="faq-item">
-                <div className="d-flex  align-items-center justify-content-space-around">
-                    <img src={dash} className="timer" alt="" />
-                <h2 onClick={() => toggleFAQ(2)}>What is Termii?</h2>
+            <div className={`faq-item ${activeIndex === 2 ? 'active' : ''}`} onClick={() => toggleFAQ(2)}>
+                <div className="d-flex align-items-center justify-content-space-around">
+                    <img src={activeIndex === 2 ? dash : plus} className="toggle-icon" alt="" />
+                    <h2>What is your cancellation policy</h2>
                 </div>
-                {activeIndex === 0 && <p className="faq-content">Termii is a platform that provides messaging and verification services...</p>}
+                {activeIndex === 2 && <p className="faq-content">You can find the full API Reference Documentation on our website...</p>}
+            </div>
+
+         </div>
+    );
+};
+
+const ContactUs = () => {
+    const addresses = [
+        { name: 'Melbourne', address: '100 founders street, Melbourne VIC 3000 ALI', lat: -37.8136, lng: 144.9631 },
+        { name: 'Sydney', address: '100 george street, Sydney NSW 2000 ALI', lat: -33.8688, lng: 151.2093 },
+        { name: 'Byron Bay', address: '100 johnson street, Byron Bay NSW 2481 AU', lat: -28.6434, lng: 153.6120 }
+    ];
+
+    const [map, setMap] = useState(null);
+    const [activeIndex, setActiveIndex] = useState(0);
+
+    useEffect(() => {
+        const google = window.google;
+        const map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: -33.8688, lng: 151.2093 },
+            zoom: 10,
+        });
+        setMap(map);
+    }, []);
+
+    const handleClick = (index) => {
+        const address = addresses[index];
+        setActiveIndex(index);
+        map.setCenter({ lat: address.lat, lng: address.lng });
+        document.querySelector('.blue-line').style.left = `${index * 33.33}%`;
+    };
+
+    return (
+        <div>
+            <div className="contact">
+                <h1>Get in Touch</h1>
+                <h2 className="mt-2">Our Locations</h2>
+                <p className="mt-1">Say hello to our friendly teams at one of these locations</p>
+            </div>
+
+            <div id="map" style={{ height: '400px', width: '100%' }}></div>
+            <div className="grey-line">
+                <div className="blue-line" style={{ left: `${activeIndex * 33.33}%`, height: '10px' }}></div>
+            </div>
+            <div className="address-container">
+                {addresses.map((address, index) => (
+                    <div 
+                        key={index} 
+                        className={`address-column ${activeIndex === index ? 'active' : ''}`} 
+                        onClick={() => handleClick(index)}
+                    >
+                        <h3>{address.name}</h3>
+                        <p>{address.address.split(', ')[0]}</p>
+                        <p>{address.address.split(', ').slice(1).join(', ')}</p>
+                    </div>
+                ))}
+            </div>
+
+            <div className="form">
+                <h1>we're here to help</h1>
+                <p className="mt-2">Have questions or feedback? We'd love to hear from you. Our team is committed to providing timely and helpful 
+                    responses to every inquiry.</p>
+                    
+                    <div className="row mt-3">
+                        <div className="col-md-7">
+                            <form action="">
+                                <div className="d-flex align-items-center">
+                                    <div className="first">
+                                    <label htmlFor="f_name">First Name</label><br/>
+                                    <input type="text" placeholder="first name" />
+                                    </div>
+
+                                    <div className="first firsts">
+                                    <label htmlFor="f_name">Last Name</label><br/>
+                                    <input type="text" placeholder="last name" />
+                                    </div>
+                                </div>
+
+
+                                <div className="first">
+                                    <label htmlFor="f_name">Last Name</label><br/>
+                                    <input type="text" placeholder="last name" />
+                                    </div>
+
+
+                                    <div className="first">
+                                    <label htmlFor="f_name">Last Name</label><br/>
+                                    <input type="text" placeholder="last name" />
+                                    </div>
+
+
+
+                                    <div className="first">
+                                    <label htmlFor="f_name">Last Name</label><br/>
+                                   <textarea name="message" id="message"  placeholder='Leave a message'></textarea>
+                                    </div>
+
+                                <div className="agreement d-flex align-item-center">
+                                    <input type="checkbox" name="agreement" id="agreement" />
+                                    <p>You agree to our friendly <a href="#">privacy policy</a></p>
+                                </div>
+                                    <button type="submit">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
             </div>
         </div>
     );
 };
-
-const ContactUs = () => (
-    <div>
-        <h1>Contact Us</h1>
-        <p>Here is how you can contact us...</p>
-    </div>
-);
 
 const Sidebar = ({ setSelectedContent }) => (
     <div className="sidebar">
@@ -129,21 +230,20 @@ function HelpCopy() {
     const [selectedContent, setSelectedContent] = useState('terms');
 
     return (
-   <>
-        <div className="container mt-5">
-            <div className="row">
-                <div className="col-md-3">
-                    <Sidebar setSelectedContent={setSelectedContent} />
-                </div>
-                <div className="col-md-9">
-                    <MainContent selectedContent={selectedContent} />
+        <>
+            <div className="container mt-5">
+                <div className="row">
+                    <div className="col-md-3">
+                        <Sidebar setSelectedContent={setSelectedContent} />
+                    </div>
+                    <div className="col-md-9">
+                        <MainContent selectedContent={selectedContent} />
+                    </div>
                 </div>
             </div>
-        </div>
 
-<Footer/>
-
-   </>
+            <Footer />
+        </>
     );
 }
 

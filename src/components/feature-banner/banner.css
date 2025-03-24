@@ -7,6 +7,31 @@
    flex-direction:column;
 }
 
+
+.banner-header{
+    margin-top: 3rem;
+}
+.banner-header p{
+    font-family: General Sans;
+font-weight: 500;
+font-size: 24px;
+line-height: 150%;
+letter-spacing: 0px;
+vertical-align: middle;
+color: #605D64;
+}
+
+.banner-header h1{
+    font-family: General Sans;
+font-weight: 600;
+font-size: 48px;
+line-height: 100%;
+letter-spacing: -0.5px;
+vertical-align: middle;
+text-transform: uppercase;
+color: #070A45;
+}
+
 .banner_content{
     display:flex;
     flex-direction: column;
@@ -121,4 +146,74 @@ color:#322F35!important;
     bottom:0;
     right:0%;
     width:20%!important;
+}
+
+.down-header h1{
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -0.5px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    
+color: #1E1E1E;
+}
+
+.down-header p{
+    font-family: Plus Jakarta Sans;
+font-weight: 400;
+font-size: 20px;
+line-height: 35px;
+letter-spacing: 0px;
+color:#605D64;
+
+}
+
+
+.down-header{
+    margin:3rem auto;
+}
+
+
+.writeing h1{
+    font-family: Plus Jakarta Sans;
+font-weight: 600;
+font-size: 32px;
+line-height: 150%;
+letter-spacing: 0px;
+vertical-align: middle;
+color:#070A45;
+}
+
+.writeing p{
+    font-family: Plus Jakarta Sans;
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+letter-spacing: 0px;
+vertical-align: middle;
+color: #605D64;
+}
+
+
+.chart_img{
+    width: 100%;;
+    align-items: center;
+    justify-content:center;
+}
+
+.chart_img  img{
+    width: 100%;;
+}
+
+section{
+    margin: 4rem auto!important;
+
+}
+
+
+.down-header{
+    align-items: start;
 }

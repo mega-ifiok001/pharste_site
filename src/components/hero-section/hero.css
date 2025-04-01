@@ -20,7 +20,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 62vh;
+    min-height: 62vh;
     border-radius: 2rem;
     width: 98%;
     margin: auto;

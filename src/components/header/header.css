@@ -127,9 +127,9 @@ ul{
 .dropdowns button span:nth-child(1){
     width:24px;
     display:block;
-    height: 5px;
+    height: 3px;
     background:#fff;
-    margin:4px 0px;
+    margin:2px 0px;
 
 }
 
@@ -137,16 +137,16 @@ ul{
     width:24px;
     display:block;
     background:#fff;
-    margin:4px 0px;
-    height: 5px;
+    margin:2px 0px;
+    height: 3px;
 
 }
 
 .dropdowns button span:nth-child(2){
     width:34px;
     background:#fff;
-    margin:4px 0px;
-    height: 5px;
+    margin:2px 0px;
+    height: 3px;
     display: block;
 
 }

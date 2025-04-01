@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import './header.css';
 import Logo from '../../asset/logo-white.png';
 import menu_btn from '../../asset/menu-btn.png';
@@ -11,6 +11,12 @@ function Header() {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
+
+
+
+
+
   return (
     <>
       <header className="container desktop_menu_container w-100%">
@@ -38,29 +44,28 @@ function Header() {
 
 
       
-        <header className="container-fluid mobile_menu_container">
-          <img src={Logo} className="logo"  alt="company logo" />
-           
-          <div className="dropdowns">
-            <button className="menu-btn"  onClick={toggleMenu}>
+      <header className="container-fluid mobile_menu_container">
+      <img src={Logo} className="logo" alt="company logo" />
+      <div className="dropdowns">
+        <button className="menu-btn" onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul className={menuOpen ? 'open' : ''}>
+          <button className="cross-button" onClick={toggleMenu}>
             <span></span>
             <span></span>
-            <span></span>
-            </button>
-            <ul  className={menuOpen ? 'open' : ''}>
-            <button className="cross-button"  onClick={toggleMenu}> 
-      <span></span>
-      <span></span>
-    </button>
-            <li><Link to="/">Home</Link></li>
-                <li><Link to="/features">Features</Link></li>
-                <li><Link to="/pricing">Pricing</Link></li>
-                <li><Link to="/blog">Blog</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/help">Help</Link></li>
-            </ul>
-          </div>
-        </header>
+          </button>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/features">Features</Link></li>
+          <li><Link to="/pricing">Pricing</Link></li>
+          <li><Link to="/blog">Blog</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/help">Help</Link></li>
+        </ul>
+      </div>
+    </header>
       
 
 

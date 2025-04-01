@@ -5,6 +5,7 @@ header{
     width:95%!important;
     display: flex;
     background:#14373D;
+    overflow: hidden;
     align-items: center;
     justify-content: space-between;  
     box-shadow: 1px 1px 10px 1px #0000001a;
@@ -125,14 +126,14 @@ ul{
         position:absolute;
         top:0;
         padding:.3rem;
-        width:50%;
+        width:70%;
         right:0;
         transition:.8s ease all;
         box-shadow:1px 1px 10px 1px #0000001a;
         border-bottom-left-radius: 1rem;
         z-index: 5;
         transform:translateX(110%);
-        backdrop-filter: blur(7px);
+        backdrop-filter: blur(4px);
         background:rgba(255, 255, 255, 0.717);
     }
 
@@ -142,7 +143,7 @@ ul{
       
 
     .cross-button {
-        padding-left:1.4rem;
+        padding-left:1.5rem;
         padding-top:1.4rem;
         margin-bottom:.9rem;
         position: relative;
@@ -173,18 +174,37 @@ ul{
       }
 
     .dropdowns ul li{
-        margin:.5rem 0;
+        margin:.9rem 0;
        
     }
-
-    .dropdowns ul li a{
-        color:#000!important;
-    }
+    .dropdowns ul li a {
+        position: relative !important;
+        color: #000 !important;
+        font-weight: 500;
+        text-decoration: none;
+        padding-bottom: 5px;
+      }
+      
+      .dropdowns ul li a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 3px !important;
+        display: block;
+        bottom: 0;
+        left: 0;
+        background: #000;
+        transition: width 0.3s ease-in-out;
+      }
+      
+      .dropdowns ul li a:hover::after {
+        width: 100%;
+      }
 }
 
 
 
-@media screen and (min-width:768px){
+@media screen and (min-width:769px){
     .mobile_menu_container{
         display:none;
     }

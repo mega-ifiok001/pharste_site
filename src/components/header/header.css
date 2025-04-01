@@ -105,6 +105,10 @@ ul{
         width:30%;
     }
 
+    .dropdowns{
+        /* position: relative; */
+    }
+
     .dropdowns button{
         background:transparent;
         display:flex;
@@ -123,9 +127,58 @@ ul{
         padding:.3rem;
         width:50%;
         right:0;
-        transform:translateX(100%);
-        backdrop-filter: blur(40%);
-        background:red;
+        transition:.8s ease all;
+        box-shadow:1px 1px 10px 1px #0000001a;
+        border-bottom-left-radius: 1rem;
+        z-index: 5;
+        transform:translateX(110%);
+        backdrop-filter: blur(7px);
+        background:rgba(255, 255, 255, 0.717);
+    }
+
+    ul.open {
+        transform: translateX(0);
+      }
+      
+
+    .cross-button {
+        padding-left:1.4rem;
+        padding-top:1.4rem;
+        margin-bottom:.9rem;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .cross-button span {
+        position: absolute;
+        width: 20px!important;
+        height: 5px!important;
+        background: #000!important; 
+        transition: all 0.3s ease;
+      }
+      
+      .cross-button span:first-child {
+        transform: rotate(45deg);
+      }
+      
+      .cross-button span:last-child {
+        transform: rotate(-45deg);
+      }
+
+    .dropdowns ul li{
+        margin:.5rem 0;
+       
+    }
+
+    .dropdowns ul li a{
+        color:#000!important;
     }
 }
 

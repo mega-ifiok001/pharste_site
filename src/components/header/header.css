@@ -96,6 +96,7 @@ ul{
         justify-content: space-between;
         margin:1rem auto;
         width:100%;
+    box-shadow: 1px 1px 10px 1px #0000001a;
         
         
     }
@@ -113,6 +114,18 @@ ul{
         border:none;
         cursor:pointer;
         
+    }
+
+
+    .dropdowns ul{
+        position:absolute;
+        top:0;
+        padding:.3rem;
+        width:50%;
+        right:0;
+        transform:translateX(100%);
+        backdrop-filter: blur(40%);
+        background:red;
     }
 }
 
@@ -151,7 +164,5 @@ ul{
 
 }
 
-.dropdowns ul{
-    display:none;
-}
+
 

@@ -107,3 +107,46 @@ color:#2D35E9;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+
+.account_setup{
+    margin-top:3rem;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    padding:2rem;
+
+
+}
+
+.account_setup .title h1{
+    font-family: Bricolage Grotesque;
+font-weight: 700;
+font-size: 48px;
+line-height: 57.6px;
+letter-spacing: -1.92px;
+text-align: center;
+vertical-align: middle;
+color:#5D64EE;
+}
+
+.account_setup p{
+    font-family: General Sans;
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+letter-spacing: -0.15px;
+text-align: center;
+color:#363F52;
+}
+
+.account_setup .row{
+    margin:4rem auto!important;
+}
+
+
+.features_ex{
+    background:#E8E9FD;
+    padding:3rem;
+}

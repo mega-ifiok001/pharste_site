@@ -1,5 +1,5 @@
 .hero-container {
-    height: 70vh;
+    height: auto;
     border-radius: 1rem;
     margin-top: 3rem;
     position: relative;
@@ -33,7 +33,7 @@
 }
 
 .hero .hero-text h1{
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-family: Bricolage Grotesque;
     font-weight: 700;
     font-size: 82px;
@@ -55,4 +55,105 @@
     vertical-align: middle;
     
 color:#5C5C70;
+}
+
+.downloader{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    gap:.6rem;
+}
+
+.downloader img{
+    width:12%;
+}
+
+@media screen and (max-width:768px){
+    .hero .badge{
+        display:block!important;
+        width:50%;
+        margin-top:3.5rem;
+    }
+
+    .downloader img{
+    width:23%;
+}
+
+.image-stack{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:1.4rem;
+    gap:1.5rem;
+}
+.image-stack img{
+    width:25%;
+
+}
+
+.stack-text{
+    
+}
+
+.stack-text span:nth-child(1){
+    font-family: Inter;
+font-weight: 600;
+font-size: 18px;
+line-height: 21.6px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+color:#3AA0B0;
+margin:0;
+}
+
+
+
+
+
+}
+
+
+.image-stack{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:1.4rem;
+    gap:1.5rem;
+}
+.image-stack img{
+    width:25%;
+
+}
+
+
+.hero-bottom {
+    position: relative;
+    display: flex;
+    align-items: flex-end; 
+    justify-content: center;
+    width: 100%; 
+    height: auto; 
+    overflow: hidden; 
+    margin-top:1.5rem;
+}
+
+.hero-bottom img {
+}
+
+.blur {
+    position: absolute;
+    width: 60%;
+    height: auto;
+    object-fit: cover; 
+    filter: blur(10px); 
+    z-index: 1; 
+}
+
+.phone {
+    position: relative;
+    width: 22%; 
+    bottom: 0;
+    height:75%;
+    z-index: 2; 
 }

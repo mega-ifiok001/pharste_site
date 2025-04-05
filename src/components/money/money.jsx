@@ -14,6 +14,8 @@ import acc_setup_3 from '../../asset/account_setup_3.png';
 import card_1 from '../../asset/card_1.png'
 import card_2 from '../../asset/card_2.png'
 import card_3 from '../../asset/card_3.png'
+
+import Exchange from '../exchange/echange';
 function Money(){
 
     return(
@@ -39,16 +41,16 @@ function Money(){
           <div className="use-text ">
             <h1>Why Use Pharste?</h1>
 
-            <div class=" mt-2 tab">
+            <div class=" mt-3 tab">
             <div class="row ">
-            <div class="col-md-5 mt-2">
+            <div class="col-md-5 mt-3">
                 <div class="content">
                     <h2>Send Money At The <br/> Speed Of Now</h2>
                     <p>Transfer funds instantly to anyone, anywhere. What used to take days now happens in seconds.</p>
                     <img src={tab} className="tab-img" alt="Tab Image" />
                 </div>
             </div>
-            <div class="col-md-7 mt-2">
+            <div class="col-md-7 mt-3">
                 <img src={fine__person} class="img-fluid" alt="Responsive Image"/>
             </div>
         </div>
@@ -57,12 +59,12 @@ function Money(){
 
 
 
-    <div class=" mt-2 tab">
+    <div class=" mt-3 tab">
             <div class="row ">
-            <div class="col-md-7 mt-2">
+            <div class="col-md-7 mt-3">
                 <img src={protect} class="img-fluid" alt="Responsive Image"/>
             </div>
-            <div class="col-md-5 mt-2">
+            <div class="col-md-5 mt-3">
                 <div class="content">
                     <h2>Protection That Never  <br/> Sleeps</h2>
                     <p>Rest easy knowing your transactions are protected by
@@ -77,9 +79,9 @@ function Money(){
 
 
 
-    <div class=" mt-2 tab">
+    <div class=" mt-3 tab">
             <div class="row ">
-            <div class="col-md-5 mt-2">
+            <div class="col-md-5 mt-3">
                 <div class="content">
                     <h2>More For You, Less For  <br/>Fees</h2>
                     <p>Say goodbye to hidden charges and confusing fee structures. 
@@ -88,7 +90,7 @@ function Money(){
                     <img src={phone_bg} className="tab-img" alt="Tab Image" />
                 </div>
             </div>
-            <div class="col-md-7 mt-2">
+            <div class="col-md-7 mt-3">
                 <img src={big_chart} class="img-fluid" alt="Responsive Image"/>
             </div>
         </div>
@@ -99,13 +101,13 @@ function Money(){
 
 
 
-    <div class=" mt-2 tab">
+    <div class=" mt-3 tab">
             <div class="row ">
-            <div class="col-md-7 mt-2">
+            <div class="col-md-7 mt-3">
                 <img src={bg} class="img-fluid  " alt="Responsive Image"/>
              
             </div>
-            <div class="col-md-5 mt-2">
+            <div class="col-md-5 mt-3">
                 <div class="content">
                     <h2>Grow Your Money   <br/> Automatically</h2>
                     <p>Set aside funds effortlessly with automated saving tools. Create goals,
@@ -129,14 +131,14 @@ function Money(){
 
 
              <div className="row mt-3 container-fluid ">
-                <div className="col-md-4">
+                <div className="col-md-4 mt-4">
                   <img src={acc_setup_1} alt="" className="img-fluid" />
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-4 mt-4">
                   <img src={acc_setup_2} alt="" className="img-fluid" />
 
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-4 mt-4">
                   <img src={acc_setup_3} alt="" className="img-fluid" />
 
                 </div>
@@ -154,14 +156,14 @@ function Money(){
 
 
              <div className="row mt-3 container-fluid ">
-                <div className="col-md-4">
+                <div className="col-md-4 mt-4">
                   <img src={card_1} alt="" className="img-fluid" />
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-4 mt-4">
                   <img src={card_3} alt="" className="img-fluid" />
 
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-4 mt-4">
                   <img src={card_2} alt="" className="img-fluid" />
 
                 </div>
@@ -180,6 +182,8 @@ function Money(){
 
             <p>Need to send money across the world? Do it with Pesa. Relocating? Get started with Pesa. <br/>
             You'll enjoy $0 fees on every transfer - no hidden costs or surprises.</p>
+       
+           <Exchange/>
         </div>
         </>
     )

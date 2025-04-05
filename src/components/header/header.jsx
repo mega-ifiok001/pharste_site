@@ -57,6 +57,10 @@ function Header() {
             <span></span>
             <span></span>
           </button>
+
+          <hr style={{
+            background:'#14373D'
+          }}/>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/features">Features</Link></li>
           <li><Link to="/pricing">Pricing</Link></li>

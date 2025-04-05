@@ -5,10 +5,14 @@ header{
     width:95%!important;
     display: flex;
     background:#14373D;
-    overflow: hidden;
+    overflow: hidden!important;
     align-items: center;
     justify-content: space-between;  
     box-shadow: 1px 1px 10px 1px #0000001a;
+}
+
+body{
+    overflow: hidden;
 }
 
 
@@ -126,10 +130,10 @@ ul{
         position:absolute;
         top:0;
         padding:.3rem;
-        width:70%;
+        width:80%;
         right:0;
         transition:.8s ease all;
-        box-shadow:1px 1px 10px 1px #0000001a;
+        box-shadow:1px 1px 10px 10px #0000001a;
         border-bottom-left-radius: 1rem;
         z-index: 5;
         transform:translateX(110%);
@@ -147,8 +151,8 @@ ul{
         padding-top:1.4rem;
         margin-bottom:.9rem;
         position: relative;
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         background: transparent;
         border: none;
         cursor: pointer;
@@ -159,9 +163,9 @@ ul{
       
       .cross-button span {
         position: absolute;
-        width: 20px!important;
+        width: 25px!important;
         height: 5px!important;
-        background: #000!important; 
+        background: #14373D!important; 
         transition: all 0.3s ease;
       }
       
@@ -174,12 +178,14 @@ ul{
       }
 
     .dropdowns ul li{
-        margin:.9rem 0;
+        margin:1.8rem 0;
        
     }
+
+  
     .dropdowns ul li a {
         position: relative !important;
-        color: #000 !important;
+        color: #14373D !important;
         font-weight: 500;
         text-decoration: none;
         padding-bottom: 5px;
@@ -193,12 +199,14 @@ ul{
         display: block;
         bottom: 0;
         left: 0;
-        background: #000;
+        background: #14373D;
         transition: width 0.3s ease-in-out;
       }
       
       .dropdowns ul li a:hover::after {
         width: 100%;
+        color:#224b52;
+        transform:scale(1.1)
       }
 }
 

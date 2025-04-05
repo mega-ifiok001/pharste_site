@@ -12,7 +12,6 @@
     min-height:70vh;
     z-index: -1;
     width:100%;
-    border:1px solid red;
 }
 
 .hero{
@@ -22,6 +21,7 @@
     flex-direction: column;
     position:relative;
     width:95%;
+    margin:0 auto;
     height:auto;
     z-index: 2;
 }
@@ -45,6 +45,12 @@
     color:#5D64EE;
 }
 
+@media screen and (max-width:425px) {
+    .hero .hero-text h1{
+        font-size:55px;
+        line-height: 48.48px;
+    }
+}
 .hero .hero-text p{
     font-family: Inter;
     font-weight: 400;

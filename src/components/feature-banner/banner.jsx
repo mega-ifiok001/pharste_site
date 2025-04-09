@@ -61,14 +61,14 @@ function Banner(){
          </div>
 
 
-         <section className="container-fluid row">
+         <section className="container-fluid row p-2 col-xs-pt-0">
           <div className="down-header">
             <h1>security and compliance</h1>
             <p>We prioritize your privacy with bank-grade security, encryption, and full compliance with financial regulations to keep your data and money safe.</p>
           </div>
 
           <div className="row mt-4">
-            <div className="col-md-6">
+            <div className="col-lg-6 p-3">
               <div className="writeing">
                 <h1>✅ Advanced Data Protection</h1>
                 <p>Your transactions are encrypted end-to-end, ensuring your information stays private and secure.</p>
@@ -86,7 +86,7 @@ function Banner(){
                 <p>We adhere to the highest financial security standards, meeting global compliance requirements to protect your funds.</p>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-lg-6">
                 <div className="chart_img">
                   <img src={chartImg} alt="" />
                 </div>

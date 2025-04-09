@@ -3,8 +3,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-border:1px solid red;
-width:95%;
 position:relative;
 }
 
@@ -41,7 +39,7 @@ color:#605D64;
     flex-direction: column;
     /* border:1px solid red; */
     position:relative;
-    min-height:40vh!important;
+    min-height:40vh;
     margin:3rem auto;
 }
 
@@ -113,7 +111,7 @@ color:#605D64;
     border-radius:40px;
     position:relative;
     width:100%;
-    min-height:50vh;
+    min-height:auto;
     overflow:hidden;
 }
 
@@ -200,3 +198,112 @@ color:#322F35!important;
     object-fit:cover;
 }
 
+
+
+
+@media screen and (max-width:768px){
+    .hero_content_anim .screen_img {
+        margin-bottom: -4.6rem;
+        height: 11rem;
+    }
+
+    .hero_content_anim .hands_img {
+      
+        height: 10.9rem;
+    }
+
+    .hero_content_anim {
+      
+        min-height: 22vh ;
+        margin: 0rem auto;
+    }
+
+    .feature-container h1 {
+        font-size: 59px;
+    }
+
+    .banner_content {
+        min-height: 22vh;
+    }
+
+    .bank_text {
+        min-height: 16vh;
+    }
+
+    .banner-header{
+        padding-left:1rem;
+    }
+}
+
+
+@media screen and (max-width:425px){
+    .feature-container h1 {
+        font-size: 44px;
+    }
+
+    .feature-container p {
+        font-size: 16px;
+    }
+
+    .hero_content_anim {
+        min-height: 12vh ;
+        margin: 0rem auto;
+    }
+
+
+    .hero_content_anim .screen_img {
+        margin-bottom: 0rem;
+        height: 8rem;
+    }
+
+    .hero_content_anim .hands_img {
+        height: 8.15rem;
+    }
+
+    .banner_content {
+        padding: 1rem;
+        background: #F8F8F8;
+        border-radius: 40px;
+        position: relative;
+        width: 100%;
+        min-height: auto;
+        margin: .6rem auto;
+        overflow: hidden;
+    }
+
+    .bank_content{
+        display: flex;
+        align-items: start;
+        flex-direction:column;
+        background: #F8F8F8;
+        border-radius: 40px;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .feature-container p {
+        width: 90%;
+        font-size: 20px;;
+    }
+
+    .banner_content img {
+        width: 28%;
+    }
+
+
+    .bank_text {
+        padding: 0rem;
+        min-height: 32vh;
+        margin: 0 auto;
+    }
+
+    .bank_paragraph {
+        width: 100%;
+    }
+
+    .bank_text {
+        min-height: 39vh;
+    }
+
+}

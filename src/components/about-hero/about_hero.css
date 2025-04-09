@@ -232,3 +232,67 @@ color:#363F52;
     width:90%;
     border-radius:40px;
 }
+
+
+
+@media screen and (max-width:768px){
+    .about_hero {
+        height: 43vh;
+    }
+
+
+
+    .about_hero .title {
+        font-size: 54px;
+        line-height: 121%;
+    }
+    .about_typo {
+        background: url(/src/asset/P_P.png);
+        background-size: cover;
+        background-position: none;
+        background-repeat: no-repeat;
+        min-height: 29vh;
+    }
+
+    .about_typo {
+        padding: 0rem;
+    }
+
+    .core h1 {
+        font-size: 32px;
+    }
+}
+
+
+@media screen and (max-width:425px){
+    .about_hero {
+        height: 81vh;
+    }
+
+    .banner_content .banner_content_title {
+        font-size: 21px;
+    }
+
+    .banner_content .banner_content_paragraph {
+        font-size: 16px;
+    }
+
+    .banner_content img {
+        width: 25%;
+    }
+
+
+    .core {
+        
+        padding: .6rem;
+    }
+
+    .impact_content{
+        padding:.8rem;
+    }
+
+    .impact_title{
+        font-size: 39px;
+        line-height: 39px;
+    }
+}

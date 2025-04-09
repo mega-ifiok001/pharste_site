@@ -44,7 +44,7 @@ function Header() {
 
 
       
-      <header className="container-fluid mobile_menu_container">
+      <header className=" mobile_menu_container">
       <img src={Logo} className="logo" alt="company logo" />
       <div className="dropdowns">
         <button className="menu-btn" onClick={toggleMenu}>

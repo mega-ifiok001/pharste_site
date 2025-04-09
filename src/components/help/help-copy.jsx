@@ -55,9 +55,9 @@ const TermsAndConditions = () => (
 );
 
 const PrivacyPolicy = () => (
-    <div>
+    <div className="mx-3 mt-4">
         <h1>Privacy Policy</h1>
-        <p>Here is the privacy policy...</p>
+        <p>Loading...</p>
     </div>
 );
 
@@ -69,9 +69,10 @@ const FAQs = () => {
     };
 
     return (
-        <div>
-            <h1> Frequently Asked Questions</h1>
-            <div className={`faq-item ${activeIndex === 0 ? 'active' : ''}`} onClick={() => toggleFAQ(0)}>
+        <div className="">
+            <h1 className="mx-3 fs-2 mb-3 mt-3"> Frequently Asked Questions</h1>
+           <div className="mx-3">
+           <div className={`faq-item ${activeIndex === 0 ? 'active' : ''}`} onClick={() => toggleFAQ(0)}>
                 <div className="d-flex align-items-center justify-content-space-around">
                     <img src={activeIndex === 0 ? dash : plus} className="toggle-icon" alt="" />
                     <h2>Is there a free trial available?</h2>
@@ -93,6 +94,7 @@ const FAQs = () => {
                 </div>
                 {activeIndex === 2 && <p className="faq-content">You can find the full API Reference Documentation on our website...</p>}
             </div>
+           </div>
 
          </div>
     );
@@ -108,14 +110,14 @@ const ContactUs = () => {
     const [map, setMap] = useState(null);
     const [activeIndex, setActiveIndex] = useState(0);
 
-    useEffect(() => {
-        const google = window.google;
-        const map = new google.maps.Map(document.getElementById("map"), {
-            center: { lat: -33.8688, lng: 151.2093 },
-            zoom: 10,
-        });
-        setMap(map);
-    }, []);
+    // useEffect(() => {
+    //     const google = window.google;
+    //     const map = new google.maps.Map(document.getElementById("map"), {
+    //         center: { lat: -33.8688, lng: 151.2093 },
+    //         zoom: 10,
+    //     });
+    //     setMap(map);
+    // }, []);
 
     const handleClick = (index) => {
         const address = addresses[index];
@@ -150,13 +152,13 @@ const ContactUs = () => {
                 ))}
             </div>
 
-            <div className="form">
+            <div className="form px-2 ">
                 <h1>we're here to help</h1>
                 <p className="mt-2">Have questions or feedback? We'd love to hear from you. Our team is committed to providing timely and helpful 
                     responses to every inquiry.</p>
                     
                     <div className="row mt-3">
-                        <div className="col-md-7">
+                        <div className="col-lg-7 col-md-10 col-sm-12  col-xs-12">
                             <form action="">
                                 <div className="d-flex align-items-center">
                                     <div className="first">

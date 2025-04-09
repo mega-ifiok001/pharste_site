@@ -1,4 +1,17 @@
 #root {
   margin: 0 auto;
   padding: .5rem;
+  width:100%;
+}
+/* 
+body{
+  max-width: 100%!important;
+} */
+
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+      overflow: hidden;
+      scroll-behavior: smooth;
+  }
 }

@@ -257,6 +257,11 @@ form button{
     padding:1rem 0;
     margin-top:1.4rem;
     border-radius:.4rem;
+    transition:.6s ease all;
+}
+
+form button:hover{
+    background:#525bff;
 }
 
 .agreement{
@@ -275,4 +280,22 @@ form button{
 .agreement p a{
    color: #667085 !important; 
    text-decoration: underline!important;
+}
+
+
+@media screen and (max-width:768px){
+    .address-column p {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width:425px){
+    .address-column p {
+        font-size: 10px;
+    }
+
+    form{
+        width:108%;
+    }
 }

@@ -2,18 +2,15 @@ header{
     border-radius:1rem;
     margin-top:3.4rem;
     padding:.8rem;
-    width:95%!important;
+    width:95%;
     display: flex;
     background:#14373D;
-    overflow: hidden!important;
+    overflow: hidden;
     align-items: center;
     justify-content: space-between;  
     box-shadow: 1px 1px 10px 1px #0000001a;
 }
 
-body{
-    overflow: hidden;
-}
 
 
 .desktop_menu{
@@ -96,15 +93,19 @@ ul{
     }
 
     .mobile_menu_container{
+        position:relative;
         display:flex;
         align-items: center;
         justify-content: space-between;
         margin:1rem auto;
-        width:100%;
+      overflow-x: hidden;
+        width:95%;
     box-shadow: 1px 1px 10px 1px #0000001a;
-        
-        
+           
     }
+
+
+    
 
     .logo{
         width:30%;
@@ -143,6 +144,8 @@ ul{
 
     ul.open {
         transform: translateX(0);
+        display:initial;
+        position: fixed;
       }
       
 

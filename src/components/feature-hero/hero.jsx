@@ -28,7 +28,7 @@ function Hero(){
 
 
 
-          <div className="banner-container">
+          <div className="banner-container d-flex align-items-center justify-content-center">
             <div className="row">
                 <div className="col-md-6 w-100%">
                   <div className="banner_content">

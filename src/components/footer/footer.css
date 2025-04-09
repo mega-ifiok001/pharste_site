@@ -218,3 +218,24 @@ color:#98A2B3!important;
     display:flex;
     gap:10px;
 }
+
+
+
+
+
+
+
+@media screen and (max-width:425px){
+    .adder-content h1 {
+        font-size: 38px;
+    }
+
+    .img_1 {
+        width: 130px;
+    }
+
+
+    .adder-content .img {
+        width: 290px;
+    }
+}

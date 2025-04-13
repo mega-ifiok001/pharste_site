@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import './help.css';
+import './help.css'; 
 import Footer from '../footer/footer';
 import dash from '../../asset/minus-circle.png';
 import plus from '../../asset/plus.png';
 
 const TermsAndConditions = () => (
-    <div className="Terms">
-        <h1>Terms and Conditions</h1>
+    <div className="Terms " style={{marginTop:'6rem'}}>
+        <h1 className='mt-5'>Terms and Conditions</h1>
         <h2>Introduction</h2>
         <p className="mt-2">
             These docs will give you a deep dive into our full API Reference Documentation and how to seamlessly integrate our messaging channels 
@@ -55,7 +55,7 @@ const TermsAndConditions = () => (
 );
 
 const PrivacyPolicy = () => (
-    <div className="mx-3 mt-4">
+    <div className="mx-3" style={{marginTop:'6rem'}}>
         <h1>Privacy Policy</h1>
         <p>Loading...</p>
     </div>
@@ -69,7 +69,7 @@ const FAQs = () => {
     };
 
     return (
-        <div className="">
+        <div className="" style={{marginTop:'7rem'}}>
             <h1 className="mx-3 fs-2 mb-3 mt-3"> Frequently Asked Questions</h1>
            <div className="mx-3">
            <div className={`faq-item ${activeIndex === 0 ? 'active' : ''}`} onClick={() => toggleFAQ(0)}>
@@ -127,7 +127,7 @@ const ContactUs = () => {
     };
 
     return (
-        <div>
+        <div style={{marginTop:'6rem'}}>
             <div className="contact">
                 <h1>Get in Touch</h1>
                 <h2 className="mt-2">Our Locations</h2>

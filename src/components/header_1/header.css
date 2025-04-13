@@ -1,11 +1,11 @@
-header{
+header {
+    margin-right: auto!important;
+    margin-left: auto!important;
     border-radius:1rem;
-    margin-top:3rem;
-    padding:.8rem;
-    width:80%!important;
-    display: flex;
     position: fixed;
-    top: 0;
+    left:10%;
+    display: flex;
+    margin-top:2rem;
     background:#14373D;
     overflow: hidden;
     align-items: center;
@@ -14,9 +14,15 @@ header{
     z-index: 10000!important;
 }
 
+@media screen and (max-width:768px) {
+    header{
+        display: none;
+    }
+}
 
 
-.desktop_menu{
+
+.desktop_menu_2{
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -111,7 +117,6 @@ ul{
     .mobile_menu_container{
         position:fixed;
         display:flex;
-        left: 5%;
         align-items: center;
         justify-content: space-between;
         margin:1rem auto;

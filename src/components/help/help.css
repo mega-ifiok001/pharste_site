@@ -3,6 +3,11 @@
     align-items:start;
     justify-content:center;
     flex-direction:column;
+    margin-top: 6rem;
+}
+
+.container{
+    margin-top:30%!important ;
 }
 
 .sidebar button{
@@ -36,7 +41,9 @@ background:#E8E9FD;
 color: #070A45;
 }
 
-
+.terms{
+   margin-top: 4rem;
+}
 .terms h1{
     font-family: General Sans;
 font-weight: 600;

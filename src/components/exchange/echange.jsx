@@ -10,6 +10,7 @@ function Exchange() {
   const [convertedAmount, setConvertedAmount] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [errorCatcher, setErrorCatcher] =  useState(null)
 
   useEffect(() => {
     const fetchExchangeRates = async () => {
@@ -80,7 +81,7 @@ function Exchange() {
 <div className="inner">
        
  <div className="exchange">
-  <h1>hello</h1>
+  <p>hello</p>
  <div className="exchange-card">
         <div className="exchange-input">
           <select id="baseCurrency" value={baseCurrency} onChange={handleBaseCurrencyChange}>

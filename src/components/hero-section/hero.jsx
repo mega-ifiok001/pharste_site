@@ -1,58 +1,47 @@
-import React, { useEffect } from 'react';
-import './hero.css';
-import heroBg from '../../asset/Vector.png';
-import badge from '../../asset/Background.png';
-import apple from '../../asset/apple.png';
+import React, { useEffect } from "react";
+import "./hero.css";
+import hero_bg from "../../asset/hero_bg.png";
+import Header from '../../components/header/header.jsx'
+import band from '../../asset/band.png'
 import google from '../../asset/google.png';
-import stack from '../../asset/Container.png';
-import phone from '../../asset/iphone.png';
-import blur from '../../asset/blur-gradient.png';
-
+import apple from '../../asset/apple.png';
+import round_img from '../../asset/container.png';
 function Hero() {
+  return(
   
-    return (
-        <>
-            <div className="container-fluid hero-container">
-             <img src={heroBg} className="bg-img" alt="vector" />
-             <div className="hero">
-                <img src={badge} className='badge' alt="" />
+  <>
+  
+ <div className="hero_container">
+    <img src={hero_bg} className="hero_img" alt="herro bg " />
+    <Header/>
 
-                <div className="hero-text">
-                    <h1>
-                        Take Control of <br/> your finances
-                    </h1>
+   <div className="hero_content">
+   <img src={band} className="band_img" alt="band_img" />
+   <div className="hero_text">
+    <h1>Take Control of  <br/>
+    your finances</h1>
+    <p>The money app built for friends, families, and fearless <br/>
+         transactions,
+         no matter where they are 🌐🌍</p>
+   </div>
 
-                    <p className="mt-3">
-                    The money app built for friends, families,
-                     and fearless <br/> transactions, no matter where they are 🌐🌍
-                    </p>
-                </div>
+   <div className="download_btn">
+     <img src={google} alt="playstore" />
+     <img src={apple} alt="apple store" />
+   </div>
 
-                <div className="d-flex downloader">
-                    <img src={apple} alt="" />
-                    <img src={google} alt="" />
-                </div>
+   <div className="download_btn mt-4 align-items-center justify-content-start">
+    <img src={round_img} alt="series" />
 
-                <div class="image-stack">
-        <img src={stack} alt="Image 1"/>
-        <div className="stack-text">
-            <span>150K+</span> <br/>
-            <span>Review</span>
-        </div>
-
-
-      
+    <div className="sub_text">
+        <span>150k+</span> <br />
+        <span className="rev">Review</span>
     </div>
-
-
-    <div className="hero-bottom">
-          <img src={blur} className="blur" alt="" />
-          <img src={phone} className="phone" alt="" />
-        </div>
-             </div>
-            </div>
-        </>
-    );
+   </div>
+   </div>
+ </div>
+  
+  </>);
 }
 
 export default Hero;

@@ -12,14 +12,9 @@ function Header() {
     setMenuOpen(!menuOpen);
   };
 
-
-
-
-
-
   return (
     <>
-      <header className="container desktop_menu_container w-100%">
+      <header className=" desktop_menu_container w-100%">
         <nav className="desktop_menu">
           
             < img className='logo' src={Logo} alt="Company Logo" />

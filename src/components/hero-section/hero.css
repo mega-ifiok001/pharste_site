@@ -1,165 +1,175 @@
-.hero-container {
-    height: auto;
-    border-radius: 1rem;
-    margin-top: 3rem;
-    position: relative;
+.hero_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 142vh;
+  position: relative;
+  flex-direction: column;
+  animation: fadeIn 1.5s ease-in-out forwards;
 }
 
-.bg-img{
-    position: absolute;
-    top:0;
-    left:0;
-    min-height:70vh;
-    z-index: -1;
-    width:100%;
+.hero_container .hero_img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%; 
+   /* animation: zoomIn 1.5s ease-in-out; */
+}
+.hero_container .hero_content {
+  display: flex;
+  margin-top: 8%;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+  flex-direction: column;
+  padding: 2rem 2.9rem;
+}
+.hero_container .hero_content .band_img {
+  width: 18%;
+  animation: slideInFromLeft 1.5s ease-in-out;
+  z-index: 5;
 }
 
-.hero{
-    display: flex;
-    align-items:center;
-    justify-content:center;
-    flex-direction: column;
-    position:relative;
-    width:95%;
-    margin:0 auto;
-    height:auto;
-    z-index: 2;
+.hero_container .hero_content .hero_text {
+  z-index: 5;
+  margin: 0.8rem 0;
 }
 
-.hero .badge{
-    display:block!important;
-    width:20%;
-    margin-top:3.5rem;
+.hero_container .hero_content .hero_text h1 {
+  font-family: Bricolage Grotesque;
+  animation: slideInFromLeft 1.5s ease-in-out;
+  font-weight: 700;
+  font-size: 82px;
+  line-height: 70.4px;
+  letter-spacing: -2.56px;
+  vertical-align: middle;
+  color: #ffffff;
 }
 
-.hero .hero-text h1{
-    margin-top: 1rem;
-    font-family: Bricolage Grotesque;
-    font-weight: 700;
-    font-size: 82px;
-    line-height: 70.4px;
-    letter-spacing: -2.56px;
-    text-align: center;
-    vertical-align: middle;
-    
-    color:#5D64EE;
+.hero_container .hero_content .hero_text p {
+    animation: slideInFromRight 1.5s ease-in-out;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: -0.32px;
+  vertical-align: middle;
+  color: #ffffff;
 }
 
-@media screen and (max-width:425px) {
-    .hero .hero-text h1{
-        font-size:55px;
-        line-height: 48.48px;
+.hero_container .hero_content .download_btn {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 1.3rem;
+  z-index: 5;
+}
+
+.hero_container .hero_content .download_btn img {
+  width: 13%;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.sub_text span {
+    font-size: 1rem;
+    color: #fff;
+    animation: fadeIn 2.5s ease-in-out;
+  }
+
+.download_btn .sub_text span:nth-child(1) {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0%;
+  text-align: center;
+  line-height: 0.6px;
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+
+.download_btn .sub_text .rev {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 0.6px;
+  letter-spacing: -0.32px;
+  
+  vertical-align: middle;
+  color: #ffffff!important;
+}
+
+
+
+/* General Animation Keyframes */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-70px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+
+  @media screen and (max-width:1024px) {
+ .hero_container {
+       height: 105vh;
+      }
+  }
+
+@media screen and (max-width: 768px) {
+    .hero_container {
+        height: 105vh;
+       }
+
+       .hero_content{
+        margin-top: -3%;
+       }
+
+       .hero_container .hero_content .hero_text h1 {
+        animation: slideInFromLeft 1.5s ease-in-out;
+        font-size: 70px;
+        line-height: 58.4px;
     }
 }
-.hero .hero-text p{
-    font-family: Inter;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 27px;
-    letter-spacing: -0.32px;
-    text-align: center;
-    vertical-align: middle;
-    
-color:#5C5C70;
-}
 
-.downloader{
-    display:flex;
-    align-items: center;
-    justify-content:center;
-    gap:.6rem;
-}
-
-.downloader img{
-    width:12%;
-}
-
-@media screen and (max-width:768px){
-    .hero .badge{
-        display:block!important;
-        width:50%;
-        margin-top:3.5rem;
-    }
-
-    .downloader img{
-    width:23%;
-}
-
-.image-stack{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin-top:1.4rem;
-    gap:1.5rem;
-}
-.image-stack img{
-    width:25%;
-
-}
-
-.stack-text{
-    
-}
-
-.stack-text span:nth-child(1){
-    font-family: Inter;
-font-weight: 600;
-font-size: 18px;
-line-height: 21.6px;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: middle;
-color:#3AA0B0;
-margin:0;
-}
-
-
-
-
-
-}
-
-
-.image-stack{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin-top:1.4rem;
-    gap:1.5rem;
-}
-.image-stack img{
-    width:25%;
-
-}
-
-
-.hero-bottom {
-    position: relative;
-    display: flex;
-    align-items: flex-end; 
-    justify-content: center;
-    width: 100%; 
-    height: auto; 
-    overflow: hidden; 
-    margin-top:1.5rem;
-}
-
-.hero-bottom img {
-}
-
-.blur {
-    position: absolute;
-    width: 60%;
-    height: auto;
-    object-fit: cover; 
-    filter: blur(10px); 
-    z-index: 1; 
-}
-
-.phone {
-    position: relative;
-    width: 22%; 
-    bottom: 0;
-    height:75%;
-    z-index: 2; 
+@media screen and (max-width: 425) {
+  .hero_container {
+    min-height: 120vh;
+  }
 }

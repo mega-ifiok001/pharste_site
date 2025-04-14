@@ -31,7 +31,7 @@ function Hero() {
    </div>
 
    <div className="download_btn mt-4 align-items-center justify-content-start">
-  //  <img src={RoundImg} alt="series" />
+  //<img src={RoundImg} alt="series" />
 
     <div className="sub_text">
         <span>150k+</span> <br />

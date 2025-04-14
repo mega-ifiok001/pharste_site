@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import "./hero.css";
-import hero_bg from "../../asset/hero_bg.png";
+import Hero_bg from "../../asset/hero_bg.png";
 import Header from '../../components/header/header.jsx'
-import band from '../../asset/band.png'
-import google from '../../asset/google.png';
-import apple from '../../asset/apple.png';
-// import round_img from '../../asset/container.png';
+import Hand from '../../asset/band.png'
+import Google from '../../asset/google.png';
+import Apple from '../../asset/apple.png';
+import Round_img from '../../asset/container.png';
 function Hero() {
   return(
   

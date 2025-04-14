@@ -5,7 +5,7 @@ import Header from '../../components/header/header.jsx'
 import Hand from '../../asset/band.png'
 import Google from '../../asset/google.png';
 import Apple from '../../asset/apple.png';
-import RoundImg from '../../asset/container.png';
+import RoundImg from '../../asset/Container.png';
 function Hero() {
   return(
   

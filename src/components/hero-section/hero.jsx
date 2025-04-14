@@ -5,7 +5,7 @@ import Header from '../../components/header/header.jsx'
 import Hand from '../../asset/band.png'
 import Google from '../../asset/google.png';
 import Apple from '../../asset/apple.png';
-import RoundImg from '../../asset/Container.png';
+//import RoundImg from '../../asset/Container.png';
 function Hero() {
   return(
   
@@ -31,7 +31,7 @@ function Hero() {
    </div>
 
    <div className="download_btn mt-4 align-items-center justify-content-start">
-    <img src={RoundImg} alt="series" />
+  //  <img src={RoundImg} alt="series" />
 
     <div className="sub_text">
         <span>150k+</span> <br />

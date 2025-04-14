@@ -5,7 +5,7 @@ import Header from '../../components/header/header.jsx'
 import Hand from '../../asset/band.png'
 import Google from '../../asset/google.png';
 import Apple from '../../asset/apple.png';
-import Round_img from '../../asset/container.png';
+import RoundImg from '../../asset/container.png';
 function Hero() {
   return(
   
@@ -16,7 +16,7 @@ function Hero() {
     <Header/>
 
    <div className="hero_content">
-   <img src={band} className="band_img" alt="band_img" />
+   <img src={Band} className="band_img" alt="band_img" />
    <div className="hero_text">
     <h1>Take Control of  <br/>
     your finances</h1>
@@ -26,12 +26,12 @@ function Hero() {
    </div>
 
    <div className="download_btn">
-     <img src={google} alt="playstore" />
-     <img src={apple} alt="apple store" />
+     <img src={Google} alt="playstore" />
+     <img src={Apple} alt="apple store" />
    </div>
 
    <div className="download_btn mt-4 align-items-center justify-content-start">
-    <img src={round_img} alt="series" />
+    <img src={RoundImg} alt="series" />
 
     <div className="sub_text">
         <span>150k+</span> <br />

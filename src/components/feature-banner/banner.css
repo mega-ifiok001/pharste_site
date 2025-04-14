@@ -12,7 +12,7 @@
     margin-top: 3rem;
 }
 .banner-header p{
-    font-family: General Sans;
+    font-family: poppins;
 font-weight: 500;
 font-size: 24px;
 line-height: 150%;
@@ -22,7 +22,7 @@ color: #605D64;
 }
 
 .banner-header h1{
-    font-family: General Sans;
+    font-family: poppins;
 font-weight: 600;
 font-size: 48px;
 line-height: 100%;
@@ -46,7 +46,7 @@ color: #070A45;
 }
 
 .banner_content .banner_content_title{
-    font-family: General Sans;
+    font-family: poppins;
 font-weight: 600;
 font-size: 32px;
 line-height: 100%;
@@ -57,7 +57,7 @@ color:#070A45;
 }
 
 .banner_content .banner_content_paragraph{
-    font-family: General Sans;
+    font-family: poppins;
 font-weight: 500;
 text-align: start;
 font-size: 24px;
@@ -96,7 +96,7 @@ color:#322F35;
 }
 
 .bank_title{
-      font-family: General Sans;
+      font-family: poppins;
 font-weight: 600;
 font-size: 32px!important;
 line-height: 100%;
@@ -110,7 +110,7 @@ color:#070A45;
 
 
 .bank_paragraph{
-      font-family: General Sans;
+      font-family: poppins;
 font-weight: 500;
 width:39%;
 text-align: start!important;
@@ -151,19 +151,20 @@ color:#322F35!important;
 .down-header h1{
     font-family: Plus Jakarta Sans;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 38px;
     line-height: 100%;
     letter-spacing: -0.5px;
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
-    
+    text-align: start;
 color: #1E1E1E;
 }
 
 .down-header p{
     font-family: Plus Jakarta Sans;
 font-weight: 400;
+width: 70%;
 font-size: 20px;
 line-height: 35px;
 letter-spacing: 0px;
@@ -174,6 +175,7 @@ color:#605D64;
 
 .down-header{
     margin:3rem auto;
+    width: 50%;
 }
 
 

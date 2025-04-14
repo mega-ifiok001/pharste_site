@@ -9,6 +9,12 @@ import hands from '../../asset/hands.png';
 import p2pPay from '../../asset/p2p_trade.png';
 import billPay from '../../asset/bill_payment.png';
 import bankLocker from '../../asset/bank_locker.png';
+import p2p from '../../asset/p2p-box.png';
+import bill from '../../asset/bill-box.png';
+import user from '../../asset/user-box.png';
+import bank from '../../asset/bank-box.png';
+import dub from '../../asset/dub-box.png';
+import effort from '../../asset/effort.png';
 function Hero(){
     return(
 
@@ -31,31 +37,25 @@ function Hero(){
           <div className="banner-container d-flex align-items-center justify-content-center">
             <div className="row">
                 <div className="col-md-6 w-100%">
-                  <div className="banner_content">
+                  <img src={p2p} className='img-fluid' alt="" />
+                  {/* <div className="banner_content">
                     <h1 className="banner_content_title">P2p</h1>
                     <p className="banner_content_paragraph">Experience lightening-fast transfers with top-tier encryption and security.</p>
                  <img src={p2pPay} alt="p2p transaction pic" />
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="col-md-6">
-                <div className="banner_content ">
-                    <h1 className="banner_content_title">Bills Payment</h1>
-                    <p className="banner_content_paragraph">Why pay high fees when you don't have to? We believe in keeping cost low so you can send more. </p>
-                 <img src={billPay} alt="bill payment image " />
-                  </div>
+                <img src={bill} className='img-fluid' alt="" />
+
                 </div>
             </div>
 
 
-           <div className="bank_content">
+           <div className="bank_content mt-5">
            <div className="row  ">
               <div className="col-md-12 ">
-                  <div className="bank_text">
-                    <h1 className="bank_title">Savings</h1>
-                    <p className="bank_paragraph">Sending money to friends, family or anyone in your circle has never been easier.</p>
-                  <img src={bankLocker} alt="bank locker" />
-                  </div>
+                 <img src={bank} className='img-fluid' alt="" />
               </div>
             </div>
            </div>

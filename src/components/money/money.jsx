@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import CountUp from "react-countup";
 
 import "./money.css";
-import Notification_one from "../../asset/notification_one.png";
+import NotificationOne from "../../asset/notify.png";
 import notification_two from "../../asset/notification_two.png";
 import trustBg from "../../asset/banner-bg.png";
 import fine__person from "../../asset/fine_person.png";
@@ -72,7 +72,7 @@ function Money() {
 
         <div className="trust-bg container-lg mt-5">
           <img src={trustBg} alt="trusted_img" className="trusted_img" />
-          <img src={Notification_one} className="noti_one animate-on-scroll" alt="notification" />
+          <img src={NotificationOne} className="noti_one animate-on-scroll" alt="notification" />
           <img src={notification_two} className="noti_two animate-on-scroll" alt="notification" />
 
           <div className="counter">

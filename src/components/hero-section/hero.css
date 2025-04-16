@@ -18,7 +18,7 @@
 }
 .hero_container .hero_content {
   display: flex;
-  margin-top: 8%;
+  margin-top: 2%;
   align-items: start;
   justify-content: start;
   width: 100%;
@@ -172,4 +172,21 @@
   .hero_container {
     min-height: 120vh;
   }
+
+  .hero_container .hero_content {
+    display: flex;
+    margin-top: -22%;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    flex-direction: column;
+    padding: 2rem 2.9rem;
+}
+
+  
+    .hero_container .hero_content .hero_text h1 {
+        animation: slideInFromLeft 1.5s ease-in-out;
+        font-size: 35px;
+        line-height: 32.4px;
+    }
 }

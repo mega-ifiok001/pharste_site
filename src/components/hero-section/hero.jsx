@@ -26,8 +26,8 @@ function Hero() {
    </div>
 
    <div className="download_btn">
-     <img src={Google} alt="playstore" />
-     <img src={Apple} alt="apple store" />
+     <img src={Google} className="img-fluid" alt="playstore" />
+     <img src={Apple} className="img-fluid" alt="apple store" />
    </div>
 
    <div className="download_btn mt-4 align-items-center justify-content-start">

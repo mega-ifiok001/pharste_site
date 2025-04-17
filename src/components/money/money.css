@@ -101,7 +101,8 @@ color:#5D64EE;
 
 
 .trust-bg img{
-    width:95%;
+    width:100%;
+    object-fit:contain;
 }
 
 
@@ -317,7 +318,7 @@ color:#363F52;
 
 @media screen and (max-width:1440px) {
     .trust-bg {
-        min-height: 69vh;
+        min-height: 36vh;
     }
 }
 
@@ -337,9 +338,21 @@ color:#363F52;
         font-size:16px;
     }
 
+    .trust_container{
+        min-height:62vh;
+    }
+
     .trust_container h1{
         font-size: 32px;
         line-height: 37.6px;
+    }
+
+    .trust-text{
+        padding:0;
+    }
+
+    .why-use{
+        margin-top:0rem;
     }
 
     .why-use h1{
@@ -375,5 +388,23 @@ line-height: 42.6px;
 @media screen and (max-width:425px) {
     .trust-bg{
         display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .trust_container h1 {
+        font-size: 26px;
+        line-height: 27.6px;
+    }
+
+    .why-use h1 {
+        font-size: 27px;
+        line-height: 0;
+        margin-top: 3rem;
+    }
+
+    .account_setup .title h1 {
+        font-size: 25px;
+        line-height: 25.6px;
     }
 }

@@ -164,3 +164,9 @@ vertical-align: middle;
     font-size: 0.9rem; /* Adjust review label size */
   }
 }
+
+@media screen and (max-width:375px){
+  .hero_container {
+    min-height: 72vh;
+}
+}

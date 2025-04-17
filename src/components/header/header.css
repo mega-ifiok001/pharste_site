@@ -310,12 +310,14 @@ li{
   .download_btn img {
     width: 115px;
 }
+
+
   }
 
   @media screen and (max-width: 320px) {
     .hero_text h1 {
-        font-size: 2.5rem;
-        line-height: 48.4px;
+        font-size: 2.3rem;
+        line-height: 40.4px;
     }
 }
 

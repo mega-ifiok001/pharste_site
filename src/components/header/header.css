@@ -126,7 +126,7 @@ li{
             justify-content: space-between;
             margin:1rem auto;
           overflow-x: hidden;
-            width:90%;
+            width:75%;
             padding:1rem;
         box-shadow: 1px 1px 10px 1px #0000001a;
                
@@ -282,7 +282,7 @@ li{
     }
   
     .desktop_menu_container {
-      width: 90%; /* Full width for mobile */
+      width: 75%; /* Full width for mobile */
       top: 1rem; /* Float closer to the top */
       padding: 0.5rem; /* Adjust padding */
     }

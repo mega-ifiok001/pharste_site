@@ -282,9 +282,12 @@ li{
     }
   
     .desktop_menu_container {
-      width: 75%; /* Full width for mobile */
-      top: 1rem; /* Float closer to the top */
+      width: 85%; /* Full width for mobile */
+      top: .3rem; /* Float closer to the top */
       padding: 0.5rem; /* Adjust padding */
+      margin-top:30%;
+      margin-right:auto;
+      margin-left: auto;
     }
   }
 

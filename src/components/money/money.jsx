@@ -69,13 +69,14 @@ function Money() {
   return (
     <>
       {/* Trusted Section */}
-      <div className="trust_container">
-        <div className="trust-text animate-on-scroll">
+
+      <div className="trust-text animate-on-scroll">
           <h1>Trusted by users across <br /> thirty countries</h1>
         </div>
+        
+      <div className="trust_container">
+      
 
-        <div className="trust-bg container-lg mt-5">
-          <img src={trustBg} alt="trusted_img" className="trusted_img" />
           <img src={NotificationOne} className="noti_one animate-on-scroll" alt="notification" />
           <img src={notification_two} className="noti_two animate-on-scroll" alt="notification" />
 
@@ -101,7 +102,7 @@ function Money() {
               <p>Positive Review</p>
             </div>
           </div>
-        </div>
+        
       </div>
 
       {/* Why Use Pharste Section */}

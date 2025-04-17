@@ -2,11 +2,20 @@
     display:flex;
     align-items:center;
     justify-content:center;
-    flex-direction: column;
     margin-top:25%;
-   position:inherit;
-   min-height: 112vh;
+    margin-left: auto;
+    margin-right: auto;
+   min-height: 90vh;
    overflow: hidden!important;
+   position:relative;
+   z-index: -1;
+   background:url(../../asset/banner-bg.png);
+   background-repeat:no-repeat;
+   background-position:center;
+   background-size:cover;
+   width:90%;
+   border-radius:10px;
+
 }
 
 
@@ -25,7 +34,7 @@
   .trust-text {
     padding: 5rem;
     opacity: 0;
-    z-index: -1;
+    z-index: -2;
     transform: translateY(30px);
     transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
   }
@@ -34,7 +43,7 @@
     opacity: 1;
     transform: translateY(0);
   }
-.trust_container h1{
+.trust-text h1{
     font-family: Bricolage Grotesque;
 font-weight: 700;
 font-size: 48px;
@@ -46,19 +55,12 @@ color:#5D64EE;
 }
 
 .trust-bg{
-    display:flex;
-    align-items:center;
-    justify-content: center;
-    margin-top:10%;
-    position:relative;
-    z-index: -1;
+  
+
    
 }
 
-.trusted_img{
-    position: absolute;
-    height: 100%;
-}
+
 
 .noti_one{
     position: absolute;
@@ -131,7 +133,7 @@ color:#5D64EE;
 .counter-text h1{
     font-family: Bricolage Grotesque;
 font-weight: 600;
-font-size: 64px!important;
+font-size: 64px;
 line-height: 70.4px;
 letter-spacing: -5px;
 vertical-align: middle;
@@ -142,7 +144,7 @@ vertical-align: middle;
 .counter-text p{
     font-family: poppins;
     font-weight: 400;
-    font-size: 16px!important;
+    font-size: 16px;
     line-height: 32.4px;
     letter-spacing: 0%;
     vertical-align: middle;
@@ -339,16 +341,20 @@ color:#363F52;
     }
 
     .trust_container{
-        min-height:62vh;
+        min-height:34vh;
     }
 
-    .trust_container h1{
-        font-size: 32px;
-        line-height: 37.6px;
+    .counter .counter-text h1 {
+        font-size: 30px;
+        letter-spacing: normal;
+        height: 3rem;
     }
+
+   
 
     .trust-text{
         padding:0;
+        margin-top:10%;
     }
 
     .why-use{
@@ -386,9 +392,17 @@ line-height: 42.6px;
 
 
 @media screen and (max-width:425px) {
-    .trust-bg{
-        display: none;
+
+    .counter .counter-text h1 {
+        font-size: 20px;
+        height: 2rem;
+        letter-spacing: 1px;
     }
+
+    .counter .counter-text p {
+        font-size: 10px;
+    }
+  
 }
 
 @media screen and (max-width: 320px) {
@@ -397,6 +411,10 @@ line-height: 42.6px;
         line-height: 27.6px;
     }
 
+
+    .counter {
+        gap: 1rem;
+    }
     .why-use h1 {
         font-size: 27px;
         line-height: 0;

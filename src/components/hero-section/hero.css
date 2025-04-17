@@ -1,192 +1,159 @@
 .hero_container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 142vh;
-  position: relative;
-  flex-direction: column;
-  animation: fadeIn 1.5s ease-in-out forwards;
+  justify-content: flex-start; /* Align content to the left */
+  flex-direction: column; /* Stack elements vertically */
+  background: url(../../asset/heroBg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 110vh;
+  padding: 2rem 1rem; /* Add padding for spacing */
+  transition: all 0.3s ease-in-out;
 }
 
-.hero_container .hero_img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%; 
-   /* animation: zoomIn 1.5s ease-in-out; */
-}
-.hero_container .hero_content {
+/* Hero Content */
+.hero_content {
   display: flex;
-  margin-top: 2%;
-  align-items: start;
-  justify-content: start;
-  width: 100%;
   flex-direction: column;
-  padding: 2rem 2.9rem;
-}
-.hero_container .hero_content .band_img {
-  width: 18%;
-  animation: slideInFromLeft 1.5s ease-in-out;
-  z-index: 5;
-}
-
-.hero_container .hero_content .hero_text {
-  z-index: 5;
-  margin: 0.8rem 0;
+  align-items: flex-start; /* Align content to the left */
+  text-align: left; /* Ensure text aligns to the left */
+  gap: 2rem;
+  margin-right:auto;
+  max-width: 1200px; /* Limit the width for larger screens */
+  padding: 1rem;
+  margin-top:10%;
 }
 
-.hero_container .hero_content .hero_text h1 {
+
+.hero_content .band_img{
+  width:60%;
+}
+
+.hero_text h1 {
   font-family: Bricolage Grotesque;
-  animation: slideInFromLeft 1.5s ease-in-out;
-  font-weight: 700;
-  font-size: 82px;
-  line-height: 70.4px;
-  letter-spacing: -2.56px;
-  vertical-align: middle;
+font-weight: 700;
+font-size: 82px;
+line-height: 70.4px;
+letter-spacing: -2.56px;
+vertical-align: middle;
+
   color: #ffffff;
 }
 
-.hero_container .hero_content .hero_text p {
-    animation: slideInFromRight 1.5s ease-in-out;
-  font-family: Inter;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 27px;
-  letter-spacing: -0.32px;
-  vertical-align: middle;
+.hero_text p {
+  font-size: 1rem;
+  line-height: 1.5;
   color: #ffffff;
+  margin: .1rem 0;
 }
 
-.hero_container .hero_content .download_btn {
+/* Download Buttons */
+.download_btn {
   display: flex;
-  align-items: start;
-  justify-content: start;
-  gap: 1.3rem;
-  z-index: 5;
+  /* gap: 1rem; */
+  align-items: center;
+  justify-content: flex-start; /* Align buttons to the left */
 }
 
-.hero_container .hero_content .download_btn img {
-  width: 13%;
-  animation: fadeIn 2s ease-in-out;
+.download_btn img {
+  width: 150px; /* Set button width */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
 }
 
-.sub_text span {
-    font-size: 1rem;
-    color: #fff;
-    animation: fadeIn 2.5s ease-in-out;
-  }
+.download_btn img:hover {
+  transform: scale(1.05); /* Grow slightly on hover */
+}
 
-.download_btn .sub_text span:nth-child(1) {
-  font-family: Inter;
-  font-weight: 600;
-  font-size: 18px;
-  letter-spacing: 0%;
-  text-align: center;
-  line-height: 0.6px;
-  vertical-align: middle;
+.download_btn.gm {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align the review badge to the left */
+  gap: 1rem;
+}
+
+.download_btn.gm .sub_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align text to the left */
+  justify-content: center;
   color: #ffffff;
 }
 
-
-.download_btn .sub_text .rev {
-  font-family: Inter;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 0.6px;
-  letter-spacing: -0.32px;
-  
-  vertical-align: middle;
-  color: #ffffff!important;
+.download_btn.gm .sub_text span:first-child {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
+.download_btn.gm .sub_text .rev {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #cccccc;
+}
 
+/* Band Image */
+.band_img {
+  width: 100%;
+  max-width: 500px; /* Limit image size for larger screens */
+  height: auto;
+  object-fit: contain;
+}
 
-/* General Animation Keyframes */
-@keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes slideInFromLeft {
-    from {
-      opacity: 0;
-      transform: translateX(-70px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  @keyframes slideInFromRight {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  @keyframes zoomIn {
-    from {
-      opacity: 0;
-      transform: scale(0.8);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-  
+/* Responsive Design */
 
-  @media screen and (max-width:1024px) {
- .hero_container {
-       height: 105vh;
-      }
-  }
-
+/* Tablets (max-width: 768px) */
 @media screen and (max-width: 768px) {
-    .hero_container {
-        height: 105vh;
-       }
-
-       .hero_content{
-        margin-top: -3%;
-       }
-
-       .hero_container .hero_content .hero_text h1 {
-        animation: slideInFromLeft 1.5s ease-in-out;
-        font-size: 70px;
-        line-height: 58.4px;
-    }
-}
-
-@media screen and (max-width: 425) {
-  .hero_container {
-    min-height: 120vh;
+  .hero_text h1 {
+    font-size: 2rem; /* Adjust heading size */
   }
 
-  .hero_container .hero_content {
-    display: flex;
-    margin-top: -22%;
-    align-items: start;
-    justify-content: start;
-    width: 100%;
-    flex-direction: column;
-    padding: 2rem 2.9rem;
+  .hero_text p {
+    font-size: 0.9rem; /* Adjust text size */
+  }
+
+  .band_img {
+    max-width: 400px;
+  }
+
+  .download_btn img {
+    width: 150px; /* Reduce button size */
+  }
+
+  .download_btn.gm {
+    flex-direction: column; /* Stack review badge vertically */
+    align-items: flex-start; /* Align stacked items to the left */
+  }
+
+  .download_btn.gm .sub_text {
+    align-items: flex-start; /* Keep text aligned to the left */
+  }
 }
 
-  
-    .hero_container .hero_content .hero_text h1 {
-        animation: slideInFromLeft 1.5s ease-in-out;
-        font-size: 35px;
-        line-height: 32.4px;
-    }
+/* Mobile Devices (max-width: 425px) */
+@media screen and (max-width: 425px) {
+  .hero_text h1 {
+    font-size: 1.5rem; /* Further reduce heading size */
+  }
+
+  .hero_text p {
+    font-size: 0.8rem; /* Further reduce text size */
+  }
+
+  .band_img {
+    max-width: 300px; /* Reduce image size */
+  }
+
+  .download_btn img {
+    width: 130px; /* Further reduce button size */
+  }
+
+  .download_btn.gm .sub_text span:first-child {
+    font-size: 1.2rem; /* Adjust review number size */
+  }
+
+  .download_btn.gm .sub_text .rev {
+    font-size: 0.9rem; /* Adjust review label size */
+  }
 }

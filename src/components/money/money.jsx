@@ -23,6 +23,10 @@ import Exchange from "../exchange/echange";
 function Money() {
   const [startCount, setStartCount] = useState(false);
 
+
+  
+
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {

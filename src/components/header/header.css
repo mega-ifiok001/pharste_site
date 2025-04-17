@@ -1,4 +1,294 @@
-header{
+/* General Styles */
+.desktop_menu_container {
+    position: fixed; /* Keeps the navbar fixed at the top */
+    top: 2rem; /* Floats the navbar 2rem away from the top */
+    left: 50%; /* Centers the navbar horizontally */
+    transform: translateX(-50%); /* Adjusts the position to center */
+    max-width: 75%; /* Sets the width to 70% */
+    z-index: 1000; /* Ensures it's above other content */
+    background-color:#14373D;
+    color: white;
+    box-shadow: 1px  1px  20px 2px rgba(162, 161, 161, 0.792);
+    border-radius: 8px; /* Adds rounded corners for a modern look */
+    transition: all 0.3s ease-in-out;
+    padding: 0.5rem 1rem; /* Adds padding for inner content */
+  }
+
+  a{
+    text-decoration: none!important;
+    color: #fff!important;
+    cursor: pointer;
+    margin:0!important;
+
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+
+}
+  
+  .desktop_menu {
+    display: flex;
+    align-items: center!important;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+  
+  .logo {
+    width: 120px;
+    height:auto;
+    margin-top:-.5rem
+  }
+  
+  /* Navigation Menu */
+  .nav_menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav_menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .nav_menu li a:hover {
+    color: #00aaff;
+  }
+  
+  /* Navigation End */
+  .nav-end .get_app_btn {
+    background-color: #00aaff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .nav-end .get_app_btn a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-end .get_app_btn:hover {
+    background-color: #008ecc;
+  }
+  
+  /* Hamburger Menu (Hidden on Desktop) */
+  .hamburger_menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.3rem;
+  }
+  
+  .hamburger_menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+  }
+
+
+  .mobile_menu_container{
+    display:none;
+  }
+  
+  /* Responsive Styles */
+  
+
+
+  @media screen and (max-width:900px){
+    .nav_menu {
+        gap: 1rem;
+      }
+
+  }
+  /* Tablets (max-width: 768px) */
+  @media screen and (max-width: 768px) {
+    .desktop_menu_container{
+        display:none;
+    }
+
+    .mobile_menu_container{
+        background:#14373D;
+            position:fixed;
+            display:flex;
+            border-radius: 10px;
+            top:2rem;
+            align-items: center;
+            justify-content: space-between;
+            margin:1rem auto;
+          overflow-x: hidden;
+            width:90%;
+            padding:1rem;
+        box-shadow: 1px 1px 10px 1px #0000001a;
+               
+        
+    
+    }
+
+
+    .dropdowns{
+         position: relative; 
+    }
+
+
+
+    .dropdowns button{
+        background:transparent;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        flex-direction:column;
+        border:none;
+        cursor:pointer;
+        
+    }
+
+
+    .dropdowns ul{
+        position:fixed;
+        top:0;
+        padding:.3rem;
+        width:80%;
+        right:0;
+        transition:.8s ease all;
+        box-shadow:1px 1px 10px 10px #0000001a;
+        border-bottom-left-radius: 1rem;
+        z-index: 5;
+        transform:translateX(115%);
+        backdrop-filter: blur(4px);
+        background:rgba(255, 255, 255, 0.717);
+    }
+
+    ul.open {
+        transform: translateX(0);
+        display:initial;
+        position: fixed;
+      }
+      
+
+    .cross-button {
+        padding-left:1.5rem;
+        padding-top:1.4rem;
+        margin-bottom:.9rem;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .cross-button span {
+        position: absolute;
+        width: 25px!important;
+        height: 5px!important;
+        background: #14373D!important; 
+        transition: all 0.3s ease;
+      }
+      
+      .cross-button span:first-child {
+        transform: rotate(45deg);
+      }
+      
+      .cross-button span:last-child {
+        transform: rotate(-45deg);
+      }
+
+    .dropdowns ul li{
+        margin: 1.8rem 1.4rem;
+       
+    }
+
+  
+    .dropdowns ul li a {
+        position: relative !important;
+        color: #14373D !important;
+        font-weight: 500;
+        text-decoration: none;
+        padding-bottom: 5px;
+      }
+      
+      .dropdowns ul li a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 3px !important;
+        display: block;
+        bottom: 0;
+        left: 0;
+        background: #14373D;
+        transition: width 0.3s ease-in-out;
+      }
+      
+      .dropdowns ul li a:hover::after {
+        width: 100%;
+        color:#224b52;
+        transform:scale(1.1)
+      }
+
+      .dropdowns button span:nth-child(1){
+        width:19px;
+        display:block;
+        height: 3px;
+        background:#fff;
+        margin:2px 0px;
+    
+    }
+    
+    .dropdowns button span:nth-child(3){
+        width:19px;
+        display:block;
+        background:#fff;
+        margin:2px 0px;
+        height: 3px;
+    
+    }
+    
+    .dropdowns button span:nth-child(2){
+        width:27px;
+        background:#fff;
+        margin:2px 0px;
+        height: 3px;
+        display: block;
+    
+    }
+ 
+  }
+  
+  /* Mobile Devices (max-width: 425px) */
+  @media screen and (max-width: 425px) {
+    .logo {
+      width: 100px; /* Smaller logo for mobile */
+    }
+  
+    .nav-end {
+      display: none; /* Hide nav-end section on mobile */
+    }
+  
+    .get_app_btn {
+      font-size: 0.8rem; /* Adjust button size */
+    }
+  
+    .desktop_menu_container {
+      width: 90%; /* Full width for mobile */
+      top: 1rem; /* Float closer to the top */
+      padding: 0.5rem; /* Adjust padding */
+    }
+  }
+
+/* header{
     border-radius:1rem;
     margin-top:3rem;
     padding:.8rem;
@@ -111,7 +401,6 @@ ul{
     .mobile_menu_container{
         position:fixed;
         display:flex;
-        left: 5%;
         align-items: center;
         justify-content: space-between;
         margin:1rem auto;
@@ -130,7 +419,9 @@ ul{
 
     .dropdowns{
         /* position: relative; */
-    }
+   /* }
+
+
 
     .dropdowns button{
         background:transparent;
@@ -266,4 +557,4 @@ ul{
 }
 
 
-
+ */

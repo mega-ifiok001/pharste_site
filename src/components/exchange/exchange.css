@@ -1,122 +1,177 @@
-/* General Container */
-.exchange-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 960px;
-  padding: 1rem;
-  background-color: #000;
-  border-radius: 1rem;
-  color: #fff;
-  margin: 0 auto;
+.card{
+  background: #080808!important;
+  border: 1.25px solid #1C1C1C!important;
+  border-radius: 30px!important;
+  z-index: 0;
+  min-height:30vh;
 }
 
-/* Inner Content */
-.inner {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  width: 100%;
+.card-inner{
+  display:flex;
+  align-items:center!important;
+  flex-direction:column!important;
+  justify-content:center;
+  gap:1rem;
+  min-height:14vh;
+  position:relative;
 }
 
-/* Exchange Section */
-.exchange {
-  flex: 1 1 300px; /* Responsive flex for cards */
-  margin: 0 auto;
-}
 
-.exchange-card {
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+.card-inner input{
+  border:none;
+  outline:none;
+  background:transparent!important;
+  height:7rem;
   text-align: center;
-  width: 100%;
-  max-width: 350px;
-  color: #000;
-}
-
-.exchange-input,
-.exchange-currency {
-  margin-bottom: 20px;
-  position: relative;
-}
-
-.exchange-input select,
-.exchange-currency select,
-.exchange-input input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.flag-icon {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Arrows */
-.arrows {
   display: flex;
-  flex-direction: column;
+  font-weight:bold;
+  font-size: 3.4rem;
+  align-items:center;
+}
+
+input{
+  outline:none;
+}
+
+.custom-select {
+  border: 1.25px solid  #1D1B20!important;
+  background: #0F0F0F!important;
+  color: #fff;
+  border-radius:3rem!important;
+  padding: 0.5rem 2rem 0.5rem 0.75rem;
+}
+
+.form-select span{
+  position:absolute;
+  bottom:0;
+}
+
+.exc{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.desktop_rate{
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  flex-direction: column;
 }
-
-.arrows span {
-  font-size: 24px;
-  color: #fff;
-}
-
-/* Ad Section */
-.ad {
+.rate_charge {
   margin-top: 1rem;
-  text-align: center;
+  height: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
-.ad span {
-  color: blue;
-  background: #110047;
-  padding: 5px 15px;
+.grey-text{
+  font-family:poppins;
+font-weight: 500;
+font-size: 16.97px;
+line-height: 133%;
+color:#737373;
+}
+
+marquee{
+   background:#2E2300;
+    padding: 3px;
+    border-radius:10px;
+    color: #CC9C00;
+    white-space: nowrap;
+  
+}
+
+.mobile_rate{
+  display:none;
+}
+
+
+@media screen and (max-width:425px){
+
+  .desktop_rate{
+    display: none;
+  }
+
+  
+.mobile_rate{
+  flex-direction: column;
+  padding:1rem;
+  min-height:auto;
+  background-color: #000;;
+  display:flex;
+  align-items:center;
   border-radius: 1rem;
+  justify-content: center;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .inner {
-    flex-direction: column;
-  }
-
-  .exchange-card {
-    max-width: 90%;
-  }
+.mobile_rate  .form-select {
+  width:30%;
 }
 
-@media (max-width: 425px) {
-  .exchange-card {
-    padding: 15px;
-  }
+.mobile_swap{
+  display:flex;
+  width:100%;
+  align-items:center!important;
+  justify-content:center;
+}
 
-  .arrows {
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-  }
+  .card-inner input {
+    border: none;
+    outline: none;
+    background: transparent !important;
+    height: 7rem;
+    text-align: center;
+    display: flex;
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+.mobile_rate h5{
+  text-align: left!important;
+  width:100%;
+}
+.swap_img{
+  width:15%;
+}
 
-  .arrows span {
-    font-size: 20px;
-  }
+marquee{
+  width:100%;
+  font-size: 7px;
+}
+.card{
+  min-height:10vh;
+}
+
+.card-inner{
+  gap:0rem;
+}
+
+.mobile_rate .rate_charge{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  margin-top: 3rem;
+  width:100%;
+}
+
+.marquee{
+  background:#2E2300;
+  padding: 5px;
+  border-radius:10px;
+  color: #CC9C00!important;
+}
+
+.mid{
+  font-size: 14px;
+}
+}
+
+
+@media screen and (max-width:375px){
+
+.mid{
+  font-size: 10px;
+}
 }

@@ -82,9 +82,6 @@
 
 
 .main-footer{
-    /* display:flex;
-    align-items:center;
-    justify-content:center; */
     padding:3rem;
     background: url(../../asset/dark_bg.png);
     background-position: bottom;
@@ -104,9 +101,16 @@
     margin-bottom:2rem;
 }
 
-.main-footer p{
-    color:#fff;
-    width:85%;
+.main-footer p {
+    color: #fff;
+    width: 55%;
+}
+
+.country_math{
+    display:flex;
+    align-items:center;
+    gap:3rem;
+    justify-content:start
 }
 
 .court_1 {
@@ -119,7 +123,8 @@ font-weight: 600;
 font-size: 14px;
 line-height: 20px;
 letter-spacing: 0%;
-color:#98A2B3;
+color:#fff;
+padding-bottom:10px;
 }
 
 
@@ -167,17 +172,19 @@ color:#fff;
 }
 
 .court_2 form{
-    display: flex
-    ;align-items:center;
+    display: flex;
+    align-items:center;
+    width:100%;
 }
 
 .court_2 form input{
-    padding:.4rem;
+    padding:.4rem ;
+    width:100%;
     border-radius:10px;
 }
 
 .court_2 form button{
-    padding:.4rem 2rem;
+    padding:.4rem 1rem;
     background:blue;
     border-radius:10px;
     margin-left:5px;
@@ -185,15 +192,50 @@ color:#fff;
     cursor:pointer;
 }
 
+.linkers {
+    margin-top:3rem;
+    display:flex;
+    align-items:center;
+    justify-content:start;
+}
+
+.linkers ul{
+    padding:0;
+    display:flex;
+    margin-right:auto;
+    align-items:center;
+    justify-content:start;
+    gap:1rem;
+}
+
+.footer_nav span{
+    margin-left:10px;
+    border: 1px solid #FFFFFF4D;
+    background:#333;
+    padding:2px 5px 2px 5px;
+    border-radius:16px;
+}
+
+
+form{
+    display:flex;
+    align-items:center;
+    
+}
+
+
+
 .foot {
     position: absolute;
     bottom: 0;
-    left:0;
-    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    align-items: center;
+    width: 93%;
 }
+
 
 /* .fill {
     position: absolute;

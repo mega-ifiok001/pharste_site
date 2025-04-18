@@ -255,7 +255,7 @@ label{
     color: #070A45;
 }
 
-form button{
+.contact_us button{
     background:#2D35E9;
     color:white;
     border:none;
@@ -267,7 +267,7 @@ form button{
     transition:.6s ease all;
 }
 
-form button:hover{
+.contact_us button:hover{
     background:#525bff;
 }
 

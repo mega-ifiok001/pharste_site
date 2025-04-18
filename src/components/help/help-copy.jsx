@@ -159,7 +159,7 @@ const ContactUs = () => {
                     
                     <div className="row mt-3">
                         <div className="col-lg-7 col-md-10 col-sm-12  col-xs-12">
-                            <form action="">
+                            <form className='contact_us' action="">
                                 <div className="d-flex align-items-center">
                                     <div className="first">
                                     <label htmlFor="f_name">First Name</label><br/>

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './footer.css';
 import apple from '../../asset/apple.png';
 import google from '../../asset/google.png';
@@ -35,75 +36,71 @@ function Footer(){
 
     <div className="main-footer">
       <div className="row">
-        <div className="col-md-4">
+        <div className="col-md-7">
           <img src={footerLogo} alt="footer logo" />
           <p>Design amazing digital experiences that create more happiness in the world.</p>
-        </div>
 
-        <div className="col-md-4 d-flex ">
-      <div className="court_1 mx-5">
-           <h1>Product</h1>
+
+
+   <div className="country_math">
+   <div className="court_1">
+           <h1>Nigeria</h1>
          <ul>
           <li>
-            <a href="#">Overview</a>
+            <a href="#">1-11 Commercial</a>
           </li>
 
           <li>
-            <a href="#">Features</a>
+            <a href="#">Avenue, Yaba,</a>
           </li>
 
           <li>
-            <a href="#">Solution</a>
-            <span>new</span>
+            <a href="#">Lagos, Nigeria</a>
+           
           </li>
 
-          <li>
-            <a href="#">Tutorials</a>
-          </li>
-
-          <li>
-            <a href="#">Pricing</a>
-          </li>
-          <li>
-            <a href="#">Releases</a>
-          </li>
+         
          </ul>
       </div>
 
 
 
       <div className="court_1">
-           <h1>Resources</h1>
+           <h1>Canada</h1>
          <ul>
-          <li>
-            <a href="#">Blog</a>
+         <li>
+            <a href="#">1-11 Commercial</a>
           </li>
 
           <li>
-            <a href="#">NewsLetter</a>
+            <a href="#">Avenue, Yaba,</a>
           </li>
 
           <li>
-            <a href="#">Events</a>
-          </li>
-
-          <li>
-            <a href="#">Help Center</a>
-          </li>
-
-          <li>
-            <a href="#">Tutorials</a>
-          </li>
-          <li>
-            <a href="#">Support</a>
+            <a href="#">Lagos, Nigeria</a>
+           
           </li>
          </ul>
       </div>
 
-        </div>
+
+   </div>
 
 
-        <div className="col-md-4">
+   <div className="linkers">
+         <ul>
+         <Link><li>Home</li></Link>
+         <Link><li>Features</li></Link>
+         <Link><li className="footer_nav">Pricing  <span>New</span></li> </Link>
+         <Link><li>Blog</li></Link>
+         <Link><li>About Us</li></Link>
+         <Link><li>Help</li></Link>
+         </ul>
+      </div>
+
+   </div>
+
+      <div className="col-md-5">
         <div className="court_2">
           <h1 className="title">Stay up to date </h1>
 
@@ -125,7 +122,12 @@ function Footer(){
 
         </div>
 
-        <div className="d-flex foot align-items-center justify-content-space-between">
+        </div>
+
+
+    
+
+        <div className="foot ">
           
              <p>&copy; 2025 copyright. Al rights reserved. </p>
           <ul>
@@ -136,8 +138,7 @@ function Footer(){
         
         </div>
       </div>
-    </div>
-    </>
+     </>
     );
 
 

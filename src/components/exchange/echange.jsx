@@ -195,7 +195,7 @@ const CurrencyConverter = () => {
           <div className="card  text-light p-3">
             <div className="card-inner d-flex">
               <select
-                className="form-select custom-select w-35 p-2"
+                className="form-select custom-select w-35 "
 
                 
                 value={toCurrency}

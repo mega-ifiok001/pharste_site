@@ -23,7 +23,7 @@ function Header() {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/features">Features</Link></li>
           <li><Link to="/pricing">Pricing</Link></li>
-          <li><Link to="/blog">Blog</Link></li>
+          <li><Link to="/https://blog.pharste.com/">Blog</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/help">Help</Link></li>
         </ul>

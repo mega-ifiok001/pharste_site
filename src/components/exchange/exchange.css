@@ -12,7 +12,7 @@
   flex-direction:column!important;
   justify-content:center;
   gap:1rem;
-  min-height:14vh;
+  min-height:10vh;
   position:relative;
 }
 
@@ -21,7 +21,7 @@
   border:none;
   outline:none;
   background:transparent!important;
-  height:7rem;
+  height:5rem;
   text-align: center;
   display: flex;
   font-weight:bold;
@@ -30,7 +30,12 @@
 }
 
 input{
-  outline:none;
+  outline:none!important;
+}
+
+input:focus{
+  border:none!important;
+  outline:none!important;
 }
 
 .custom-select {
@@ -122,15 +127,17 @@ marquee{
     border: none;
     outline: none;
     background: transparent !important;
-    height: 7rem;
+    height: 2rem;
     text-align: center;
     display: flex;
     font-weight: bold;
-    font-size: 2.4rem;
+    font-size: 1.4rem;
 }
 .mobile_rate h5{
   text-align: left!important;
   width:100%;
+  font-size: 13px;
+  color:#212529;
 }
 .swap_img{
   width:15%;
@@ -138,12 +145,12 @@ marquee{
 
 marquee{
   width:100%;
-  font-size: 7px;
-}
-.card{
-  min-height:10vh;
+  font-size: 7px!important;
 }
 
+.mobile_rate .card{
+  min-height:5vh;
+}
 .card-inner{
   gap:0rem;
 }
@@ -156,9 +163,15 @@ marquee{
   width:100%;
 }
 
+.mobile_rate .rate_charge p{
+  font-size: 10px;
+}
+
 .marquee{
   background:#2E2300;
   padding: 5px;
+  font-size: 10px!important;
+  line-height: 1rem!important;;
   border-radius:10px;
   color: #CC9C00!important;
 }

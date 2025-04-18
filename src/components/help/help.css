@@ -128,17 +128,18 @@ color: #79767D;
 }
 
 .contact h1{
-    font-family: General Sans;
+    font-family: Bricolage Grotesque;
 font-weight: 600;
 font-size: 48px;
 line-height: 130%;
 letter-spacing: -2px;
 vertical-align: middle;
-color:#070A45;
+text-align: start;
+color:#1117A2;
 }
 
 .contact h2{
-    font-family: General Sans;
+    font-family: Bricolage Grotesque;
 font-weight: 600;
 font-size: 24px;
 line-height: 42px;
@@ -153,6 +154,7 @@ font-weight: 400;
 font-size: 20px;
 line-height: 30px;
 letter-spacing: 0%;
+text-align: start;
 color:#667085;
 }
 
@@ -238,6 +240,7 @@ color:#667085;
 
 .firsts{
     margin-left: 2rem;
+    width: 100%;
 }
 
 input, textarea{
@@ -287,6 +290,11 @@ label{
 .agreement p a{
    color: #667085 !important; 
    text-decoration: underline!important;
+}
+
+.help p{
+    font-family: poppins!important;
+    font-size: 13px;
 }
 
 

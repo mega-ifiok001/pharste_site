@@ -8,12 +8,11 @@
     flex-direction: column;
     width: 95%;
     position: relative;
-    z-index: -1;
     text-align: center; /* Center text within the container */
 }
 
 .adder-content h1 {
-    font-family: Plus Jakarta Sans;
+    font-family: Bricolage Grotesque;
     font-weight: 600;
     font-size: 48px;
     line-height: 126%;
@@ -21,7 +20,8 @@
     text-align: center;
     vertical-align: middle;
     text-transform: capitalize;
-    color: #070A45;
+    
+    color: #1117A2;
 }
 
 .adder-content p {
@@ -30,6 +30,7 @@
     font-size: 24px;
     line-height: 140%;
     letter-spacing: 0px;
+    width: 60%;
     text-align: center;
     color: #414042;
 }
@@ -88,7 +89,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     min-height:60vh;
-    z-index: -1;
+    z-index: 1;
     width:100%;
     position:relative;
     overflow: hidden;
@@ -103,6 +104,7 @@
 
 .main-footer p {
     color: #fff;
+    margin: 0;
     width: 55%;
 }
 
@@ -202,6 +204,7 @@ color:#fff;
 .linkers ul{
     padding:0;
     display:flex;
+    flex-wrap: wrap;
     margin-right:auto;
     align-items:center;
     justify-content:start;
@@ -251,10 +254,11 @@ form{
 .foot ul li a{
     font-family: Maison Neue Extended;
 font-weight: 400;
-font-size: 16px;
+font-size: 10px;
 line-height: 24px;
 letter-spacing: 0%;
 color:#98A2B3!important;
+margin: 0;
 }
 
 .foot ul {
@@ -270,16 +274,48 @@ color:#98A2B3!important;
 
 
 @media screen and (max-width:425px){
+
+    .adder-content{
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        width: 100%;
+    }
     .adder-content h1 {
         font-size: 38px;
+        width:100%;
+        text-align: start;
     }
 
+    .adder-content p {
+        text-align: start;
+        width: 100%;
+    }
+    .downloads {
+        display: flex;
+        align-items: start;
+        width: 95%;
+        margin:1rem auto;
+    }
     .img_1 {
-        width: 130px;
+        width: 146px;
     }
 
 
     .adder-content .img {
         width: 290px;
+    }
+
+    .main-footer{
+        padding:1rem;
+    }
+    .main-footer p {
+        color: #fff;
+        margin: 0;
+        width: 105%;
+    }
+
+    .country_math{
+        margin-top: 1rem;
     }
 }

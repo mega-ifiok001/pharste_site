@@ -1,9 +1,11 @@
 import React from 'react';
 import './banner.css';
-import src from '../../asset/src.png';
-import src2 from '../../asset/src-2.png';
-import src3 from '../../asset/src-3.png';
-import sr4 from '../../asset/src-4.png';
+import src1 from '../../asset/desktop1.png';
+import src2 from '../../asset/desktop2.png';
+import src3 from '../../asset/desktop3.png';
+import src4 from '../../asset/desktop4.png';
+import src5 from '../../asset/desktop5.png';
+import src6 from '../../asset/desktop6.png';
 import chartImg from '../../asset/chart.png';
 import user from '../../asset/user-box.png';
 import bank from '../../asset/bank-box.png';
@@ -15,6 +17,24 @@ function Banner(){
 
     return(
         <>
+
+<div className="mobile_content d-block d-md-none d-flex justify-content-center align-items-center flex-column">
+             
+             <div className="row">
+              <div className="col-md-6 w-100% d-flex justify-content-center align-items-center mx-auto ">
+                <img src={src1} className='img-fluid w-60% h-70 my-5' alt="" />
+              </div>
+  
+              <div className="col-md-6">
+                <img src={src2} className='img-fluid' alt="" />
+              </div>
+             </div>
+             <div className="row mt-5">
+              <div className="col-md-12">
+                <img src={src3} className='img-fluid' alt="" />
+              </div>
+             </div>
+           </div>
 
 <div className="banner-container">
   <div className="banner-header">
@@ -29,19 +49,24 @@ function Banner(){
       </div>
     </div>
   </div>
-            <div className="row">
-                <div className="col-md-6 w-100%">
-                 <img src={effort} className='img-fluid' alt="" />
+            <div className="row best_ways">
+                <div className="col-md-4 w-100%">
+                 <img src={src4} className='img-fluid my-3' alt="" />
                 </div>
 
-                <div className="col-md-6">
-                <img src={user} className='img-fluid' alt="" />
+                <div className="col-md-4">
+                <img src={src5} className='img-fluid my-3' alt="" />
+               
+                </div>
+
+                <div className="col-md-4">
+                <img src={src6} className='img-fluid my-3' alt="" />
                
                 </div>
             </div>
 
 
-           <div className="bank_content mt-5">
+           <div className="bank_content mt-5  d-none d-md-block ">
            <div className="row  ">
               <div className="col-md-12 ">
               <img src={dub} className='img-fluid' alt="" />
@@ -52,7 +77,7 @@ function Banner(){
          </div>
 
 
-         <section className="container-fluid row p-2 col-xs-pt-0">
+         <section className="container-fluid row px-4 col-xs-pt-0   d-none d-md-block ">
           <div className="down-header">
             <h1>security and compliance</h1>
             <p>We prioritize your privacy with bank-grade security, encryption, and full compliance with financial regulations to keep your data and money safe.</p>
@@ -85,10 +110,22 @@ function Banner(){
           </div>
          </section>
 
+
+
+
+
+
+
+
          <section>
           <Footer/>
          </section>
 
+
+
+
+
+        
         </>
     );
 }

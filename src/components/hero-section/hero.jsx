@@ -7,6 +7,8 @@ import Google from '../../asset/google.png';
 import Apple from '../../asset/apple.png';
 import RoundImg from '../../asset/Container.png';
 function Hero() {
+
+  
   return(
   
   <>

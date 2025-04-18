@@ -18,7 +18,7 @@ const Testimonial = () => {
 
   <>
      <h2 className="testimonials-text">
-      Our Users Speak For Us
+      Our Users Speak For Us 
      </h2>
      <p className="testimonials-sub-text text-center">
       More than 90% of our users managed their finances better after using pharste. Checkout <br/>

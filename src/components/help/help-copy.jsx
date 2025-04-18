@@ -2,13 +2,15 @@ import React, { useState, useEffect } from 'react';
 import './help.css'; 
 import Footer from '../footer/footer';
 import dash from '../../asset/minus-circle.png';
+import Header from '../header/header';
+
 import plus from '../../asset/plus.png';
 
 const TermsAndConditions = () => (
     <div className="Terms " style={{marginTop:'6rem'}}>
-        <h1 className='mt-5'>Terms and Conditions</h1>
+        <h1 className='mt-5 text start'>Terms and Conditions</h1>
         <h2>Introduction</h2>
-        <p className="mt-2">
+        <p className="mt-2 text-start">
             These docs will give you a deep dive into our full API Reference Documentation and how to seamlessly integrate our messaging channels 
             and verification functionalities into your product.
         </p>
@@ -16,30 +18,30 @@ const TermsAndConditions = () => (
         <br />
 
         <h2>Basics</h2>
-        <p className="mt-2">
+        <p className="mt-2 text-start">
             Our API is organised around using HTTP verbs and REST. Our API accepts and returns JSON formatted payload.
         </p>
-        <p>We provide sample code snippets and API calls that can serve as guide during your integration process.
+        <p className='text-start'>We provide sample code snippets and API calls that can serve as guide during your integration process.
         </p>
-        <p>We also advice running some tests using Postman. Postman is a collaboration platform for API development which makes testing endpoints easy. We have also provided a Postman Collection you can easily import to your postman and start testing.</p>
+        <p className='text-start'>We also advice running some tests using Postman. Postman is a collaboration platform for API development which makes testing endpoints easy. We have also provided a Postman Collection you can easily import to your postman and start testing.</p>
 
         <br />
 
         <h2>SDKs</h2>
-        <p className="mt-2">
+        <p className="mt-2 text-start">
             Ship your products faster & in any language you are proficient in by using SDKs provided by our community of open source developers. You can submit & view available ones here.
         </p>
 
         <br />
 
         <h2>API Endpoint</h2>
-        <p className="mt-2">
+        <p className="mt-2 text-start">
             In order to use Termii's APIs, you need to first create an account for free at termii.com.
         </p>
         <br />
 
         <h2>BASE URL</h2>
-        <p className="mt-2">
+        <p className="mt-2 text-start">
             Your Termii account has its own base URL, which you should use in all API requests.
             Your base URL can be found on your dashboard.
         </p>
@@ -48,7 +50,7 @@ const TermsAndConditions = () => (
         </p>
 
         <h2>Explore Products</h2>
-        <p className="mt-2">
+        <p className="mt-2 text-start">
             These docs will give you a deep dive into our full API Reference Documentation and how to seamlessly integrate our messaging channels and verification functionalities into your product.
         </p>
     </div>
@@ -110,14 +112,14 @@ const ContactUs = () => {
     const [map, setMap] = useState(null);
     const [activeIndex, setActiveIndex] = useState(0);
 
-    // useEffect(() => {
-    //     const google = window.google;
-    //     const map = new google.maps.Map(document.getElementById("map"), {
-    //         center: { lat: -33.8688, lng: 151.2093 },
-    //         zoom: 10,
-    //     });
-    //     setMap(map);
-    // }, []);
+    useEffect(() => {
+        const google = window.google;
+        const map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: -33.8688, lng: 151.2093 },
+            zoom: 10,
+        });
+        setMap(map);
+    }, []);
 
     const handleClick = (index) => {
         const address = addresses[index];
@@ -129,7 +131,7 @@ const ContactUs = () => {
     return (
         <div style={{marginTop:'6rem'}}>
             <div className="contact">
-                <h1>Get in Touch</h1>
+                <h1 >Get in Touch</h1>
                 <h2 className="mt-2">Our Locations</h2>
                 <p className="mt-1">Say hello to our friendly teams at one of these locations</p>
             </div>
@@ -152,7 +154,7 @@ const ContactUs = () => {
                 ))}
             </div>
 
-            <div className="form px-2 ">
+            <div className="form px-2  ">
                 <h1>we're here to help</h1>
                 <p className="mt-2">Have questions or feedback? We'd love to hear from you. Our team is committed to providing timely and helpful 
                     responses to every inquiry.</p>
@@ -160,7 +162,7 @@ const ContactUs = () => {
                     <div className="row mt-3">
                         <div className="col-lg-7 col-md-10 col-sm-12  col-xs-12">
                             <form className='contact_us' action="">
-                                <div className="d-flex align-items-center">
+                                <div className="d-flex align-items-center w-100%">
                                     <div className="first">
                                     <label htmlFor="f_name">First Name</label><br/>
                                     <input type="text" placeholder="first name" />
@@ -233,8 +235,12 @@ function HelpCopy() {
 
     return (
         <>
-            <div className="container mt-5">
+
+            <div className=" feature-container help mt-5">
+           < Header/>
+
                 <div className="row">
+                    
                     <div className="col-md-3">
                         <Sidebar setSelectedContent={setSelectedContent} />
                     </div>

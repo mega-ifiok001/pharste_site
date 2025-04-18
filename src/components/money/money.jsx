@@ -70,7 +70,7 @@ function Money() {
     <>
       {/* Trusted Section */}
 
-      <div className="trust-text animate-on-scroll">
+      <div className=" animate-on-scroll  testimonials-text mt-4">
           <h1>Trusted by users across <br /> thirty countries</h1>
         </div>
         
@@ -107,8 +107,8 @@ function Money() {
 
       {/* Why Use Pharste Section */}
       <div className="why-use">
-        <div className="use-text">
-          <h1 className=" animate-on-scroll">Why Use Pharste?</h1>
+        <div className=" testimonials-text animate-on-scroll">
+          <h2 className="f-bold" >Why Use Pharste?</h2>
 
           {/* Tab 1 */}
           <div className="mt-3 tab" >
@@ -186,7 +186,7 @@ function Money() {
 
       {/* Account Setup */}
       <div className="container-fluid account_setup">
-        <div className="title animate-on-scroll">
+        <div className=" animate-on-scroll testimonials-text">
           <h1>Get your Account ready in <br /> three steps</h1>
         </div>
 
@@ -205,7 +205,7 @@ function Money() {
 
       {/* Features Section */}
       <div className="container-fluid account_setup features_ex">
-        <div className="title animate-on-scroll">
+        <div className="testimonials-text animate-on-scroll">
           <h1>Feel the best experience <br /> with our features</h1>
         </div>
 
@@ -224,8 +224,8 @@ function Money() {
 
       {/* Final Section */}
       <div className="account_setup container-fluid">
-        <div className="title animate-on-scroll">
-          <h1>No Fees. One World.</h1>
+        <div className="testimonials-text animate-on-scroll">
+          <h1 className="testimonials-text">No Fees. One World.</h1>
         </div>
 
         <p className="animate-on-scroll">

@@ -8,7 +8,7 @@
    min-height: 90vh;
    overflow: hidden!important;
    position:relative;
-   z-index: -1;
+   z-index: 1;
    background:url(../../asset/banner-bg.png);
    background-repeat:no-repeat;
    background-position:center;
@@ -34,7 +34,7 @@
   .trust-text {
     padding: 5rem;
     opacity: 0;
-    z-index: -2;
+    z-index: 1;
     transform: translateY(30px);
     transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
   }
@@ -190,7 +190,7 @@ color:#2D35E9;
 
 .tab {
     position: relative;
-    z-index: -1;
+    z-index: 1;
     margin:0 auto;
     display:flex;
     align-items:center;
@@ -277,7 +277,6 @@ color:#2D35E9;
 .account_setup{
     position: relative;
     z-index: 1;
-    margin-top:3rem;
     display:flex;
     align-items: center;
     justify-content:center;
@@ -315,7 +314,6 @@ color:#363F52;
 
 .features_ex{
     background:#E8E9FD;
-    padding:3rem;
 }
 
 @media screen and (max-width:1440px) {
@@ -341,7 +339,8 @@ color:#363F52;
     }
 
     .trust_container{
-        min-height:34vh;
+        min-height:61vh;
+        margin-bottom:2rem;
     }
 
     .counter .counter-text h1 {

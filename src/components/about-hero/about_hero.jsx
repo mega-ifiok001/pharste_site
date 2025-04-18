@@ -5,12 +5,14 @@ import money from '../../asset/money.png';
 import bankLocker from '../../asset/bank_locker.png';
 import billPay from'../../asset/bill_payment.png';
 import p2p from '../../asset/p2p_trade.png';
+import Header from '../header/header';
 import smileyFace from '../../asset/smiley_face.png';
 function AboutHero(){
 
     return(
 <>
-  <div className="container-fluid about_hero">
+  <div className=" about_hero">
+        <Header/>
         <div className="d-flex align-items-center justify-content-center box_">
             <h1 className="title">
                 Pharste  <br/>  
@@ -29,7 +31,7 @@ function AboutHero(){
     
     <div className="about_typo">
      <div className="row">
-        <div className="col-md-6">
+        <div className="col-md-6 mt-2">
         <h2 className="title">
       OUR MISSION
       </h2>
@@ -61,8 +63,8 @@ function AboutHero(){
         no matter where they are 🌐🌍</p>
 
       
-            <div className="row  mt-4">
-                <div className="col-md-6 w-100%">
+            <div className="row g-3  mt-4">
+                <div className="col-sm-6 w-100%">
                   <div className="banner_content">
                     <h1 className="banner_content_title">Transparency</h1>
                     <p className="banner_content_paragraph">No hidden fees, no fine-print- just honest <br></br> service.</p>
@@ -70,7 +72,7 @@ function AboutHero(){
                   </div>
                 </div>
 
-                <div className="col-md-6">
+                <div className="col-sm-6">
                 <div className="banner_content ">
                     <h1 className="banner_content_title">security</h1>
                     <p className="banner_content_paragraph">Your financial safety is our non-negotiable priority. </p>
@@ -85,8 +87,8 @@ function AboutHero(){
 
 
 
-            <div className="row mt-4">
-                <div className="col-md-6 w-100%">
+            <div className="row g-3 mt-4">
+                <div className="col-sm-6 w-100%">
                   <div className="banner_content">
                     <h1 className="banner_content_title">Accessibility</h1>
                     <p className="banner_content_paragraph">Financial tools should work for everyone, <br/> everywhere.</p>
@@ -94,7 +96,7 @@ function AboutHero(){
                   </div>
                 </div>
 
-                <div className="col-md-6">
+                <div className="col-sm-6">
                 <div className="banner_content ">
                     <h1 className="banner_content_title">Innovation</h1>
                     <p className="banner_content_paragraph">We constantly evolve to serve you better. </p>

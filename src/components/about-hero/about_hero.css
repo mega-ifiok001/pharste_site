@@ -18,14 +18,15 @@
 }
 
 .about_hero .title{
-    font-family: General Sans;
-font-weight: 600;
-font-size: 64px;
-line-height: 130%;
-letter-spacing: -2px;
-text-align: center;
-vertical-align: middle;
-color:#070A45;
+    font-family: Bricolage Grotesque;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 130%;
+    letter-spacing: -2px;
+    text-align: center;
+    vertical-align: middle;
+    
+color:#1117A2;
 }
 
 .about_hero .paragraph{
@@ -45,7 +46,7 @@ color:#605D64;
     justify-content: center;
     padding:3rem;
     background:url(../../asset/P_P.png);
-    background-size:cover;
+    background-size:contain;
     background-position: top;
     background-repeat: no-repeat;
     min-height:100vh;
@@ -65,7 +66,7 @@ color:#8592AD;
 .typo_content{
     font-family: Plus Jakarta Sans;
 font-weight: 500;
-font-size: 24px;
+font-size: 19px;
 line-height: 174%;
 letter-spacing: 0%;
 color:#070A45;
@@ -84,8 +85,8 @@ color:#070A45;
 .typo_content_1{
     font-family: Plus Jakarta Sans;
 font-weight: 500;
-font-size: 20px;
-line-height: 36.35px;
+font-size: 17px;
+line-height: 25.35px;
 letter-spacing: 0%;
 vertical-align: middle;
 color:#697A9B;
@@ -104,7 +105,7 @@ color:#697A9B;
 .core h1{
     font-family: Plus Jakarta Sans;
 font-weight: 700;
-font-size: 48px;
+font-size: 36px;
 line-height: 100%;
 letter-spacing: -0.5px;
 vertical-align: middle;
@@ -114,9 +115,10 @@ color:#070A45;
 
 
 .core p{
+    width: 62%;
     font-family: Plus Jakarta Sans;
 font-weight: 500;
-font-size: 24px;
+font-size: 19px;
 line-height: 150%;
 letter-spacing: 0px;
 color:#605D64;
@@ -154,9 +156,9 @@ min-height:30vh;
 }
 
 .banner_content .banner_content_title{
-    font-family: General Sans;
+    font-family:  poppins;
 font-weight: 600;
-font-size: 32px;
+font-size: 24px;
 line-height: 100%;
 letter-spacing: -0.5px;
 vertical-align: middle;
@@ -165,10 +167,10 @@ color:#070A45;
 }
 
 .banner_content .banner_content_paragraph{
-    font-family: General Sans;
+    font-family: poppins;
 font-weight: 500;
 text-align: start;
-font-size: 24px;
+font-size: 15px;
 line-height: 150%;
 letter-spacing: 0px;
 color:#322F35;
@@ -198,53 +200,58 @@ color:#322F35;
     align-items: start;
     justify-content:center;
     background:#F0F2F5;
-border-radius:40px;
-padding:4rem;
+border-radius:10px;
+padding:2rem;
 width:100%;
 
 }
 
 .impact_title{
-   font-family: General Sans;
-font-weight: 600;
-text-align: start;
-font-size: 48px;
-line-height: 64px;
-letter-spacing: -1px;
-vertical-align: middle;
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 39px;
+    letter-spacing: -1px;
+    vertical-align: middle;
+    
 color:#070A45;
 
 }
 
 
 .impact_paragraph{
-    font-family: General Sans;
+    font-family: Plus Jakarta Sans;
 font-weight: 400;
-font-size: 18px;
+font-size: 13px;
 line-height: 32px;
-text-align: start;
 letter-spacing: -0.15px;
+
 color:#363F52;
 }
 
 
 .impact_content img{
     width:90%;
-    border-radius:40px;
+    border-radius:10px;
 }
 
 
 
 @media screen and (max-width:768px){
     .about_hero {
+        margin-top: 11rem;
         height: 43vh;
     }
 
 
 
     .about_hero .title {
-        font-size: 54px;
+        font-size: 40px;
         line-height: 121%;
+    }
+
+    .about_hero .paragraph {
+        font-size: 17px;
     }
     .about_typo {
         background: url(/src/asset/P_P.png);
@@ -256,6 +263,10 @@ color:#363F52;
 
     .about_typo {
         padding: 0rem;
+    }
+
+    .core{
+        padding:1rem;
     }
 
     .core h1 {
@@ -291,8 +302,8 @@ color:#363F52;
         padding:.8rem;
     }
 
-    .impact_title{
-        font-size: 39px;
-        line-height: 39px;
+    .impact_title {
+        font-size: 26px;
+        line-height: 33px;
     }
 }

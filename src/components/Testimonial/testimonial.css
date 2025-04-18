@@ -59,7 +59,7 @@
   border: 1px solid #ddd;
   border-radius: 1rem;
   padding: 2rem 1rem;
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
   font-size: 16px;
   line-height: 1.5;
   background-color: #fefefe; /* Subtle background for better readability */
@@ -90,7 +90,7 @@
     letter-spacing: -1.92px;
     text-align: center;
     vertical-align: middle;
-    color:#2D35E9;
+    color:#1117A2;
   }
   
   /* Adjust for medium-sized screens (e.g., tablets) */

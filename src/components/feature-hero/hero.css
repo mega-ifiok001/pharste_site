@@ -7,17 +7,47 @@ position:relative;
 }
 
 
-.feature-container h1{
-    margin-top: 8rem;
-    font-family: General Sans;
-font-weight: 600;
-font-size: 64px;
-line-height: 130%;
-letter-spacing: -2px;
-text-align: center;
-vertical-align: middle;
-color:#070A45;
+.feature-container h1 {
+    margin-top: 3rem;
+    font-family: Bricolage Grotesque;
+    font-weight: 600;
+    font-size: 39px;
+    line-height: 103%;
+    letter-spacing: -2px;
+    text-align: center;
+    vertical-align: middle;
+    color: #1117A2;
 }
+
+
+/*animations*/
+
+/* Initial State */
+.from-left,
+.from-right {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Animate Left Column */
+.from-left.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Initial State */
+.from-right {
+  transform: translateX(100px);
+}
+
+/* Animate Right Column */
+.from-right.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
 
 
 .feature-container p{
@@ -41,7 +71,6 @@ color:#605D64;
     /* border:1px solid red; */
     position:relative;
     min-height:40vh;
-    margin:3rem auto;
 }
 
 .hero_content_anim img{
@@ -208,19 +237,22 @@ color:#322F35!important;
         height: 11rem;
     }
 
-    .hero_content_anim .hands_img {
-      
-        height: 10.9rem;
-    }
 
     .hero_content_anim {
-      
-        min-height: 22vh ;
-        margin: 0rem auto;
+      display: none;
+    }
+
+    .feature-container{
+        min-height:50vh;
+        position:relative;
     }
 
     .feature-container h1 {
-        font-size: 59px;
+        font-size: 37px;
+    }
+
+    .feature-container p {  
+        font-size: 18px;
     }
 
     .banner_content {
@@ -239,11 +271,16 @@ color:#322F35!important;
 
 @media screen and (max-width:425px){
     .feature-container h1 {
-        font-size: 44px;
+        font-size: 39px;
+        text-align: start;
+        font-weight: bold;
+        width: 92%;
     }
 
     .feature-container p {
+        text-align: start;
         font-size: 16px;
+        width: 100%;
     }
 
     .hero_content_anim {

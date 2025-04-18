@@ -9,12 +9,17 @@
 
 
 .banner-header{
+    display: flex;
+    align-items: center;
+    align-items: center;
     margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right:auto;
 }
 .banner-header p{
     font-family: poppins;
 font-weight: 500;
-font-size: 24px;
+font-size: 17px;
 line-height: 150%;
 letter-spacing: 0px;
 vertical-align: middle;
@@ -22,14 +27,15 @@ color: #605D64;
 }
 
 .banner-header h1{
-    font-family: poppins;
-font-weight: 600;
-font-size: 48px;
-line-height: 100%;
-letter-spacing: -0.5px;
-vertical-align: middle;
-text-transform: uppercase;
-color: #070A45;
+    font-family: Bricolage Grotesque;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 100%;
+    letter-spacing: -0.5px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    
+color: #1117A2;
 }
 
 .banner_content{
@@ -149,25 +155,26 @@ color:#322F35!important;
 }
 
 .down-header h1{
-    font-family: Plus Jakarta Sans;
-    font-weight: 700;
+    font-family: Bricolage Grotesque;
+    font-weight: 600;
     font-size: 38px;
     line-height: 100%;
     letter-spacing: -0.5px;
-    text-align: center;
+    text-align: start;
     vertical-align: middle;
     text-transform: uppercase;
-    text-align: start;
-color: #1E1E1E;
+    
+color: #1117A2;
 }
 
 .down-header p{
     font-family: Plus Jakarta Sans;
-font-weight: 400;
-width: 70%;
-font-size: 20px;
-line-height: 35px;
-letter-spacing: 0px;
+    font-weight: 400;
+    font-size: 20px;
+    width: 75%;
+    line-height: 35px;
+    letter-spacing: 0px;
+    
 color:#605D64;
 
 }
@@ -180,22 +187,24 @@ color:#605D64;
 
 
 .writeing h1{
-    font-family: Plus Jakarta Sans;
-font-weight: 600;
-font-size: 32px;
-line-height: 150%;
-letter-spacing: 0px;
-vertical-align: middle;
-color:#070A45;
+    font-family: Bricolage Grotesque;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    
+color:#1117A2;
 }
 
 .writeing p{
     font-family: Plus Jakarta Sans;
-font-weight: 400;
-font-size: 18px;
-line-height: 150%;
-letter-spacing: 0px;
-vertical-align: middle;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    
 color: #605D64;
 }
 
@@ -210,12 +219,28 @@ color: #605D64;
     width: 100%;;
 }
 
-section{
-    margin: 4rem auto!important;
-
+.mobile_content img{
+    border-radius: 2.2rem;
 }
 
 
 .down-header{
     align-items: start;
+}
+
+.best_ways img{
+    border-radius: 2.2rem!important;
+
+}
+
+
+@media screen and (max-width:425px){
+    .banner-header {
+        display: flex;
+        align-items: center;
+        align-items: center;
+        margin-top: 0rem; 
+         margin-left: 0rem; 
+        margin-right: auto;
+    }
 }

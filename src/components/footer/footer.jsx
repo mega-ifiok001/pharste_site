@@ -11,8 +11,8 @@ function Footer(){
 
     return(
     <>
-    <div className="container-fluid adder-content">
-         <h1>Ready To Take Charge Of Your Finances</h1>
+    <div className="container-fluid adder-content ">
+         <h1 className='!testimonials-text'>Ready To Take Charge Of Your Finances</h1>
         <p> Taking charge of your finances starts with understanding
         your income and expenses</p>
 
@@ -111,7 +111,7 @@ function Footer(){
           </form>
 
 
-        <div className="mt-5">
+        <div className="mt-5 !g-4" style={{gap:'2rem'}}>
             <h1 className="title">Get the app</h1>
           <div className="d-flex align-items-center">
             <img src={apple} alt="" />
@@ -129,7 +129,7 @@ function Footer(){
 
         <div className="foot ">
           
-             <p>&copy; 2025 copyright. Al rights reserved. </p>
+             <p>&copy; 2025 copyright. All rights reserved. </p>
           <ul>
             <li><a href="#">Terms</a></li>
             <li><a href="#">Privacy</a></li>

@@ -111,7 +111,7 @@ function Money() {
           <h2 className="f-bold" >Why Use Pharste?</h2>
 
           {/* Tab 1 */}
-          <div className=" tab" style={{marginTop:'1.3rem'}} >
+          <div className=" tab" style={{marginTop:'-1.7rem'}} >
             <div className="row  ">
               <div className="col-md-5 mt-3 from-left animate-on-scroll ">
                 <div className="content">

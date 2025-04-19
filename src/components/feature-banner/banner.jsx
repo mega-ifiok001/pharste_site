@@ -23,10 +23,10 @@ function Banner(){
     return(
         <>
 
-<div className="mobile_content d-block d-md-none d-flex justify-content-center align-items-center flex-column">
+<div className="mobile_content p-3 d-block d-md-none d-flex justify-content-center align-items-center flex-column">
              
               <div className="row g-3  mt-4">
-                             <div className="col-sm-4 w-100%">
+                             <div className="col-xs-4 w-100%">
                                <div className="banner_content">
                                  <h1 className="banner_content_title">P2P</h1>
                                  <p className="banner_content_paragraph">Experience lightening-fast transfer with top-tier encryption abd security.</p>
@@ -34,7 +34,7 @@ function Banner(){
                                </div>
                              </div>
              
-                             <div className="col-sm-4">
+                             <div className="col-xs-4">
                              <div className="banner_content ">
                                  <h1 className="banner_content_title">BILLS PAYMENT</h1>
                                  <p className="banner_content_paragraph">Why pay high fees when you don’t have to? We believe in keeping costs low so you can send more.</p>
@@ -42,7 +42,7 @@ function Banner(){
                                </div>
                              </div>
 
-                             <div className="col-sm-4">
+                             <div className="col-xs-4">
                              <div className="banner_content ">
                                  <h1 className="banner_content_title">SAVINGS</h1>
                                  <p className="banner_content_paragraph">Sending money to friends, family, or anyone in your circle has never been easier. </p>
@@ -68,7 +68,7 @@ function Banner(){
 
  
   <div className="row g-3  mt-4  best_ways d-block d-md-none">
-                             <div className="col-sm-4 w-100%">
+                             <div className="col-xs-4 w-100%">
                                <div className="banner_content">
                                  <h1 className="banner_content_title">EFFORTLESS ONBOARDING</h1>
                                  <p className="banner_content_paragraph">Get started in minutes with a quick and intuitive registration process.</p>
@@ -76,7 +76,7 @@ function Banner(){
                                </div>
                              </div>
              
-                             <div className="col-sm-4">
+                             <div className="col-xs-4">
                              <div className="banner_content ">
                                  <h1 className="banner_content_title">USER-FRIENDLY INTERFACE</h1>
                                  <p className="banner_content_paragraph">Navigate easily with a clean, modern, and interactive design. </p>
@@ -84,7 +84,7 @@ function Banner(){
                                </div>
                              </div>
 
-                             <div className="col-sm-4">
+                             <div className="col-xs-4">
                              <div className="banner_content ">
                                  <h1 className="banner_content_title">SECURE & RELIABLE</h1>
                                  <p className="banner_content_paragraph">Enjoy bank-level security without compromising on speed. </p>

@@ -73,7 +73,7 @@ color:#322F35;
 }
 
 .banner_content img{
-    width:35%;
+    width:58%;
     position:absolute;
     bottom:0;
     right:0%;
@@ -229,13 +229,13 @@ color: #605D64;
 }
 
 .best_ways img{
-    border-radius: 2.2rem!important;
+    border-radius: 1.2rem!important;
 
 }
 
 @media screen and (max-width:768px) {
     .banner_content .banner_content_paragraph {
-        font-size: 17px;
+        font-size: 27px;
     }
 
     .banner_content {
@@ -262,5 +262,21 @@ color: #605D64;
         margin-top: 0rem; 
          margin-left: 0rem; 
         margin-right: auto;
+    }
+
+    .banner-header h1{
+        font-size: 30px;
+    }
+
+    .banner_content{
+        min-height:37vh;
+    }
+
+    .banner_content .banner_content_paragraph {
+        font-size: 18px;
+    }
+
+    .banner_content .banner_content_title {
+        font-size: 24px;
     }
 }

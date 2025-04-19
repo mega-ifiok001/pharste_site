@@ -210,6 +210,23 @@ color: #667085;
     transition: left 0.3s;
 }
 
+.contact_us{
+    display: flex;
+    align-items: start;
+    width: 100%;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.map{
+    background: url(../../asset/content.png);
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
+
 .form h1{
     font-family: General Sans;
 font-weight: 600;
@@ -229,8 +246,10 @@ letter-spacing: 0%;
 color: #667085;
 }
 
-.first{margin-top: 2rem;}
-
+.first {
+    width: 89%;
+    margin-top: 2rem;
+}
 .first input::placeholder{
 color:#667085;
     margin-left: 5px;
@@ -263,7 +282,7 @@ label{
     color:white;
     border:none;
     display:block;
-    width:100%;
+    width:89%;
     padding:1rem 0;
     margin-top:1.4rem;
     border-radius:.4rem;
@@ -301,6 +320,18 @@ label{
 @media screen and (max-width:768px){
     .address-column p {
         font-size: 14px;
+    }
+    .first {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .contact_us button {
+        background: #2D35E9;
+        color: white;
+        border: none;
+        display: block;
+        width: 100%;
     }
 }
 

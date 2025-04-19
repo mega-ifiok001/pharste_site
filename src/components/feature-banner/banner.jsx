@@ -49,7 +49,7 @@ function Banner(){
       </div>
     </div>
   </div>
-            <div className="row best_ways">
+            <div className="row best_ways d-block d-md-none">
                 <div className="col-md-4 w-100%">
                  <img src={src4} className='img-fluid my-3' alt="" />
                 </div>
@@ -63,6 +63,18 @@ function Banner(){
                 <img src={src6} className='img-fluid my-3' alt="" />
                
                 </div>
+            </div>
+
+            <div className="row d-flex d-none d-md-flex">
+                <div className="col-md-6 ">
+                 <img src={effort} className='img-fluid my-3' alt="" />
+                </div>
+
+                <div className="col-md-6">
+                <img src={user} className='img-fluid my-3' alt="" />
+               
+                </div>
+
             </div>
 
 

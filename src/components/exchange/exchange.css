@@ -15,7 +15,17 @@
   min-height:10vh;
   position:relative;
 }
-
+.custom-dropdown select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('https://flagcdn.com/w40/ng.png') no-repeat 5px center;
+  background-size: 20px;
+  padding-left: 30px;
+  font-size: 16px;
+  height: 40px;
+  border-radius: 16px;
+}
 
 .card-inner input{
   border:none;

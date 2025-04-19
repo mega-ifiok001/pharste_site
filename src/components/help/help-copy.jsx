@@ -110,23 +110,22 @@ const ContactUs = () => {
     ];
 
     const [map, setMap] = useState(null);
-    const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
 
-    useEffect(() => {
-        const google = window.google;
-        const map = new google.maps.Map(document.getElementById("map"), {
-            center: { lat: -33.8688, lng: 151.2093 },
-            zoom: 10,
-        });
-        setMap(map);
-    }, []);
 
-    const handleClick = (index) => {
-        const address = addresses[index];
-        setActiveIndex(index);
-        map.setCenter({ lat: address.lat, lng: address.lng });
-        document.querySelector('.blue-line').style.left = `${index * 33.33}%`;
-    };
+  
+  
+
+  const handleClick = (index) => {
+    const address = addresses[index];
+    setActiveIndex(index);
+
+    map.setCenter({ lat: address.lat, lng: address.lng });
+
+   
+    document.querySelector(".blue-line").style.left = `${index * 33.33}%`;
+  };
+
 
     return (
         <div style={{marginTop:'6rem'}}>
@@ -136,7 +135,9 @@ const ContactUs = () => {
                 <p className="mt-1">Say hello to our friendly teams at one of these locations</p>
             </div>
 
-            <div id="map" style={{ height: '400px', width: '100%' }}></div>
+            <div id="map" className='map' style={{ height: '400px', width: '100%'}}></div>
+
+
             <div className="grey-line">
                 <div className="blue-line" style={{ left: `${activeIndex * 33.33}%`, height: '10px' }}></div>
             </div>
@@ -162,7 +163,7 @@ const ContactUs = () => {
                     <div className="row mt-3">
                         <div className="col-lg-7 col-md-10 col-sm-12  col-xs-12">
                             <form className='contact_us' action="">
-                                <div className="d-flex align-items-center w-100%">
+                                <div className="d-flex align-items-center w-100% justify-content-space-around">
                                     <div className="first">
                                     <label htmlFor="f_name">First Name</label><br/>
                                     <input type="text" placeholder="first name" />

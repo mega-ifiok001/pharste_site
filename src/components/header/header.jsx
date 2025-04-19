@@ -18,15 +18,15 @@ function Header() {
       <nav className="desktop_menu">
         <img className="logo" src={Logo} alt="Company Logo" />
 
-        {/* Navigation Menu */}
-        <ul className="nav_menu d-flex align-items-center justify-content-center ">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/features">Features</Link></li>
-          <li><Link to="/pricing">Pricing</Link></li>
-          <li><Link to="/https://blog.pharste.com/">Blog</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/help">Help</Link></li>
-        </ul>
+     {/* Navigation Menu */}
+<ul className="nav_menu d-flex align-items-center justify-content-center">
+  <li><Link to="/">Home</Link></li>
+  <li><Link to="/features">Features</Link></li>
+  {/* Use <a> for external links */}
+  <li><a href="https://blog.pharste.com/" target="_blank" rel="noopener noreferrer">Blog</a></li>
+  <li><Link to="/about">About</Link></li>
+  <li><Link to="/help">Help</Link></li>
+</ul>
 
         {/* Navigation End */}
         <div className="nav-end d-flex align-items-center justify-content-end">
@@ -61,8 +61,8 @@ function Header() {
           }}/>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/features">Features</Link></li>
-          <li><Link to="/pricing">Pricing</Link></li>
-          <li><Link to="/blog">Blog</Link></li>
+          <li><a href="https://blog.pharste.com/" target="_blank" rel="noopener noreferrer">Blog</a></li>
+
           <li><Link to="/about">About</Link></li>
           <li><Link to="/help">Help</Link></li>
         </ul>

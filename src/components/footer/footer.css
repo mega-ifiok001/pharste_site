@@ -83,7 +83,7 @@
 
 
 .main-footer{
-    padding:3rem;
+    padding:1.4rem;
     background: url(../../asset/dark_bg.png);
     background-position: bottom;
     background-size: cover;
@@ -105,18 +105,20 @@
 .main-footer p {
     color: #fff;
     margin: 0;
-    width: 55%;
+    font-size: 13px;
+    width: 90%;
 }
 
 .country_math{
     display:flex;
-    align-items:center;
-    gap:3rem;
-    justify-content:start
+    gap:1rem;
+    justify-content:start;
+    margin-top:1rem;
 }
 
 .court_1 {
-    margin-top:1rem;
+    /* margin-top:1rem; */
+    width: 100%;;
 }
 
 .court_1 h1{
@@ -132,6 +134,7 @@ padding-bottom:10px;
 
 .court_1 ul{
     padding:0;
+    margin-top: 20px;
 }
 
 .court_1 ul li a{
@@ -162,7 +165,8 @@ color:#EAECF0!important;
 
 
 .court_2{
-    margin-top:1rem;
+   width:100%;
+   margin-top: 1rem;
 }
 .court_2 .title{
     font-family: Plus Jakarta Sans;
@@ -174,24 +178,30 @@ color:#fff;
 }
 
 .court_2 form{
+    margin-top: 2rem;
     display: flex;
     align-items:center;
     width:100%;
 }
 
 .court_2 form input{
-    padding:.4rem ;
-    width:100%;
-    border-radius:10px;
+    padding:.3rem 1rem;
+    border-top-left-radius:10px!important;
+    border-bottom-left-radius:10px!important;
 }
 
 .court_2 form button{
-    padding:.4rem 1rem;
+    padding:.2rem .5rem;
     background:blue;
-    border-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
     margin-left:5px;
     color:#fff;
     cursor:pointer;
+}
+
+.done{
+    display: none;
 }
 
 .linkers {
@@ -226,6 +236,10 @@ form{
     
 }
 
+.done{
+    width: 100%;
+    border: 1px solid red;
+}
 
 
 .foot {
@@ -254,7 +268,7 @@ form{
 .foot ul li a{
     font-family: Maison Neue Extended;
 font-weight: 400;
-font-size: 10px;
+font-size: 13px;
 line-height: 24px;
 letter-spacing: 0%;
 color:#98A2B3!important;
@@ -274,7 +288,11 @@ margin: 0;
 
 
 @media screen and (max-width:425px){
+.done p:nth-child(2){
+    display: none;
+}
 
+   
     .adder-content{
         display: flex;
         align-items: start;
@@ -313,9 +331,12 @@ margin: 0;
         color: #fff;
         margin: 0;
         width: 105%;
+        font-size: 10px!important;
     }
 
     .country_math{
         margin-top: 1rem;
     }
+
+   
 }

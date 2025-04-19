@@ -83,16 +83,16 @@ function Money() {
           <div className="counter">
             <div className="counter-text animate-on-scroll">
               <h1>
-                {startCount && <CountUp end={50} duration={3} suffix="k" />}
+                {startCount && <CountUp end={11} duration={3} suffix="k" />}
               </h1>
               <p>Downloads</p>
             </div>
 
             <div className="counter-text animate-on-scroll">
               <h1>
-                {startCount && <CountUp end={20} duration={3} suffix="+" />}
+                {startCount && <CountUp end={9} duration={3} suffix="+" />}
               </h1>
-              <p>Countries</p>
+              <p>Active Users </p>
             </div>
 
             <div className="counter-text animate-on-scroll">
@@ -106,14 +106,14 @@ function Money() {
       </div>
 
       {/* Why Use Pharste Section */}
-      <div className="why-use">
+      <div className="why-use" style={{marginTop:'2rem'}}>
         <div className=" testimonials-text animate-on-scroll">
           <h2 className="f-bold" >Why Use Pharste?</h2>
 
           {/* Tab 1 */}
-          <div className="mt-3 tab" >
-            <div className="row">
-              <div className="col-md-5 mt-3 from-left animate-on-scroll">
+          <div className=" tab" style={{marginTop:'1.3rem'}} >
+            <div className="row  ">
+              <div className="col-md-5 mt-3 from-left animate-on-scroll ">
                 <div className="content">
                   <h2>Send Money At The <br /> Speed Of Now</h2>
                   <p>Transfer funds instantly to anyone, anywhere. What used to take days now happens in seconds.</p>
@@ -128,22 +128,22 @@ function Money() {
 
           {/* Tab 2 */}
           <div className="mt-3 tab">
-            <div className="row">
-              <div className="col-md-7 mt-3 from-left animate-on-scroll">
-                <img src={protect} className="img-fluid" alt="Responsive Image" />
-              </div>
-              <div className="col-md-5 mt-3 from-right animate-on-scroll">
-                <div className="content">
-                  <h2>Protection That Never <br /> Sleeps</h2>
-                  <p>
-                    Rest easy knowing your transactions are protected by
-                    military-grade encryption and advanced fraud monitoring.
-                  </p>
-                  <img src={phone_bg} className="tab-img" alt="Tab Image" />
-                </div>
-              </div>
-            </div>
-          </div>
+  <div className=" row d-flex flex-column-reverse flex-md-row">
+    <div className="col-md-7 mt-3 from-left animate-on-scroll order-md-2">
+      <img src={protect} className="img-fluid" alt="Responsive Image" />
+    </div>
+    <div className="col-md-5 mt-3 from-right animate-on-scroll order-md-1">
+      <div className="content">
+        <h2>Protection That Never <br /> Sleeps</h2>
+        <p>
+          Rest easy knowing your transactions are protected by
+          military-grade encryption and advanced fraud monitoring.
+        </p>
+        <img src={phone_bg} className="tab-img" alt="Tab Image" />
+      </div>
+    </div>
+  </div>
+</div>
 
           {/* Tab 3 */}
           <div className="mt-3 tab">
@@ -165,22 +165,22 @@ function Money() {
 
           {/* Tab 4 */}
           <div className="mt-3 tab">
-            <div className="row">
-              <div className="col-md-7 mt-3 from-left animate-on-scroll">
-                <img src={bg} className="img-fluid" alt="Responsive Image" />
-              </div>
-              <div className="col-md-5 mt-3 from-right animate-on-scroll">
-                <div className="content">
-                  <h2>Grow Your Money <br /> Automatically</h2>
-                  <p>
-                    Set aside funds effortlessly with automated saving tools. Create goals,
-                    schedule regular transfers, and watch your savings grow.
-                  </p>
-                  <img src={phone_bg} className="tab-img" alt="Tab Image" />
-                </div>
-              </div>
-            </div>
-          </div>
+  <div className="row d-flex flex-column-reverse flex-md-row">
+    <div className="col-md-7 mt-3 from-left animate-on-scroll">
+      <img src={bg} className="img-fluid" alt="Responsive Image" />
+    </div>
+    <div className="col-md-5 mt-3 from-right animate-on-scroll">
+      <div className="content">
+        <h2>Grow Your Money <br /> Automatically</h2>
+        <p>
+          Set aside funds effortlessly with automated saving tools. Create goals,
+          schedule regular transfers, and watch your savings grow.
+        </p>
+        <img src={phone_bg} className="tab-img" alt="Tab Image" />
+      </div>
+    </div>
+  </div>
+</div>
         </div>
       </div>
 

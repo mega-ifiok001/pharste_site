@@ -270,7 +270,16 @@ color:#363F52;
     }
 
     .core h1 {
-        font-size: 32px;
+        font-size: 24px;
+    }
+
+
+    .core p {
+        font-size: 14px;
+    }
+
+    .banner_content .banner_content_title {
+        font-size: 21px;
     }
 }
 

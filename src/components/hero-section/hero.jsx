@@ -25,7 +25,7 @@ function Hero() {
       </h1>
       <p>
         The money app built for friends, families, and fearless <br />
-        transactions, no matter where they are 🌐🌍
+        transactions, no matter where they are in the world
       </p>
     </div>
 
@@ -34,13 +34,13 @@ function Hero() {
       <img src={Apple} className="img-fluid" alt="apple store" />
     </div>
 
-    <div className="download_btn gm align-items-center justify-content-start">
+    {/* <div className="download_btn gm align-items-center justify-content-start">
       <img src={RoundImg} className="w-[100]" alt="" />
       <div className="sub_text">
         <span>150k+</span>
         <span className="rev">Review</span>
       </div>
-    </div>
+    </div> */}
   </div>
  
  </div>

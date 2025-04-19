@@ -57,44 +57,19 @@ function Footer() {
            <div className="country_math">
               <div className="court_1">
                 <h1>Nigeria</h1>
-                <ul>
-                  <li>
-                    <a href="#">1-11 Commercial</a>
-                  </li>
-
-                  <li>
-                    <a href="#">Avenue, Yaba,</a>
-                  </li>
-
-                  <li>
-                    <a href="#">Lagos, Nigeria</a>
-
-                  </li>
-
-
-                </ul>
+              <p>1-11 Commercial <br/> Avenue, Yaba, <br/> Lagos, Nigeria</p>
+              
               </div>
 
 
 
               <div className="court_1">
                 <h1>Canada</h1>
-                <ul>
-                  <li>
-                    <a href="#">Pharste Inc 600 Matheson Blvd W,
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#">Mississauga, ON L5R 4B8, Canada</a>
-                  </li>
-
-                  <li>
-                    <a href="#">
-                      © 2025 Pharste</a>
-
-                  </li>
-                </ul>
+            <p>
+            Pharste Inc 600 Matheson Blvd W,
+                  Mississauga, ON L5R 4B8, Canada
+                      © 2025 Pharste
+            </p>
               </div>
            
 
@@ -138,8 +113,8 @@ function Footer() {
         <div className="foot ">
 
 
-         <p>&copy; 2025 copyright. All rights reserved. </p>
-         <p> Crafted with ❤ by <a href="https://coderigi.co">CodeRigi</a> </p>
+         <p>&copy; 2025. All rights reserved. </p>
+         <p className='d-none d-sm-block'> Crafted with ❤ by <a href="https://coderigi.co">CodeRigi</a> </p>
         
           <ul>
             <li><a href="#">Terms</a></li>

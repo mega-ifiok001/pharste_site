@@ -51,7 +51,7 @@ position:relative;
 
 
 .feature-container p{
-    font-family: General Sans;
+    font-family: poppins;
 font-weight: 500;
 font-size: 24px;
 line-height: 150%;
@@ -251,8 +251,9 @@ color:#322F35!important;
         font-size: 37px;
     }
 
-    .feature-container p {  
-        font-size: 18px;
+    .feature-container p {
+        font-size: 15px;
+        width: 90%;
     }
 
     .banner_content {

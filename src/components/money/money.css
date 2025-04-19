@@ -298,7 +298,7 @@ color:#5D64EE;
 }
 
 .account_setup p{
-    font-family: General Sans;
+    font-family: poppins;
 font-weight: 400;
 font-size: 18px;
 line-height: 32px;
@@ -423,5 +423,10 @@ line-height: 42.6px;
     .account_setup .title h1 {
         font-size: 25px;
         line-height: 25.6px;
+    }
+
+    .account_setup p {
+        font-size: 8px;
+        line-height: 18px;
     }
 }

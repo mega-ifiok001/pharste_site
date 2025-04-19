@@ -133,6 +133,10 @@
 }
 
 @media (max-width: 425px) {
+
+  .testimonials-text h1{
+    font-size: 20px;
+  }
   .testimonials-row {
     display: grid; 
     grid-template-columns: repeat(1, 1fr); 

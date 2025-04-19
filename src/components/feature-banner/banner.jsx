@@ -1,8 +1,8 @@
 import React from 'react';
 import './banner.css';
-import src1 from '../../asset/desktop1.png';
-import src2 from '../../asset/desktop2.png';
-import src3 from '../../asset/desktop3.png';
+import src1 from '../../asset/src.png';
+import src2 from '../../asset/src-2.png';
+import src3 from '../../asset/safe.png';
 import src4 from '../../asset/desktop4.png';
 import src5 from '../../asset/desktop5.png';
 import src6 from '../../asset/desktop6.png';
@@ -12,6 +12,11 @@ import bank from '../../asset/bank-box.png';
 import dub from '../../asset/dub-box.png';
 import effort from '../../asset/effort.png';
 import Footer from '../footer/footer';
+import money from '../../asset/money.png';
+import bankLocker from '../../asset/bank_locker.png';
+import billPay from'../../asset/bill_payment.png';
+import p2p from '../../asset/p2p_trade.png';
+import '../about-hero/about_hero.css';
 function Banner(){
 
 
@@ -20,20 +25,31 @@ function Banner(){
 
 <div className="mobile_content d-block d-md-none d-flex justify-content-center align-items-center flex-column">
              
-             <div className="row">
-              <div className="col-md-6 w-100% d-flex justify-content-center align-items-center mx-auto ">
-                <img src={src1} className='img-fluid w-60% h-70 my-5' alt="" />
-              </div>
-  
-              <div className="col-md-6">
-                <img src={src2} className='img-fluid' alt="" />
-              </div>
-             </div>
-             <div className="row mt-5">
-              <div className="col-md-12">
-                <img src={src3} className='img-fluid' alt="" />
-              </div>
-             </div>
+              <div className="row g-3  mt-4">
+                             <div className="col-sm-4 w-100%">
+                               <div className="banner_content">
+                                 <h1 className="banner_content_title">P2P</h1>
+                                 <p className="banner_content_paragraph">Experience lightening-fast transfer with top-tier encryption abd security.</p>
+                              <img src={p2p} alt="p2p transaction pic" />
+                               </div>
+                             </div>
+             
+                             <div className="col-sm-4">
+                             <div className="banner_content ">
+                                 <h1 className="banner_content_title">BILLS PAYMENT</h1>
+                                 <p className="banner_content_paragraph">Why pay high fees when you don’t have to? We believe in keeping costs low so you can send more.</p>
+                              <img src={billPay} alt="bill payment image " />
+                               </div>
+                             </div>
+
+                             <div className="col-sm-4">
+                             <div className="banner_content ">
+                                 <h1 className="banner_content_title">SAVINGS</h1>
+                                 <p className="banner_content_paragraph">Sending money to friends, family, or anyone in your circle has never been easier. </p>
+                              <img src={bankLocker} alt="bill payment image " />
+                               </div>
+                             </div>
+                         </div>
            </div>
 
 <div className="banner-container">
@@ -49,21 +65,33 @@ function Banner(){
       </div>
     </div>
   </div>
-            <div className="row best_ways d-block d-md-none">
-                <div className="col-md-4 w-100%">
-                 <img src={src4} className='img-fluid my-3' alt="" />
-                </div>
 
-                <div className="col-md-4">
-                <img src={src5} className='img-fluid my-3' alt="" />
-               
-                </div>
+ 
+  <div className="row g-3  mt-4  best_ways d-block d-md-none">
+                             <div className="col-sm-4 w-100%">
+                               <div className="banner_content">
+                                 <h1 className="banner_content_title">EFFORTLESS ONBOARDING</h1>
+                                 <p className="banner_content_paragraph">Get started in minutes with a quick and intuitive registration process.</p>
+                              <img src={src1} alt="p2p transaction pic" />
+                               </div>
+                             </div>
+             
+                             <div className="col-sm-4">
+                             <div className="banner_content ">
+                                 <h1 className="banner_content_title">USER-FRIENDLY INTERFACE</h1>
+                                 <p className="banner_content_paragraph">Navigate easily with a clean, modern, and interactive design. </p>
+                              <img src={src2} alt="bill payment image " />
+                               </div>
+                             </div>
 
-                <div className="col-md-4">
-                <img src={src6} className='img-fluid my-3' alt="" />
-               
-                </div>
-            </div>
+                             <div className="col-sm-4">
+                             <div className="banner_content ">
+                                 <h1 className="banner_content_title">SECURE & RELIABLE</h1>
+                                 <p className="banner_content_paragraph">Enjoy bank-level security without compromising on speed. </p>
+                              <img src={src3} alt="bill payment image " />
+                               </div>
+                             </div>
+                         </div>
 
             <div className="row d-flex d-none d-md-flex">
                 <div className="col-md-6 ">

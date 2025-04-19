@@ -43,6 +43,10 @@ input{
   outline:none!important;
 }
 
+input::placeholder{
+  font-size: 1.9rem;
+}
+
 input:focus{
   border:none!important;
   outline:none!important;
@@ -90,7 +94,7 @@ line-height: 133%;
 color:#737373;
 }
 
-marquee{
+.marquee_1{
    background:#2E2300;
     padding: 3px;
     border-radius:10px;
@@ -98,6 +102,8 @@ marquee{
     white-space: nowrap;
   
 }
+
+
 
 .mobile_rate{
   display:none;

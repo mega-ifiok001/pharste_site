@@ -51,7 +51,7 @@ function Hero(){
         <Header/>
 
             <h1 className='display-1 display-md-2 display-sm-4  fs-md-3 fs-sm-5' style={{marginTop:'5rem'}}>Fast, Secure and Hassle-Free <br/> Money Transfer </h1>
-            <p>Experience seamless transactions with low fees & top-<br/>tier security.🌐🌍</p>
+            <p>Experience seamless transactions with low fees & top-<br/>tier security.</p>
       
           <div className="hero_content_anim">
              <img src={pop1} className='pop-1' alt="" />

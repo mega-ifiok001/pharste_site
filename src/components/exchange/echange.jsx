@@ -85,6 +85,7 @@ const CurrencyConverter = () => {
 
                 <input
                   type="text"
+                  placeholder='Enter Amount'
                   className="form-control bg-dark text-light ms-3"
                   value={amount ? `${currencySymbols[fromCurrency]} ${amount}` : ''}
                   onChange={(e) => {
@@ -124,6 +125,7 @@ const CurrencyConverter = () => {
                 </select>
                 <input
                   type="text"
+                  placeholder='Receiving Amount'
                   className="form-control bg-dark text-light ms-3"
                   value={converted ? `${currencySymbols[toCurrency]} ${converted}` : ''}
                   readOnly
@@ -142,7 +144,7 @@ const CurrencyConverter = () => {
             <p>$0.00</p>
           </div>
           <marquee
-            className="text-center"
+            className="text-center .marquee_1"
 
           >
             Our fees include a fee to exchange uncommon currencies or outside market hours.

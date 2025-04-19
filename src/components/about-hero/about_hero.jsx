@@ -21,7 +21,7 @@ function AboutHero(){
 
             <p className="paragraph">
             Pharste simplifies money movement, effortless, transparent, <br/> 
-             and instant transactions—anytime, anywhere. 💸🌍
+             and instant transactions—anytime, anywhere.
             </p>
         </div>
   </div>
@@ -60,7 +60,7 @@ function AboutHero(){
   <section className="core">
     <h1>Our core values</h1>
     <p>The money app built for friends, families, and fearless transactions, 
-        no matter where they are 🌐🌍</p>
+        no matter where they are in the world.</p>
 
       
             <div className="row g-3  mt-4">

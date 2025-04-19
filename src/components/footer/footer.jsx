@@ -7,6 +7,11 @@ import hands from '../../asset/hands.png';
 import screen from '../../asset/screen.png';
 import footerLogo from '../../asset/footer_logo.png';
 import google_footer from '../../asset/google_footer.png';
+import x from '../../asset/x.png';
+import f from '../../asset/f.png';
+import insta from '../../asset/insta.png';
+import w from '../../asset/w.png';
+import li from '../../asset/li.png';
 function Footer() {
 
   return (
@@ -37,34 +42,22 @@ function Footer() {
       <div className="main-footer">
         <div className="row">
           <div className="col-md-4">
-            <img src={footerLogo} alt="footer logo" />
-            <p>Transmitex is registered with FINTRAC in Canada as a Money Service Business (Registration number - M22889301). Transmitex provides currency exchange services and handles all bill payment in Canada like school fees, accommodation fees, admission fees and lots more.</p>
+            <img src={footerLogo} className='img-fluid' alt="footer logo" />
+            <p>Pharste is a global fintech company revolutionizing international money remittance. We empower individuals and businesses to send and receive funds across borders with speed, transparency, and security..</p>
 
-            <div className="linkers flex-column justify-content-start align-items-start"> 
-              <h6><b className='text-white text-start'>Quick Links</b></h6>
-              <ul>
-                <Link><li>Home</li></Link>
-                <Link><li>Features</li></Link>
-                <Link><li >Pricing</li> </Link>
-                <Link><li>Blog</li></Link>
-                <Link><li>About </li></Link>
-                <Link><li>Help</li></Link>
-              </ul>
-            </div>
-            </div>
 
-           <div className="col-md-4">
+                  
            <div className="country_math">
               <div className="court_1">
-                <h1>Nigeria</h1>
-              <p>1-11 Commercial <br/> Avenue, Yaba, <br/> Lagos, Nigeria</p>
+                <h1>Branch Office (Nigeria)</h1>
+              <marquee style={{color:'white', fontSize:'.5rem'}}>Coming Soon ...</marquee>
               
               </div>
 
-
+             
 
               <div className="court_1">
-                <h1>Canada</h1>
+                <h1>Head Office (Canada)</h1>
             <p>
             Pharste Inc 600 Matheson Blvd W,
                   Mississauga, ON L5R 4B8, Canada
@@ -74,6 +67,29 @@ function Footer() {
            
 
             </div>
+
+
+         
+            </div>
+
+           <div className="col-md-4">
+
+           <div className="mt-5 !g-4  mid_footer" style={{ gap: '2rem' }}>
+                <h1 className="title">Get the app</h1>
+                <div className="d-flex align-items-center">
+                  <a href="
+https://play.google.com/store/apps?hl=en_US&gl=US" target="_blank" rel="noopener noreferrer">
+                  <img src={apple} alt="" />
+                  </a>
+                  <a href="
+                  https://www.apple.com/iphone/app-store/" target="_blank" rel="noopener noreferrer">
+                  <img src={google_footer} alt="" />
+                  </a>
+                </div>
+              </div>
+
+
+        
 
 
              
@@ -93,14 +109,50 @@ function Footer() {
                 <button type="submit">Subscribe</button>
               </form>
 
+              
+            <div className="linkers flex-column justify-content-start align-items-start"> 
+              <h6><b className='text-white text-start'>Quick Links</b></h6>
+              <ul>
+                <Link><li>Home</li></Link>
+                <Link><li>Features</li></Link>
+                <Link><li >Pricing</li> </Link>
+                <Link><li>Blog</li></Link>
+                <Link><li>About </li></Link>
+                <Link><li>Help</li></Link>
+              </ul>
+            </div>
 
-              <div className="mt-5 !g-4" style={{ gap: '2rem' }}>
-                <h1 className="title">Get the app</h1>
-                <div className="d-flex align-items-center">
-                  <img src={apple} alt="" />
-                  <img src={google_footer} alt="" />
-                </div>
+
+          <div className="">
+          <div className="contact d-flex align-items-center mt-4 mx-1 "> 
+                <i className="fas fa-phone text-white"></i>
+                <p className='px-1 text-white'>+1 647 557 4718</p>
+                
               </div>
+
+              <div className="contact d-flex align-items-center mt-1 mx-1"> 
+                <i className="fa fa-message text-white"></i>
+                <p className='px-1 text-white'>support@pharste.com</p>
+                
+              </div>
+          </div>
+
+              
+            <div className="d-flex socials align-items-center justify-content-start">
+             
+              
+              <a href=""><img src={f} alt="" /></a>
+              <a href="https://www.instagram.com/pharstepayment/"><img src={insta} alt="" /></a>
+              <a href="https://www.linkedin.com/in/pharste-app-8bb17b360/"><img src={li} alt="" /></a>
+              <a href=""><img src={w} alt="" /></a>
+              <a href="https://x.com/Pharste"><img src={x} alt="" /></a>
+            </div>
+
+
+           
+
+
+            
             </div>
 
           </div>

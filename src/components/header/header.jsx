@@ -21,7 +21,7 @@ function Header() {
      {/* Navigation Menu */}
 <ul className="nav_menu d-flex align-items-center justify-content-center">
   <li><Link to="/">Home</Link></li>
-  <li><Link to="/features">Features</Link></li>
+  <li><Link to="/features">Our Service</Link></li>
   {/* Use <a> for external links */}
   <li><a href="https://blog.pharste.com/" target="_blank" rel="noopener noreferrer">Blog</a></li>
   <li><Link to="/about">About</Link></li>
@@ -60,7 +60,7 @@ function Header() {
             background:'#14373D'
           }}/>
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/features">Features</Link></li>
+          <li><Link to="/features">Our Service</Link></li>
           <li><a href="https://blog.pharste.com/" target="_blank" rel="noopener noreferrer">Blog</a></li>
 
           <li><Link to="/about">About</Link></li>

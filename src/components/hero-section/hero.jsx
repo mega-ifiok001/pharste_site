@@ -8,47 +8,53 @@ import Apple from '../../asset/apple.png';
 import RoundImg from '../../asset/Container.png';
 function Hero() {
 
-  
-  return(
-  
-  <>
-  
-  <div className="hero_container">
-  <Header />
- 
-   <div className="hero_content">
-    <img src={Band} className=" band_img" alt="band" />
-    <div className="hero_text">
-      <h1>
-        Take Control of <br />
-        your finances
-      </h1>
-      <p>
-        The money app built for friends, families, and fearless <br />
-        transactions, no matter where they are in the world
-      </p>
-    </div>
 
-    <div className="download_btn">
-      <img src={Google} className="img-fluid" alt="playstore" />
-      <img src={Apple} className="img-fluid" alt="apple store" />
-    </div>
+  return (
 
-    {/* <div className="download_btn gm align-items-center justify-content-start">
+    <>
+
+      <div className="hero_container">
+        <Header />
+
+        <div className="hero_content">
+          <img src={Band} className=" band_img" alt="band" />
+          <div className="hero_text">
+            <h1>
+              Take Control of <br />
+              your finances
+            </h1>
+            <p>
+              The money app built for friends, families, and fearless <br />
+              transactions, no matter where they are in the world
+            </p>
+          </div>
+
+          <div className="download_btn">
+            <a href="
+     https://play.google.com/store/apps?hl=en_US&gl=US" target="_blank" rel="noopener noreferrer">
+              <img src={Google} alt="" />
+            </a>
+            <a href="
+                       https://www.apple.com/iphone/app-store/" target="_blank" rel="noopener noreferrer">
+              <img src={Apple} alt="" />
+            </a>
+          </div>
+
+          {/* <div className="download_btn gm align-items-center justify-content-start">
       <img src={RoundImg} className="w-[100]" alt="" />
       <div className="sub_text">
         <span>150k+</span>
         <span className="rev">Review</span>
-      </div>
+      </div>2
     </div> */}
-  </div>
- 
- </div>
-  
+        </div>
 
-   {/* <img src={Hero_bg} className="hero_img" alt="hero bg" /> */}
+      </div>
 
-  {/* <div className="hero_content">
+
+      {/* <img src={Hero_bg} className="hero_img" alt="hero bg" /> */}
+
+      {/* <div className="hero_content">
     <img src={Band} className="band_img" alt="band" />
     <div className="hero_text">
       <h1>
@@ -75,7 +81,7 @@ function Hero() {
     </div>
   </div> */}
 
-  </>);
+    </>);
 }
 
 export default Hero;

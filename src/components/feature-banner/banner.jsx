@@ -36,7 +36,7 @@ function Banner(){
              
                              <div className="col-xs-4">
                              <div className="banner_content ">
-                                 <h1 className="banner_content_title">BILLS PAYMENT</h1>
+                                 <h1 className="banner_content_title">Bills Payment</h1>
                                  <p className="banner_content_paragraph">Why pay high fees when you don’t have to? We believe in keeping costs low so you can send more.</p>
                               <img src={billPay} alt="bill payment image " />
                                </div>
@@ -44,7 +44,7 @@ function Banner(){
 
                              <div className="col-xs-4">
                              <div className="banner_content ">
-                                 <h1 className="banner_content_title">SAVINGS</h1>
+                                 <h1 className="banner_content_title">Savings</h1>
                                  <p className="banner_content_paragraph">Sending money to friends, family, or anyone in your circle has never been easier. </p>
                               <img src={bankLocker} alt="bill payment image " />
                                </div>
@@ -56,7 +56,7 @@ function Banner(){
   <div className="banner-header">
     <div className="row">
       <div className="col-md-6">
-        <h1>best ways for your banking</h1>
+        <h1>Best ways for your banking</h1>
         <p>Stand out with pharste advanced fintech solutions.</p>
       </div>
 
@@ -70,7 +70,7 @@ function Banner(){
   <div className="row g-3  mt-4  best_ways d-block d-md-none">
                              <div className="col-xs-4 w-100%">
                                <div className="banner_content">
-                                 <h1 className="banner_content_title">EFFORTLESS ONBOARDING</h1>
+                                 <h1 className="banner_content_title">Effortless Onboarding</h1>
                                  <p className="banner_content_paragraph">Get started in minutes with a quick and intuitive registration process.</p>
                               <img src={src1} alt="p2p transaction pic" />
                                </div>
@@ -78,7 +78,7 @@ function Banner(){
              
                              <div className="col-xs-4">
                              <div className="banner_content ">
-                                 <h1 className="banner_content_title">USER-FRIENDLY INTERFACE</h1>
+                                 <h1 className="banner_content_title">User-Firendly Interface</h1>
                                  <p className="banner_content_paragraph">Navigate easily with a clean, modern, and interactive design. </p>
                               <img src={src2} alt="bill payment image " />
                                </div>
@@ -86,7 +86,7 @@ function Banner(){
 
                              <div className="col-xs-4">
                              <div className="banner_content ">
-                                 <h1 className="banner_content_title">SECURE & RELIABLE</h1>
+                                 <h1 className="banner_content_title">Secure & Reliable</h1>
                                  <p className="banner_content_paragraph">Enjoy bank-level security without compromising on speed. </p>
                               <img src={src3} alt="bill payment image " />
                                </div>
@@ -96,7 +96,7 @@ function Banner(){
             <div className="row d-flex d-none d-md-flex">
             <div className="col-md-6 w-100%">
                                <div className="banner_content">
-                                 <h1 className="banner_content_title">EFFORTLESS ONBOARDING</h1>
+                                 <h1 className="banner_content_title">Effortless Onboarding</h1>
                                  <p className="banner_content_paragraph">Get started in minutes with a quick and intuitive registration process.</p>
                               <img src={src1} alt="p2p transaction pic" />
                                </div>
@@ -104,7 +104,7 @@ function Banner(){
              
                              <div className="col-md-6">
                              <div className="banner_content ">
-                                 <h1 className="banner_content_title">USER-FRIENDLY INTERFACE</h1>
+                                 <h1 className="banner_content_title">User-Firendly Interface</h1>
                                  <p className="banner_content_paragraph">Navigate easily with a clean, modern, and interactive design. </p>
                               <img src={src2} alt="bill payment image " />
                                </div>
@@ -117,7 +117,7 @@ function Banner(){
            <div className="row  ">
               <div className="col-md-12 ">
               <div className="banner_content ">
-                                 <h1 className="banner_content_title">SECURE & RELIABLE</h1>
+                                 <h1 className="banner_content_title">Secure & Reliable</h1>
                                  <p className="banner_content_paragraph">Enjoy bank-level security without compromising on speed. </p>
                               <img src={src3} className='secure_img img-fluid' alt="bill payment image " 
                               style={{width:'10%', marginBottom:'-9rem'}}/>

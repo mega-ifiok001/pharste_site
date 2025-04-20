@@ -74,7 +74,7 @@ function AboutHero(){
 
                 <div className="col-sm-6">
                 <div className="banner_content ">
-                    <h1 className="banner_content_title">security</h1>
+                    <h1 className="banner_content_title">Security</h1>
                     <p className="banner_content_paragraph">Your financial safety is our non-negotiable priority. </p>
                  <img src={billPay} alt="bill payment image " />
                   </div>
@@ -117,7 +117,7 @@ function AboutHero(){
                By choosing Pharste, you're not just managing transactions—you’re contributing to a movement that builds a better future for everyone.</p>
             </div>
              <div className="col-md-6">
-              <img src={smileyFace} alt="smiley faces " />
+              <img src={smileyFace} style={{width:'100%'}} alt="smiley faces " />
              </div>
            </div>
           </div>

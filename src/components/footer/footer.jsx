@@ -42,7 +42,7 @@ function Footer() {
 
       <div className="main-footer">
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-md-6">
             <img src={footerLogo} className='img-fluid' alt="footer logo" />
             <p>Pharste is a global fintech company revolutionizing international money remittance. We empower individuals and businesses to send and receive funds across borders with speed, transparency, and security..</p>
 
@@ -73,34 +73,12 @@ function Footer() {
          
             </div>
 
-           <div className="col-md-4">
-
-           <div className="mt-5 !g-4  mid_footer" style={{ gap: '2rem' }}>
-                <h1 className="title">Get the app</h1>
-                <div className="d-flex align-items-center">
-                  <a href="
-https://play.google.com/store/apps?hl=en_US&gl=US" target="_blank" rel="noopener noreferrer">
-                  <img src={apple} alt="" />
-                  </a>
-                  <a href="
-                  https://www.apple.com/iphone/app-store/" target="_blank" rel="noopener noreferrer">
-                  <img src={google_footer} alt="" />
-                  </a>
-                </div>
-              </div>
-
-
-        
-
-
-             
-           </div>
-
+       
 
           
 
 
-          <div className="col-md-4">
+          <div className="col-md-6 d-flex justify-content-end align-items-end flex-column">
             <div className="court_2">
               <h1 className="title">Stay up to date </h1>
 
@@ -108,14 +86,10 @@ https://play.google.com/store/apps?hl=en_US&gl=US" target="_blank" rel="noopener
 
 
               <NewsletterForm/>
-              {/* <form action="#">
-                <input
-                  placeholder="Enter your email" type="text" />
-                <button type="submit">Subscribe</button>
-              </form> */}
+            
 
               
-            <div className="linkers flex-column justify-content-start align-items-start"> 
+            <div className="linkers flex-column justify-content-center align-items-start"> 
               <h6><b className='text-white text-start'>Quick Links</b></h6>
               <ul>
                 <Link><li>Home</li></Link>

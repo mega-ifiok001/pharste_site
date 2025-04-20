@@ -94,14 +94,21 @@ function Banner(){
                          </div>
 
             <div className="row d-flex d-none d-md-flex">
-                <div className="col-md-6 ">
-                 <img src={effort} className='img-fluid my-3' alt="" />
-                </div>
-
-                <div className="col-md-6">
-                <img src={user} className='img-fluid my-3' alt="" />
-               
-                </div>
+            <div className="col-md-6 w-100%">
+                               <div className="banner_content">
+                                 <h1 className="banner_content_title">EFFORTLESS ONBOARDING</h1>
+                                 <p className="banner_content_paragraph">Get started in minutes with a quick and intuitive registration process.</p>
+                              <img src={src1} alt="p2p transaction pic" />
+                               </div>
+                             </div>
+             
+                             <div className="col-md-6">
+                             <div className="banner_content ">
+                                 <h1 className="banner_content_title">USER-FRIENDLY INTERFACE</h1>
+                                 <p className="banner_content_paragraph">Navigate easily with a clean, modern, and interactive design. </p>
+                              <img src={src2} alt="bill payment image " />
+                               </div>
+                             </div>
 
             </div>
 
@@ -109,7 +116,12 @@ function Banner(){
            <div className="bank_content mt-5  d-none d-md-block ">
            <div className="row  ">
               <div className="col-md-12 ">
-              <img src={dub} className='img-fluid' alt="" />
+              <div className="banner_content ">
+                                 <h1 className="banner_content_title">SECURE & RELIABLE</h1>
+                                 <p className="banner_content_paragraph">Enjoy bank-level security without compromising on speed. </p>
+                              <img src={src3} className='secure_img img-fluid' alt="bill payment image " 
+                              style={{width:'10%', marginBottom:'-9rem'}}/>
+                               </div>
 
               </div>
             </div>

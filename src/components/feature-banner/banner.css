@@ -54,7 +54,7 @@ color: #1117A2;
 .banner_content .banner_content_title{
     font-family: poppins;
 font-weight: 600;
-font-size: 32px;
+font-size: 25px;
 line-height: 100%;
 letter-spacing: -0.5px;
 vertical-align: middle;
@@ -66,14 +66,16 @@ color:#070A45;
     font-family: poppins;
 font-weight: 500;
 text-align: start;
-font-size: 24px;
+font-size: 18px;
 line-height: 150%;
 letter-spacing: 0px;
 color:#322F35;
 }
 
+
+
 .banner_content img{
-    width:58%;
+    width:39%;
     position:absolute;
     bottom:0;
     right:0%;
@@ -235,7 +237,7 @@ color: #605D64;
 
 @media screen and (max-width:768px) {
     .banner_content .banner_content_paragraph {
-        font-size: 27px;
+        font-size: 17px;
     }
 
     .banner_content {

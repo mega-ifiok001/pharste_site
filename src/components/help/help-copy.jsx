@@ -310,7 +310,7 @@ function HelpCopy() {
     return (
         <>
 
-            <div className=" feature-container help mt-5">
+            <div className=" container help mt-5">
                 < Header />
 
                 <div className="row">

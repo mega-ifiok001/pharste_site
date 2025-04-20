@@ -13,9 +13,9 @@
 .sidebar button{
     background:transparent;
     border:none;
-    font-family: General Sans;
+    font-family: poppins;
 font-weight: 500;
-font-size: 16px;
+font-size: 14px;
 line-height: 24px;
 letter-spacing: 0%;
 color: #919191;
@@ -37,8 +37,8 @@ padding-right: 12px;
 padding-bottom: 8px;
 padding-left: 12px;
 border-radius: 6px;
-background:#E8E9FD;
-color: #070A45;
+background:#E8E9FD!important;
+color: #070A45!important;
 }
 
 .terms{
@@ -130,7 +130,7 @@ color: #79767D;
 .contact h1{
     font-family: Bricolage Grotesque;
 font-weight: 600;
-font-size: 48px;
+font-size:24px;
 line-height: 130%;
 letter-spacing: -2px;
 vertical-align: middle;
@@ -141,8 +141,8 @@ color:#1117A2;
 .contact h2{
     font-family: Bricolage Grotesque;
 font-weight: 600;
-font-size: 24px;
-line-height: 42px;
+font-size: 18px;
+line-height: 9px;
 letter-spacing: -2%;
 text-transform: uppercase;
 color:#070A45;
@@ -151,7 +151,7 @@ color:#070A45;
 .contact p{
     font-family: General Sans;
 font-weight: 400;
-font-size: 20px;
+font-size: 12px;
 line-height: 30px;
 letter-spacing: 0%;
 text-align: start;
@@ -177,7 +177,7 @@ color:#667085;
 .address-column h3{
     font-family: Maison Neue Extended;
 font-weight: 500;
-font-size: 20px;
+font-size: 12px;
 line-height: 30px;
 letter-spacing: 0%;
 text-align: center;
@@ -188,7 +188,7 @@ color: #101828;
     font-family: Maison Neue Extended;
 font-weight: 400;
 font-size: 16px;
-line-height: 10px!important;
+line-height: 10px;
 letter-spacing: 0%;
 text-align: center;
 color: #667085;
@@ -228,9 +228,9 @@ color: #667085;
 }
 
 .form h1{
-    font-family: General Sans;
+    font-family: poppins;
 font-weight: 600;
-font-size: 24px;
+font-size: 19px;
 line-height: 42px;
 letter-spacing: -2%;
 text-transform: uppercase;
@@ -238,7 +238,7 @@ color: #070A45;
 }
 
 .form p{
-    font-family: General Sans;
+    font-family:poppins;
 font-weight: 400;
 font-size: 20px;
 line-height: 30px;
@@ -338,10 +338,21 @@ label{
 
 @media screen and (max-width:425px){
     .address-column p {
-        font-size: 10px;
+        font-size: 6px;
+        text-align: start;
+        line-height:9px;
     }
 
     form{
         width:108%;
+    }
+
+    form h1{
+  font-size: 15px;
+    }
+    .help p {
+        font-family: poppins !important;
+        font-size: 11px;
+        line-height: 19px;
     }
 }

@@ -1,17 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import './help.css'; 
+import React, { useState, useEffect, useRef } from 'react';
+import './help.css';
 import Footer from '../footer/footer';
 import dash from '../../asset/minus-circle.png';
 import Header from '../header/header';
 
+import emailjs from "@emailjs/browser";
+
 import plus from '../../asset/plus.png';
 
 const TermsAndConditions = () => (
-    <div className="Terms " style={{marginTop:'6rem'}}>
+    <div className="Terms " style={{ marginTop: '6rem' }}>
         <h1 className='mt-5 text start'>Terms and Conditions</h1>
         <h2>Introduction</h2>
         <p className="mt-2 text-start">
-            These docs will give you a deep dive into our full API Reference Documentation and how to seamlessly integrate our messaging channels 
+            These docs will give you a deep dive into our full API Reference Documentation and how to seamlessly integrate our messaging channels
             and verification functionalities into your product.
         </p>
 
@@ -57,7 +59,7 @@ const TermsAndConditions = () => (
 );
 
 const PrivacyPolicy = () => (
-    <div className="mx-3" style={{marginTop:'6rem'}}>
+    <div className="mx-3" style={{ marginTop: '6rem' }}>
         <h1>Privacy Policy</h1>
         <p>Loading...</p>
     </div>
@@ -71,174 +73,212 @@ const FAQs = () => {
     };
 
     return (
-        <div className="" style={{marginTop:'7rem'}}>
+        <div className="" style={{ marginTop: '7rem' }}>
             <h1 className="mx-3 fs-2 mb-3 mt-3"> Frequently Asked Questions</h1>
-           <div className="mx-3">
-           <div className={`faq-item ${activeIndex === 0 ? 'active' : ''}`} onClick={() => toggleFAQ(0)}>
-                <div className="d-flex align-items-center justify-content-space-around">
-                    <img src={activeIndex === 0 ? dash : plus} className="toggle-icon" alt="" />
-                    <h2>How does Transmitex fulfil customer transactions?
-                    </h2>
+            <div className="mx-3">
+                <div className={`faq-item ${activeIndex === 0 ? 'active' : ''}`} onClick={() => toggleFAQ(0)}>
+                    <div className="d-flex align-items-center justify-content-space-around">
+                        <img src={activeIndex === 0 ? dash : plus} className="toggle-icon" alt="" />
+                        <h2>How does Transmitex fulfil customer transactions?
+                        </h2>
+                    </div>
+                    {activeIndex === 0 && <p className="faq-content">At Transmitex, we believe in personalised service. For this reason, we keep an open line of communication on our whatsapp lines to support our customers till their transactions are completed.</p>}
                 </div>
-                {activeIndex === 0 && <p className="faq-content">At Transmitex, we believe in personalised service. For this reason, we keep an open line of communication on our whatsapp lines to support our customers till their transactions are completed.</p>}
-            </div>
-            <div className={`faq-item ${activeIndex === 1 ? 'active' : ''}`} onClick={() => toggleFAQ(1)}>
-                <div className="d-flex align-items-center justify-content-space-around">
-                    <img src={activeIndex === 1 ? dash : plus} className="toggle-icon" alt="" />
-                    <h2>When a customer places an exchange order on the website, how does Transmitex fulfil the order?</h2>
+                <div className={`faq-item ${activeIndex === 1 ? 'active' : ''}`} onClick={() => toggleFAQ(1)}>
+                    <div className="d-flex align-items-center justify-content-space-around">
+                        <img src={activeIndex === 1 ? dash : plus} className="toggle-icon" alt="" />
+                        <h2>When a customer places an exchange order on the website, how does Transmitex fulfil the order?</h2>
+                    </div>
+                    {activeIndex === 1 && <p className="faq-content">After we have received a customer’s exchange request, we encourage customers to reach us on whatsapp to receive updates on their order. We will also contact customers by email or whatsapp if we need more information or to give them an update on their transaction..</p>}
                 </div>
-                {activeIndex === 1 && <p className="faq-content">After we have received a customer’s exchange request, we encourage customers to reach us on whatsapp to receive updates on their order. We will also contact customers by email or whatsapp if we need more information or to give them an update on their transaction..</p>}
-            </div>
-            <div className={`faq-item ${activeIndex === 2 ? 'active' : ''}`} onClick={() => toggleFAQ(2)}>
-                <div className="d-flex align-items-center justify-content-space-around">
-                    <img src={activeIndex === 2 ? dash : plus} className="toggle-icon" alt="" />
-                    <h2>How long does it take to fulfil transaction?</h2>
+                <div className={`faq-item ${activeIndex === 2 ? 'active' : ''}`} onClick={() => toggleFAQ(2)}>
+                    <div className="d-flex align-items-center justify-content-space-around">
+                        <img src={activeIndex === 2 ? dash : plus} className="toggle-icon" alt="" />
+                        <h2>How long does it take to fulfil transaction?</h2>
+                    </div>
+                    {activeIndex === 2 && <p className="faq-content">In the absence of any delays from our partners (banks, payment systems). Transmitex will fulfil all transactions within two hours of receipt of the funds.</p>}
                 </div>
-                {activeIndex === 2 && <p className="faq-content">In the absence of any delays from our partners (banks, payment systems). Transmitex will fulfil all transactions within two hours of receipt of the funds.</p>}
+
+                <div className={`faq-item ${activeIndex === 2 ? 'active' : ''}`} onClick={() => toggleFAQ(2)}>
+                    <div className="d-flex align-items-center justify-content-space-around">
+                        <img src={activeIndex === 2 ? dash : plus} className="toggle-icon" alt="" />
+                        <h2>I sent naira to the Transmitex Nigeria account but the whatsapp agent says it has not been received. What should I do?</h2>
+                    </div>
+                    {activeIndex === 2 && <p className="faq-content">In instances where naira is not received, we urge customers to contact their bank to ascertain the cause of the issue. We will do our best to support our customers should this occur..</p>}
+                </div>
+
+                <div className={`faq-item ${activeIndex === 2 ? 'active' : ''}`} onClick={() => toggleFAQ(2)}>
+                    <div className="d-flex align-items-center justify-content-space-around">
+                        <img src={activeIndex === 2 ? dash : plus} className="toggle-icon" alt="" />
+                        <h2>How can customers complete the verification</h2>
+                    </div>
+                    {activeIndex === 2 && <p className="faq-content">Customers can find the verification link on the Kyc page and in the menu. Customers just need to click on the link, upload a government-issued photo identification card and take a selfie.</p>}
+                </div>
+
+                <div className={`faq-item ${activeIndex === 2 ? 'active' : ''}`} onClick={() => toggleFAQ(2)}>
+                    <div className="d-flex align-items-center justify-content-space-around">
+                        <img src={activeIndex === 2 ? dash : plus} className="toggle-icon" alt="" />
+                        <h2>How is customer information stored and used?</h2>
+                    </div>
+                    {activeIndex === 2 && <p className="faq-content">Customer data is protected using our topnotch safeguard measures. Customer information is treated with utmost confidentiality and is not sold or given out for any reason.</p>}
+                </div>
+
+
+                <div className={`faq-item ${activeIndex === 2 ? 'active' : ''}`} onClick={() => toggleFAQ(2)}>
+                    <div className="d-flex align-items-center justify-content-space-around">
+                        <img src={activeIndex === 2 ? dash : plus} className="toggle-icon" alt="" />
+                        <h2>Does Transmitex handle money transfers to other countries aside Canada and Nigeria?</h2>
+                    </div>
+                    {activeIndex === 2 && <p className="faq-content">Currently, Transmitex only handles money remittance to Nigeria and Canada. Money service for other countries will be rolled out in the near future.</p>}
+                </div>
             </div>
 
-            <div className={`faq-item ${activeIndex === 2 ? 'active' : ''}`} onClick={() => toggleFAQ(2)}>
-                <div className="d-flex align-items-center justify-content-space-around">
-                    <img src={activeIndex === 2 ? dash : plus} className="toggle-icon" alt="" />
-                    <h2>I sent naira to the Transmitex Nigeria account but the whatsapp agent says it has not been received. What should I do?</h2>
-                </div>
-                {activeIndex === 2 && <p className="faq-content">In instances where naira is not received, we urge customers to contact their bank to ascertain the cause of the issue. We will do our best to support our customers should this occur..</p>}
-            </div>
-
-            <div className={`faq-item ${activeIndex === 2 ? 'active' : ''}`} onClick={() => toggleFAQ(2)}>
-                <div className="d-flex align-items-center justify-content-space-around">
-                    <img src={activeIndex === 2 ? dash : plus} className="toggle-icon" alt="" />
-                    <h2>How can customers complete the verification</h2>
-                </div>
-                {activeIndex === 2 && <p className="faq-content">Customers can find the verification link on the Kyc page and in the menu. Customers just need to click on the link, upload a government-issued photo identification card and take a selfie.</p>}
-            </div>
-
-            <div className={`faq-item ${activeIndex === 2 ? 'active' : ''}`} onClick={() => toggleFAQ(2)}>
-                <div className="d-flex align-items-center justify-content-space-around">
-                    <img src={activeIndex === 2 ? dash : plus} className="toggle-icon" alt="" />
-                    <h2>How is customer information stored and used?</h2>
-                </div>
-                {activeIndex === 2 && <p className="faq-content">Customer data is protected using our topnotch safeguard measures. Customer information is treated with utmost confidentiality and is not sold or given out for any reason.</p>}
-            </div>
-
-
-            <div className={`faq-item ${activeIndex === 2 ? 'active' : ''}`} onClick={() => toggleFAQ(2)}>
-                <div className="d-flex align-items-center justify-content-space-around">
-                    <img src={activeIndex === 2 ? dash : plus} className="toggle-icon" alt="" />
-                    <h2>Does Transmitex handle money transfers to other countries aside Canada and Nigeria?</h2>
-                </div>
-                {activeIndex === 2 && <p className="faq-content">Currently, Transmitex only handles money remittance to Nigeria and Canada. Money service for other countries will be rolled out in the near future.</p>}
-            </div>
-           </div>
-
-         </div>
+        </div>
     );
 };
 
+
 const ContactUs = () => {
     const addresses = [
-        { name: 'Melbourne', address: '100 founders street, Melbourne VIC 3000 ALI', lat: -37.8136, lng: 144.9631 },
-        { name: 'Sydney', address: '100 george street, Sydney NSW 2000 ALI', lat: -33.8688, lng: 151.2093 },
-        { name: 'Byron Bay', address: '100 johnson street, Byron Bay NSW 2481 AU', lat: -28.6434, lng: 153.6120 }
+        { name: "Melbourne", address: "100 founders street, Melbourne VIC 3000 ALI", lat: -37.8136, lng: 144.9631 },
+        { name: "Sydney", address: "100 george street, Sydney NSW 2000 ALI", lat: -33.8688, lng: 151.2093 },
+        { name: "Byron Bay", address: "100 johnson street, Byron Bay NSW 2481 AU", lat: -28.6434, lng: 153.6120 },
     ];
 
     const [map, setMap] = useState(null);
-  const [activeIndex, setActiveIndex] = useState(0);
+    const [activeIndex, setActiveIndex] = useState(0);
+    const form = useRef();
 
+    const handleClick = (index) => {
+        const address = addresses[index];
+        setActiveIndex(index);
 
-  
-  
+        if (map) {
+            map.setCenter({ lat: address.lat, lng: address.lng });
+        }
 
-  const handleClick = (index) => {
-    const address = addresses[index];
-    setActiveIndex(index);
+        document.querySelector(".blue-line").style.left = `${index * 33.33}%`;
+    };
 
-    map.setCenter({ lat: address.lat, lng: address.lng });
+    const sendEmail = (e) => {
+        e.preventDefault();
 
-   
-    document.querySelector(".blue-line").style.left = `${index * 33.33}%`;
-  };
-
+        emailjs
+            .sendForm(
+                "service_8ouv69f", 
+                "template_46z1agy",
+                form.current,
+                "qmHvOk5OU1pq_8a3A" 
+            )
+            .then(
+                (result) => {
+                    console.log("Message sent successfully:", result.text);
+                    alert("Thank you! Your message has been sent.");
+                },
+                (error) => {
+                    console.error("Error sending the message:", error.text);
+                    alert("Oops! Something went wrong. Please try again.");
+                }
+            );
+    };
 
     return (
-        <div style={{marginTop:'6rem'}}>
+        <div style={{ marginTop: "6rem" }}>
             <div className="contact">
-                <h1 >Get in Touch</h1>
+                <h1>Get in Touch</h1>
                 <h2 className="mt-2">Our Locations</h2>
                 <p className="mt-1">Say hello to our friendly teams at one of these locations</p>
             </div>
 
-            <div id="map" className='map' style={{ height: '400px', width: '100%'}}></div>
-
+            <div id="map" className="map" style={{ height: "400px", width: "100%" }}></div>
 
             <div className="grey-line">
-                <div className="blue-line" style={{ left: `${activeIndex * 33.33}%`, height: '10px' }}></div>
+                <div className="blue-line" style={{ left: `${activeIndex * 33.33}%`, height: "10px" }}></div>
             </div>
             <div className="address-container">
                 {addresses.map((address, index) => (
-                    <div 
-                        key={index} 
-                        className={`address-column ${activeIndex === index ? 'active' : ''}`} 
+                    <div
+                        key={index}
+                        className={`address-column ${activeIndex === index ? "active" : ""}`}
                         onClick={() => handleClick(index)}
                     >
                         <h3>{address.name}</h3>
-                        <p>{address.address.split(', ')[0]}</p>
-                        <p>{address.address.split(', ').slice(1).join(', ')}</p>
+                        <p>{address.address.split(", ")[0]}</p>
+                        <p>{address.address.split(", ").slice(1).join(", ")}</p>
                     </div>
                 ))}
             </div>
 
-            <div className="form px-2  ">
-                <h1>we're here to help</h1>
-                <p className="mt-2">Have questions or feedback? We'd love to hear from you. Our team is committed to providing timely and helpful 
-                    responses to every inquiry.</p>
-                    
-                    <div className="row mt-3">
-                        <div className="col-lg-7 col-md-10 col-sm-12  col-xs-12">
-                            <form className='contact_us' action="">
-                                <div className="d-flex align-items-center w-100% justify-content-space-around">
-                                    <div className="first">
-                                    <label htmlFor="f_name">First Name</label><br/>
-                                    <input type="text" placeholder="first name" />
-                                    </div>
+            <div className="form px-2">
+                <h1>We're here to help</h1>
+                <p className="mt-2">
+                    Have questions or feedback? We'd love to hear from you. Our team is committed to providing timely and helpful responses to every inquiry.
+                </p>
 
-                                    <div className="first firsts">
-                                    <label htmlFor="f_name">Last Name</label><br/>
-                                    <input type="text" placeholder="last name" />
-                                    </div>
-                                </div>
-
-
+                <div className="row mt-3">
+                    <div className="col-lg-7 col-md-10 col-sm-12 col-xs-12">
+                        <form className="contact_us" ref={form} onSubmit={sendEmail}>
+                            <div className="d-flex align-items-center w-100% justify-content-space-around">
                                 <div className="first">
-                                    <label htmlFor="f_name">Email</label><br/>
-                                    <input type="text" placeholder="email" />
-                                    </div>
-
-
-                                    <div className="first">
-                                    <label htmlFor="f_name">phone number</label><br/>
-                                    <input type="text" placeholder="phone number" />
-                                    </div>
-
-
-
-                                    <div className="first">
-                                    <label htmlFor="f_name">Leave a Message</label><br/>
-                                   <textarea name="message" id="message"  placeholder='Leave a message'></textarea>
-                                    </div>
-
-                                <div className="agreement d-flex align-item-center">
-                                    <input type="checkbox" name="agreement" id="agreement" />
-                                    <p>You agree to our friendly <a href="#">privacy policy</a></p>
+                                    <label htmlFor="f_name">First Name</label>
+                                    <br />
+                                    <input
+                                        type="text"
+                                        placeholder="First name"
+                                        name="first_name"
+                                        required
+                                    />
                                 </div>
-                                    <button type="submit">Send Message</button>
-                            </form>
-                        </div>
+
+                                <div className="first firsts">
+                                    <label htmlFor="l_name">Last Name</label>
+                                    <br />
+                                    <input
+                                        type="text"
+                                        name="last_name"
+                                        placeholder="Last name"
+                                        required
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="first">
+                                <label htmlFor="email">Email</label>
+                                <br />
+                                <input type="email" name="email" placeholder="Email" required />
+                            </div>
+
+                            <div className="first">
+                                <label htmlFor="phone">Phone Number</label>
+                                <br />
+                                <input type="text" name="phone_number" placeholder="Phone number" required />
+                            </div>
+
+                            <div className="first">
+                                <label htmlFor="message">Leave a Message</label>
+                                <br />
+                                <textarea name="message" id="message" placeholder="Leave a message" required></textarea>
+                            </div>
+
+                            <div className="agreement d-flex align-item-center">
+                                <input type="checkbox" name="agreement" id="agreement" required />
+                                <p>
+                                    You agree to our friendly <a href="#">privacy policy</a>
+                                </p>
+                            </div>
+                            <button type="submit">Send Message</button>
+                        </form>
                     </div>
+                </div>
             </div>
         </div>
     );
 };
+
+
+
+
+
 
 const Sidebar = ({ setSelectedContent }) => (
     <div className="sidebar">
@@ -271,10 +311,10 @@ function HelpCopy() {
         <>
 
             <div className=" feature-container help mt-5">
-           < Header/>
+                < Header />
 
                 <div className="row">
-                    
+
                     <div className="col-md-3">
                         <Sidebar setSelectedContent={setSelectedContent} />
                     </div>

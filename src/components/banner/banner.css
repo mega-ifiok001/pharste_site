@@ -42,7 +42,7 @@ color:#322F35;
 }
 
 .banner_content img{
-    width:35%;
+    width:35%!important ;
     position:absolute;
     bottom:0;
     right:0%;
@@ -68,6 +68,14 @@ color:#322F35;
 
 .bank_content{
     width:100%!important;
+}
+
+.smiley_face{
+    width: 100%;;
+}
+
+.smiley{
+    border: 1px solid red!important;
 }
 
 .bank_title{

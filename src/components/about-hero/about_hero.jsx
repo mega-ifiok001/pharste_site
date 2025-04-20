@@ -32,11 +32,11 @@ function AboutHero(){
     <div className="about_typo">
      <div className="row">
         <div className="col-md-6 mt-2">
-        <h2 className="title">
+        <h2 className="title_1">
       OUR MISSION
       </h2>
 
-      <p className="typo_content">
+      <p className="typo_content_1">
       At Pharste, we're on a mission to make money movement as simple as sending a text message.
       We believe financial services should be intuitive, instant, and inclusive. Every feature we build, every experience we design, and every partnership
        we form is guided by this fundamental commitment.
@@ -50,7 +50,7 @@ function AboutHero(){
             <p className="typo_content_1">We understand that financial freedom is more than just transactions—it's about having the flexibility, control, and confidence to manage your finances on your terms. That’s why Pharste is built to offer speed, security, and convenience, ensuring you stay
                  in control of your financial journey.</p>
             <p className="typo_content_1">With Pharste, you’re not just banking—you’re experiencing the future of finance.
-            🔹 Fast. Secure. Affordable. Your Money, Your Way.</p>
+             Fast. Secure. Affordable. Your Money, Your Way.</p>
         </div>
      </div>
   </div>

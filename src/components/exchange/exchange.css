@@ -36,15 +36,17 @@
   display: flex;
   font-weight:bold;
   font-size: 3.4rem;
+  font-size: 1.9rem;
+  outline:none!important;
+
+
   align-items:center;
 }
 
 input{
-  outline:none!important;
 }
 
 input::placeholder{
-  font-size: 1.9rem;
 }
 
 input:focus{
@@ -143,11 +145,16 @@ color:#737373;
     border: none;
     outline: none;
     background: transparent !important;
-    height: 2rem;
+    height:3rem;
     text-align: center;
     display: flex;
     font-weight: bold;
     font-size: 1.4rem;
+}
+
+.card-inner input::placeholder{
+  font-size: 2rem;
+  display: block!important;
 }
 .mobile_rate h5{
   text-align: left!important;

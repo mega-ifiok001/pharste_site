@@ -12,6 +12,7 @@ import f from '../../asset/f.png';
 import insta from '../../asset/insta.png';
 import w from '../../asset/w.png';
 import li from '../../asset/li.png';
+import NewsletterForm from './news-letter-form';
 function Footer() {
 
   return (
@@ -103,11 +104,15 @@ https://play.google.com/store/apps?hl=en_US&gl=US" target="_blank" rel="noopener
             <div className="court_2">
               <h1 className="title">Stay up to date </h1>
 
-              <form action="#">
+
+
+
+              <NewsletterForm/>
+              {/* <form action="#">
                 <input
                   placeholder="Enter your email" type="text" />
                 <button type="submit">Subscribe</button>
-              </form>
+              </form> */}
 
               
             <div className="linkers flex-column justify-content-start align-items-start"> 

@@ -77,24 +77,57 @@ const FAQs = () => {
            <div className={`faq-item ${activeIndex === 0 ? 'active' : ''}`} onClick={() => toggleFAQ(0)}>
                 <div className="d-flex align-items-center justify-content-space-around">
                     <img src={activeIndex === 0 ? dash : plus} className="toggle-icon" alt="" />
-                    <h2>Is there a free trial available?</h2>
+                    <h2>How does Transmitex fulfil customer transactions?
+                    </h2>
                 </div>
-                {activeIndex === 0 && <p className="faq-content">Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you
-                     up and running as soon as possible.</p>}
+                {activeIndex === 0 && <p className="faq-content">At Transmitex, we believe in personalised service. For this reason, we keep an open line of communication on our whatsapp lines to support our customers till their transactions are completed.</p>}
             </div>
             <div className={`faq-item ${activeIndex === 1 ? 'active' : ''}`} onClick={() => toggleFAQ(1)}>
                 <div className="d-flex align-items-center justify-content-space-around">
                     <img src={activeIndex === 1 ? dash : plus} className="toggle-icon" alt="" />
-                    <h2>Do you change my plan later</h2>
+                    <h2>When a customer places an exchange order on the website, how does Transmitex fulfil the order?</h2>
                 </div>
-                {activeIndex === 1 && <p className="faq-content">Our API is organized around using HTTP verbs and REST...</p>}
+                {activeIndex === 1 && <p className="faq-content">After we have received a customer’s exchange request, we encourage customers to reach us on whatsapp to receive updates on their order. We will also contact customers by email or whatsapp if we need more information or to give them an update on their transaction..</p>}
             </div>
             <div className={`faq-item ${activeIndex === 2 ? 'active' : ''}`} onClick={() => toggleFAQ(2)}>
                 <div className="d-flex align-items-center justify-content-space-around">
                     <img src={activeIndex === 2 ? dash : plus} className="toggle-icon" alt="" />
-                    <h2>What is your cancellation policy</h2>
+                    <h2>How long does it take to fulfil transaction?</h2>
                 </div>
-                {activeIndex === 2 && <p className="faq-content">You can find the full API Reference Documentation on our website...</p>}
+                {activeIndex === 2 && <p className="faq-content">In the absence of any delays from our partners (banks, payment systems). Transmitex will fulfil all transactions within two hours of receipt of the funds.</p>}
+            </div>
+
+            <div className={`faq-item ${activeIndex === 2 ? 'active' : ''}`} onClick={() => toggleFAQ(2)}>
+                <div className="d-flex align-items-center justify-content-space-around">
+                    <img src={activeIndex === 2 ? dash : plus} className="toggle-icon" alt="" />
+                    <h2>I sent naira to the Transmitex Nigeria account but the whatsapp agent says it has not been received. What should I do?</h2>
+                </div>
+                {activeIndex === 2 && <p className="faq-content">In instances where naira is not received, we urge customers to contact their bank to ascertain the cause of the issue. We will do our best to support our customers should this occur..</p>}
+            </div>
+
+            <div className={`faq-item ${activeIndex === 2 ? 'active' : ''}`} onClick={() => toggleFAQ(2)}>
+                <div className="d-flex align-items-center justify-content-space-around">
+                    <img src={activeIndex === 2 ? dash : plus} className="toggle-icon" alt="" />
+                    <h2>How can customers complete the verification</h2>
+                </div>
+                {activeIndex === 2 && <p className="faq-content">Customers can find the verification link on the Kyc page and in the menu. Customers just need to click on the link, upload a government-issued photo identification card and take a selfie.</p>}
+            </div>
+
+            <div className={`faq-item ${activeIndex === 2 ? 'active' : ''}`} onClick={() => toggleFAQ(2)}>
+                <div className="d-flex align-items-center justify-content-space-around">
+                    <img src={activeIndex === 2 ? dash : plus} className="toggle-icon" alt="" />
+                    <h2>How is customer information stored and used?</h2>
+                </div>
+                {activeIndex === 2 && <p className="faq-content">Customer data is protected using our topnotch safeguard measures. Customer information is treated with utmost confidentiality and is not sold or given out for any reason.</p>}
+            </div>
+
+
+            <div className={`faq-item ${activeIndex === 2 ? 'active' : ''}`} onClick={() => toggleFAQ(2)}>
+                <div className="d-flex align-items-center justify-content-space-around">
+                    <img src={activeIndex === 2 ? dash : plus} className="toggle-icon" alt="" />
+                    <h2>Does Transmitex handle money transfers to other countries aside Canada and Nigeria?</h2>
+                </div>
+                {activeIndex === 2 && <p className="faq-content">Currently, Transmitex only handles money remittance to Nigeria and Canada. Money service for other countries will be rolled out in the near future.</p>}
             </div>
            </div>
 
@@ -177,20 +210,20 @@ const ContactUs = () => {
 
 
                                 <div className="first">
-                                    <label htmlFor="f_name">Last Name</label><br/>
-                                    <input type="text" placeholder="last name" />
+                                    <label htmlFor="f_name">Email</label><br/>
+                                    <input type="text" placeholder="email" />
                                     </div>
 
 
                                     <div className="first">
-                                    <label htmlFor="f_name">Last Name</label><br/>
-                                    <input type="text" placeholder="last name" />
+                                    <label htmlFor="f_name">phone number</label><br/>
+                                    <input type="text" placeholder="phone number" />
                                     </div>
 
 
 
                                     <div className="first">
-                                    <label htmlFor="f_name">Last Name</label><br/>
+                                    <label htmlFor="f_name">Leave a Message</label><br/>
                                    <textarea name="message" id="message"  placeholder='Leave a message'></textarea>
                                     </div>
 

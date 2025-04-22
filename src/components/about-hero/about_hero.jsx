@@ -44,7 +44,7 @@ function AboutHero(){
         </div>
 
         <div className="col-md-6">
-            <h2 className="title_1">Why choose Pharste</h2>
+            <h2 className="title_1 " style={{textTransform:'uppercase'}}>Why choose Pharste</h2>
             <p className="typo_content_1"> Our goal is to eliminate outdated processes and provide a modern financial experience built for the digital economy.</p>
             <p className="typo_content_1">At Pharste, we believe that financial freedom should not be complicated—it should be accessible to everyone, regardless of where they are.</p>
             <p className="typo_content_1">We understand that financial freedom is more than just transactions—it's about having the flexibility, control, and confidence to manage your finances on your terms. That’s why Pharste is built to offer speed, security, and convenience, ensuring you stay

@@ -12,56 +12,164 @@ const TermsAndConditions = () => (
     <div className="Terms " style={{ marginTop: '6rem' }}>
         <h1 className='mt-5 text start'>Terms and Conditions</h1>
         <h2>Introduction</h2>
-        <p className="mt-2 text-start">
-            These docs will give you a deep dive into our full API Reference Documentation and how to seamlessly integrate our messaging channels
-            and verification functionalities into your product.
-        </p>
-
-        <br />
-
-        <h2>Basics</h2>
-        <p className="mt-2 text-start">
-            Our API is organised around using HTTP verbs and REST. Our API accepts and returns JSON formatted payload.
-        </p>
-        <p className='text-start'>We provide sample code snippets and API calls that can serve as guide during your integration process.
-        </p>
-        <p className='text-start'>We also advice running some tests using Postman. Postman is a collaboration platform for API development which makes testing endpoints easy. We have also provided a Postman Collection you can easily import to your postman and start testing.</p>
-
-        <br />
-
-        <h2>SDKs</h2>
-        <p className="mt-2 text-start">
-            Ship your products faster & in any language you are proficient in by using SDKs provided by our community of open source developers. You can submit & view available ones here.
-        </p>
-
-        <br />
-
-        <h2>API Endpoint</h2>
-        <p className="mt-2 text-start">
-            In order to use Termii's APIs, you need to first create an account for free at termii.com.
-        </p>
-        <br />
-
-        <h2>BASE URL</h2>
-        <p className="mt-2 text-start">
-            Your Termii account has its own base URL, which you should use in all API requests.
-            Your base URL can be found on your dashboard.
-        </p>
         <p>
-            The base URL is used to route your request to the appropriate "regulatory region" and to optimize traffic between data centers in the region.
-        </p>
-
-        <h2>Explore Products</h2>
-        <p className="mt-2 text-start">
-            These docs will give you a deep dive into our full API Reference Documentation and how to seamlessly integrate our messaging channels and verification functionalities into your product.
-        </p>
+    In this client agreement, we, us and our refers to 12080133 Canada Incorporated dba <strong>Pharste</strong> along with her employees, directors, successors, and assigns. The terms ‘you’ and ‘your’ refer to persons who have signed up to utilize the services prescribed in this agreement. Pharste is a registered Money Service Business and is regulated by the Financial Transaction and Report Analysis Centre of Canada (FINTRAC) with registration number <strong>M22889301</strong> to deal in money transfer and foreign exchange transactions.<br />
+    <br />
+    <br />
+    <br />
+    <strong>
+        General Provisions<br />
+        <br />
+    </strong>
+    <strong>A. </strong>By utilizing the service of Pharste, you accept and agree to the terms and conditions contained in this agreement. This is to ensure that we can provide you with the services that you need.<br />
+    <br />
+    <strong>B.</strong> Pharste exercise the right to alter the agreement to keep up with industry regulations and business demands. Except mandated by law, you will be informed of any changes made before they go into effect. All adjustment to this agreement will come into force upon publication. Continued usage of Pharste services after an update to this agreement constitutes automatic acceptance of the updated agreement.<br />
+    <br />
+    <strong>C. </strong>Changes made to this agreement comes into force after publication and will not affect previous usage of Pharste services.<br />
+    <br />
+    <strong>D. </strong>You agree to access Pharste services strictly for personal, non-commercial purposes. Pharste does not welcome third party deposits. You must only fund your wallet from a bank account or payment instrument set up in your name and this name must be the same as the verified name on your profile. Your access to Pharste services is non-transferable, non-exclusive and cannot be rented, leased, sold, lent, or sublicensed. Any acts that violate our intellectual property is strictly prohibited. Downloading, retrieving, and displaying Pharste website on a computer screen, printing pages, photocopy and storage of such pages as soft copy are allowed however the intellectual property in the service continues to be vested with Pharste.<br />
+    <br />
+    <strong>E.</strong> All website elements, social media pages are owned by us and our suppliers and protected by Canadian and trademark laws, international treaties and terms and conditions.<br />
+    <br />
+    <strong>F. </strong>Reproduction, modification, copying, distribution, transmission, display, publishing, or redistribution of the service is prohibited. Unauthorized use of Pharste materials can result in civil and criminal charges.<br />
+    <br />
+    <strong>G. </strong>Canada’s anti-money laundering policies mandate us to obtain, verify and record information about you. Therefore, you agree to furnish us with all relevant information and documents that we may ask for and in the service registration form before and after registration. <br />
+    <strong>
+        <br />
+        H.
+    </strong>
+    All information provided to Pharste must be accurate and current and no information withheld. All information must be updated promptly to ensure accuracy and completeness. Pharste can lawfully carry out necessary investigations, including using a third party to authenticate your identity as part of the registration process. <br />
+    <strong>
+        <br />
+        I.
+    </strong>
+    By reason of this agreement, you consent to Pharste making inquiries with third parties to authenticate any information that you supply.<br />
+    <strong>
+        <br />
+        J.
+    </strong>
+    Pharste reserves the right to suspend or terminate service in cases where it is proven or suspected that information provided is false, outdated, incomplete or misleading.<br />
+    <br />
+    <strong>K.</strong> To be eligible to access Pharste services, you must be 18 years of age, reside in one of the countries we provide money remittance services for, access Pharste services for your own personal use, not acting as a third party for remittance purposes, not listed on any sanctions list in any country, not a politically exposed person in any country, not ranked below Pharste’s anti-money laundering standards which is at our sole discretion.<br />
+    <br />
+    <strong>L. </strong>Pharste services are made available on an “as is” and “as available” basis, except as warranted in these terms of use, we expressly disclaim all warranties of any kind, whether express or implied or statutory, including, but not limited to the implied warranties of merchantability, fitness for a particular purpose, data accuracy and completeness and any warranties relating to non-infringement in the service. We shall not be responsible or liable for the authenticity, accuracy, completeness, errors, omission, typographic errors, disruption, delay, interruption, failure, deletion, defect of any information, research, reports, analysis, quotes etc. in this website or any part thereof. Also, we shall not cover any liability direct or indirect to you or any third party because of non-functioning of any equipment belonging to you, any third party or us. We shall not be responsible for any downtime of such equipment.<br />
+    <br />
+    <strong>M. </strong>You will defend, indemnify, and hold harmless Pharste, its parent company, affiliates, licensors, suppliers, issuer, third-party providers, respective shareholders, directors, officers, assigns and successors-in-interest from any and all liabilities, damages caused by any virus, personal injuries, loss of profits, data or other intangible, any damages arising from interruption, suspension or termination of service, including but not limited to direct, indirect, incidental, special, consequential or exemplary damages, whether such interruption, suspension or termination was justified or not, negligent or intentional, inadvertent or advertent, causes of action and cost arising out of or resulting from your use of Pharste services, your alleged or actual acts whether negligent or wilful, your omissions or those of your agents or employees, your failure to comply with this agreement and third party use of your account or services.<br />
+    <strong>
+        <br />
+        N.
+    </strong>
+    In no event will our liability for any claim, whether in contract, tort or any other theory of liability exceed one CAD. You also agree that your sole remedy under this Terms of Use is cancellation of the service.<br />
+    <strong>
+        <br />
+        O.
+    </strong>
+    You represent and warrant that all information that you provide regarding the Remittance payments is true, accurate and complete. When sending and/or receiving money, Pharste may rely on the registration information and remittance payment request information that you provide. You acknowledge that any mistakes in the information, including misidentification of Beneficiary(s), incorrect or inconsistent account names and numbers, or misspellings, are fully your responsibility and that Pharste shall have no liability for executing a payment based upon the inaccurate or incomplete information you provided.<br />
+    <br />
+    <strong>P. </strong>On receipt of your Instruction, you cannot cancel it. Notwithstanding this clause, we may, in our absolute discretion, attempt to reverse your Instruction if you have informed us that you wish us to do so. In some cases, we may have initiated an irreversible request for funds to be paid out to your receiver by a Service Provider or third-party payment provider. If this is the case, we cannot guarantee that the reversal will be successful. PLEASE NOTE: We apply a charge of 3 CAD (or equivalent in other currencies) to reverse your Instruction.<br />
+    <br />
+    <strong>Q. </strong>Pharste may also have charges that would apply to money transfers. These fees will be clearly stated and explained and can change at the sole discretion of Pharste. <br />
+    <br />
+    <strong>R. </strong>Pharste may offer you the opportunity to earn rewards for activities such as referring other people to Pharste or transferring a higher amount. Pharste reserves the right at any time to modify, suspend or cancel the rewards without notice to you.<br />
+    <br />
+    <strong>S. </strong>We introduce programs such as these in good faith and expect the same good faith in return. Please note that we may withhold rewards where we believe customers are acting in bad faith or otherwise acting contrary to the intent of this program. To be clear, commercializing, advertising, publishing, mass distributing, selling, or paying for use of referral links is not appropriate and will therefore not be honoured. We cannot cover every disreputable scenario, nor will we attempt to, but we do promise to be fair and reasonable.<br />
+    <br />
+    <strong>T. </strong>If you suggest a feature or adjustment to Pharste Platform, or if you submit to us any marketing material (a &quot;Suggestion&quot;) then you agree that we may make use of the Suggestion and disclaim any intellectual property rights, including any moral rights, to any resulting intellectual property.<br />
+    <br />
+    <strong>U.</strong> Pharste is committed to the privacy of customers but as a regulated business we may be required to share your personal information with FINTRAC and other regulatory agencies or law enforcement. We may also disclose your personal information to credit bureaus, anti-money laundering service providers, or other identity verification partners as part of opening your Account or for periodic checks to ensure that we have accurate information about you. We may also disclose your personal information to financial institutions or other financial intermediaries. Our commitment to privacy is further explained in the Pharste Privacy Policy which forms part of this agreement.<br />
+    <br />
+    <strong>V. </strong>Either party may terminate this agreement for any reason or for no reason without notice and without further liability.<br />
+    <br />
+    <strong>X. </strong>We may take any action we consider applicable to implement this Agreement, including employing any third-party agent to collect any amount owing, taking steps to enforce its rights against your assets, such as attaching any amount owing to those assets, and commencing legal proceedings.<br />
+    <br />
+    <strong>Y. </strong>This Agreement will be governed by and construed in accordance with the laws of the Province of Ontario, and the parties submit to the jurisdiction of the Courts and Tribunals of Ontario, Canada.This is the entire agreement between Pharste and you. This agreement supersedes any other understandings or contracts, and you represent that in entering into this agreement you have not relied on any representations made by Pharste.<br />
+    <br />
+    <strong>Z.</strong> For Questions, notices, and requests for further information, reach us at:<br />
+    Chat us on WhatsApp +16479174197<br />
+    Call at +16479174197<br />
+    Email at support@pharste.com
+</p>
     </div>
 );
 
 const PrivacyPolicy = () => (
-    <div className="mx-3" style={{ marginTop: '6rem' }}>
-        <h1>Privacy Policy</h1>
-        <p>Loading...</p>
+    <div className="Terms " style={{ marginTop: '6rem' }}>
+        <h1 className='mt-5 text start'>Terms and Conditions</h1>
+        <h2>Introduction</h2>
+        <p className="mt-2 text-start">
+        As a regulated money service business, we handle personal information of our customers with extreme care even going beyond our legal obligations. As a Pharste user, we take extra steps to ensure that customer data is kept very secured and not put to any unexpected use. We take very seriously our resolve to protect customer data and privacy and utilize customer information with transparency.
+        </p>
+
+        <br />
+
+
+        <p className="mt-2 text-start">
+        By visiting this website, our partners’ websites, or giving us your personal information when you peruse our website, set up an account, request currency exchange, partake in a competition, promotion or survey or when you contact one of our employees, for example by telephone, chat or email, you expressly consent to our use and disclosure of your personal information and direct us to do so in the manner described in this Privacy Policy.
+        </p>
+        <p className='text-start'>Please read this notice carefully, together with our Terms and Conditions and any other documents referred to in it. Here we set out the basis on which any information we collect about you or from you, or that you provide us with, will be processed by us and other parties in providing you with the services that you need through the website, apps or over the phone. Pharste is committed to making use of your information in accordance to this privacy policy. In circumstances where there is conflict, the terms of use shall stand supreme.
+        </p>
+        <p className='text-start'>We also advice running some tests using Postman. Postman is a collaboration platform for API development which makes testing endpoints easy. We have also provided a Postman Collection you can easily import to your postman and start testing.</p>
+         <p><b>a).</b> Children are not eligible to use Pharste services and are therefore not allowed to submit any information to us.
+<b>b).</b> Pharste is a Canadian money remittance company authorized to deal in foreign exchange and money transferring activities. In this Policy, "You" and “your" are references to a user of our website and/or of our Mobile Apps.
+</p>
+
+<p><b>c)</b>. We, or our third-party service providers on our behalf collects the following personal information about our customers as follows:
+— Contact information (e.g., name, address, phone number, email); and,
+— Information that we are required by law to collect (AML/CTF) (e.g., occupation as required by law); and,
+— Identity documents as required by law (e.g., Government issued identity card); and,
+— Photo(s) to compare against provided identity documents (e.g., selfie); and,
+— Network identifiers (e.g., IP address or browser information, login information, time zone setting, operating system and platform); and,
+— Personal information that is requested from you for the use our website or app.
+— Details of the transactions you carry out when using our Services, including geographic location from which the transaction originates.
+</p>
+
+<p><b>d).</b> We may collect and store any information you provide to us when you use Pharste Services, including when you add information on our website, or social platforms, add or update your account information, or dispute resolutions, or when you otherwise correspond with us regarding our services, or other social media functions on our website, enter a competition, promotion or survey, and when you make us aware of a problem with our services. The information you give us may include your name, address, e-mail address, phone number, financial information (including bank account information), payment reason, geographical location, personal description and photograph.
+We may also need additional commercial and/or identification information from you e.g., if you send or receive certain high-value or high-volume transactions or as needed to comply with our anti-money laundering obligations under applicable law.
+</p>
+
+
+<p><b>e).s</b>We may also obtain information about you from third parties such as identity verification services and credit bureaus. This process is known as a “soft pull”. A soft pull is restricted only to Name, Address, and Date of Birth, to match the information found on the credit bureaus’ database. The nature of the pull is that only you, as the owner of your credit bureau report can see this inquiry. It does not affect your credit score.
+</p>
+
+
+<p><b>f).</b> If you log in to our services using your social media account (for example, Facebook, Instagram) we will receive relevant information that is necessary to enable our Services and to authenticate you. The social media network will provide us with access to certain information that you have provided to them, including your name, profile image and e-mail address. We use such information, together with any other information you directly provide to us when registering or using our Services, to create your account and to communicate with you about the information, products, and services that you request from us. You may also be able to specifically request that we have access to the contacts in your social media account, so that you can send a referral link to your family and friends. We will use, disclose, and store all this information in accordance with this privacy policy.
+</p>
+
+<p><b>g).</b> To help protect you from fraud and misuse of your personal information, we may collect information about you and your interactions with Pharste Services.
+</p>
+
+
+<p>
+<b>h).</b> Our primary purpose in obtaining personal information is to provide you with a protected, smooth, proficient, and personalised money exchange experience. We may use the following information to:
+— Provide Pharste money transfer Services and customer support.
+— Process transactions and send you notices (email, text, chats) about your transactions.
+— Verify your identity, including during account creation and password reset processes.
+— Manage risk, or to detect, prevent, and/or remediate fraud or other potentially prohibited or illegal activities.
+— Detect, prevent, or remediate violations of policies or applicable user agreements.
+— Improve Pharste Services by customizing your user experience.
+— Gauge the functioning of Pharste Services and improve their content and layout.
+— Direct and protect our information technology infrastructure.
+— Provide targeted marketing and advertising, provide service update notices, and deliver promotional offers based on your communication preferences.
+— Contact you at any telephone number, by placing a voice call or through text (SMS) or WhatsApp or email messaging, as authorized by our User Agreement.
+— Perform creditworthiness and solvency checks, compare information for accuracy and verify it with third parties.
+
+</p>
+
+
+<p><b>i).</b> We do not sell or rent your personal information to third parties for their marketing purposes without your explicit consent. We may combine your personal information with information we collect from other companies and use it to improve and personalize Pharste Services, content, and advertising.
+</p>
+
+
+<p><b>j).</b> Most personal information that Pharste collects is processed by our own personnel, but for some purposes, we rely on third parties. We collect and process personal information using Pharste personnel who have received training in the importance of security, confidentiality, and privacy. We make use of contractors, who are legally bound to confidentiality and are also trained on security, confidentiality, and privacy.</p>
+      
+  <p><b>k).</b> We design our systems with your security and privacy in mind. We work to protect the security of your personal information during transmission by using encryption protocols and software. We maintain physical, electronic, and procedural safeguards in connection with the collection, storage, and disclosure of your personal information. Our security procedures mean that we may ask you to verify your identity before we disclose personal information to you. It is important for you to protect against unauthorized access to your account or password. We recommend using a unique password for your Pharste account that is not utilized for other online accounts. Be sure to sign off when you finish using a shared computer.</p>    
+     <p><b>l).</b> We want to have accurate information about our customers and users, and we want you to be able to access the information we have collected about you. You can write to us to gain access to your personal information. We require customers and users to clearly demonstrate who they are before divulging personal information because we are mindful of attempts to impersonate people to gain access to their personal information inappropriately.
+     </p> 
+
+     <p><b>m).</b> If you would like to correct an error regarding your personal information, please use the provided functionality within the Pharste website or write to us with an explanation of the correction. As a regulated financial institution, we keep your personal information to enable your continued use of Pharste Services and storage of your data extends beyond the closure of your account with us, as it is required by Law. Your data is only accessed internally on a need-to-know basis, which is done only if necessary. Pharste will always delete data that is no longer required by a relevant law or jurisdiction in which we operate.</p>  <br />
+
+
+
     </div>
 );
 

@@ -120,7 +120,7 @@ function Banner(){
                                  <h1 className="banner_content_title">Secure & Reliable</h1>
                                  <p className="banner_content_paragraph">Enjoy bank-level security without compromising on speed. </p>
                               <img src={src3} className='secure_img img-fluid' alt="bill payment image " 
-                              style={{width:'10%', marginBottom:'-9rem'}}/>
+                              style={{width:'20%', marginBottom:'0rem'}}/>
                                </div>
 
               </div>
@@ -138,19 +138,19 @@ function Banner(){
           <div className="row mt-4">
             <div className="col-lg-6 p-3">
               <div className="writeing">
-                <h1>✅ Advanced Data Protection</h1>
+                <h1> Advanced Data Protection</h1>
                 <p>Your transactions are encrypted end-to-end, ensuring your information stays private and secure.</p>
               </div>
 
               <div className="writeing">
-                <h1>🚀 Real-Time Fraud Monitoring</h1>
+                <h1> Real-Time Fraud Monitoring</h1>
                 <p>AI-powered fraud detection continuously scans for suspicious activities, keeping your money safe from threats.</p>
               </div>
 
 
 
               <div className="writeing">
-                <h1>🏦 Regulatory Compliance</h1>
+                <h1>Regulatory Compliance</h1>
                 <p>We adhere to the highest financial security standards, meeting global compliance requirements to protect your funds.</p>
               </div>
             </div>

@@ -11,12 +11,17 @@ import protect from "../../asset/protect.png";
 import phone_bg from "../../asset/phone-bg.png";
 import big_chart from "../../asset/bg-chart.png";
 import bg from "../../asset/bg.png";
-import acc_setup_1 from "../../asset/account_setup_1.png";
-import acc_setup_2 from "../../asset/account_setup_2.png";
-import acc_setup_3 from "../../asset/account_setup_3.png";
+import acc_setup_1 from "../../asset/one.png";
+import acc_setup_2 from "../../asset/two.png";
+import acc_setup_3 from "../../asset/three.png";
 import card_1 from "../../asset/card_1.png";
 import card_2 from "../../asset/card_2.png";
 import card_3 from "../../asset/card_3.png";
+import first from '../../asset/background.png';
+import second from '../../asset/pro-tect.png';
+import third from '../../asset/more.png';
+import four from '../../asset/four.png';
+import six from '../../asset/six.png';
 
 import Exchange from "../exchange/echange";
 
@@ -114,11 +119,13 @@ function Money() {
           <div className=" tab" style={{marginTop:'-1.7rem'}} >
             <div className="row  ">
               <div className="col-md-5 mt-3 from-left animate-on-scroll ">
-                <div className="content">
+                {/* <div className="content">
                   <h2>Send Money At The <br /> Speed Of Now</h2>
                   <p>Transfer funds instantly to anyone, anywhere. What used to take days now happens in seconds.</p>
                   <img src={tab} className="tab-img" alt="Tab Image" />
-                </div>
+                </div> */}
+                  <img src={first} className="img-fluid" alt="" />
+
               </div>
               <div className="col-md-7 mt-3 from-right animate-on-scroll">
                 <img src={fine__person} className="img-fluid" alt="Responsive Image" />
@@ -133,14 +140,16 @@ function Money() {
       <img src={protect} className="img-fluid" alt="Responsive Image" />
     </div>
     <div className="col-md-5 mt-3 from-right animate-on-scroll order-md-1">
-      <div className="content">
+      {/* <div className="content">
         <h2>Protection That Never <br /> Sleeps</h2>
         <p>
           Rest easy knowing your transactions are protected by
           military-grade encryption and advanced fraud monitoring.
         </p>
-        <img src={phone_bg} className="tab-img" alt="Tab Image" />
-      </div>
+      </div> */}
+
+      <img src={second} className="img-fluid" alt="Tab Image" />
+
     </div>
   </div>
 </div>
@@ -149,13 +158,14 @@ function Money() {
           <div className="mt-3 tab">
             <div className="row">
               <div className="col-md-5 mt-3 from-left animate-on-scroll">
-                <div className="content">
+                {/* <div className="content">
                   <h2>More For You, Less For <br /> Fees</h2>
                   <p>
                     Say goodbye to hidden charges and confusing fee structures. Our transparent pricing means you'll always know exactly what you're paying.
                   </p>
-                  <img src={phone_bg} className="tab-img" alt="Tab Image" />
-                </div>
+                </div> */}
+                <img src={third} className="img-fluid" alt="Tab Image" />
+
               </div>
               <div className="col-md-7 mt-3 from-right animate-on-scroll">
                 <img src={big_chart} className="img-fluid" alt="Responsive Image" />
@@ -170,14 +180,15 @@ function Money() {
       <img src={bg} className="img-fluid" alt="Responsive Image" />
     </div>
     <div className="col-md-5 mt-3 from-right animate-on-scroll">
-      <div className="content">
+    <img src={four} className=" img-fluid" alt="Tab Image" />
+
+      {/* <div className="content">
         <h2>Grow Your Money <br /> Automatically</h2>
         <p>
           Set aside funds effortlessly with automated saving tools. Create goals,
           schedule regular transfers, and watch your savings grow.
         </p>
-        <img src={phone_bg} className="tab-img" alt="Tab Image" />
-      </div>
+      </div> */}
     </div>
   </div>
 </div>

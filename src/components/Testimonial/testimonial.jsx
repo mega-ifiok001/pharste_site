@@ -84,64 +84,29 @@ const Testimonial = () => {
      </p>
 
     <div className="testimonials-row">
-      <div className="testimonial-container">
-        <div className="testimonial-content">
-          {testimonials.map((testimonial, index) => (
+  {[0, 1, 2].map((col) => (
+    <div className="testimonial-container" key={col}>
+      <div className="testimonial-content">
+        {testimonials
+          .slice(col * Math.ceil(testimonials.length / 3), (col + 1) * Math.ceil(testimonials.length / 3))
+          .map((testimonial, index) => (
             <div className="testimonial-item" key={index}>
               <div className="testimonial_header">
-              <img src={testimonial.profile} alt="" />
+                <img src={testimonial.profile} alt={testimonial.author} />
                 <div className="profile_tag">
                   <h2>{testimonial.author}</h2>
                   <p>{testimonial.title}</p>
                 </div>
               </div>
-             <div>
-             {testimonial.stars}
-             </div>
+              <div>{testimonial.stars}</div>
               {testimonial.text}
             </div>
           ))}
-        </div>
-      </div>
-      <div className="testimonial-container">
-        <div className="testimonial-content">
-          {testimonials.map((testimonial, index) => (
-            <div className="testimonial-item" key={index}>
-               <div className="testimonial_header">
-              <img src={testimonial.profile} alt="" />
-              <div className="profile_tag">
-                  <h2>{testimonial.author}</h2>
-                  <p>{testimonial.title}</p>
-                </div>
-              </div>
-              <div>
-             {testimonial.stars}
-             </div>
-              {testimonial.text}
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="testimonial-container">
-        <div className="testimonial-content">
-          {testimonials.map((testimonial, index) => (
-            <div className="testimonial-item" key={index}>
-               <div className="testimonial_header">
-              <img src={testimonial.profile} alt="" />
-              <div className="profile_tag">
-                  <h2>{testimonial.author}</h2>
-                  <p> {testimonial.title}</p>
-                </div>
-              </div>
-              <div>
-             {testimonial.stars}
-             </div>
-              {testimonial.text}
-            </div>
-          ))}
-        </div>
       </div>
     </div>
+  ))}
+</div>
+
   </>
   );
 };

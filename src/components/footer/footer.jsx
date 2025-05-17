@@ -60,8 +60,8 @@ function Footer() {
               <div className="court_1">
                 <h1>Head Office (Canada)</h1>
             <p>
-            Pharste Inc 600 Matheson Blvd W,
-                  Mississauga, ON L5R 4B8, Canada
+            Pharste Inc 3091 Dufferin Street,
+                North York, ON M6A 0C4
                       © 2025 Pharste
             </p>
               </div>

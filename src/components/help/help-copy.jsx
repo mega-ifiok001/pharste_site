@@ -248,7 +248,7 @@ const FAQs = () => {
 
 const ContactUs = () => {
     const addresses = [
-        { name: "Melbourne", address: "100 founders street, Melbourne VIC 3000 ALI", lat: -37.8136, lng: 144.9631 },
+        { name: "North York", address: "3091 Dufferin street, ON M6A 0C4", lat: -37.8136, lng: 144.9631 },
         { name: "Sydney", address: "100 george street, Sydney NSW 2000 ALI", lat: -33.8688, lng: 151.2093 },
         { name: "Byron Bay", address: "100 johnson street, Byron Bay NSW 2481 AU", lat: -28.6434, lng: 153.6120 },
     ];

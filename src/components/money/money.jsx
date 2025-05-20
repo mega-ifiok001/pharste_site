@@ -17,7 +17,7 @@ import acc_setup_3 from "../../asset/three.png";
 import card_1 from "../../asset/card_1.png";
 import card_2 from "../../asset/card_2.png";
 import card_3 from "../../asset/card_3.png";
-import first from '../../asset/background.png';
+import first from '../../asset/Background.png';
 import second from '../../asset/pro-tect.png';
 import third from '../../asset/more.png';
 import four from '../../asset/four.png';

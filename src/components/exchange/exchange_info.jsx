@@ -9,6 +9,59 @@ const Ex_info=()=>{
 
 
  
+   useEffect(() => {
+     const fetchExchangeRate = async () => {
+       try {
+         const res = await fetch('https://api.coderigi.co/api/rates');
+         const json = await res.json();
+ 
+         if (json.status && json.data) {
+           setExchangeData(json.data);
+ 
+         
+ 
+           const rateValue = json.data[fromCurrency]?.[toCurrency];
+           console.log(`${fromCurrency} → ${toCurrency} rate:`, rateValue);
+ 
+           if (rateValue != null) setRate(rateValue);
+           else setRate(null);
+ 
+         }
+       } catch (error) {
+         console.error('Failed to fetch exchange rate:', error);
+         setRate(null);
+       }
+     };
+ 
+     fetchExchangeRate();
+   }, [fromCurrency, toCurrency]);
+ 
+ 
+ 
+   useEffect(() => {
+     if (!amount || !rate) {
+       setConverted('');
+       return;
+     }
+     const result = parseFloat(amount) * rate;
+     setConverted(result.toFixed(2));
+   }, [amount, rate]);
+ 
+   const handleAmountChange = (e) => {
+     const raw = e.target.value.replace(/[^\d.]/g, '');
+     setAmount(raw);
+   };
+   const handleFromChange = (e) => {
+     const newFrom = e.target.value;
+     setFromCurrency(newFrom);
+ 
+     // Automatically switch toCurrency to the other currency
+     if (newFrom === 'NGN') setToCurrency('CAD');
+     else if (newFrom === 'CAD') setToCurrency('NGN');
+   };
+ 
+   const handleToChange = (e) => setToCurrency(e.target.value);
+ 
 
     return(
         <>

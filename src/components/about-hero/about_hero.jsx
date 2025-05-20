@@ -7,11 +7,14 @@ import billPay from'../../asset/bill_payment.png';
 import p2p from '../../asset/p2p_trade.png';
 import Header from '../header/header';
 import smileyFace from '../../asset/smiley_face.png';
+import Ex_info from '../exchange/exchange_info.jsx';
+
 function AboutHero(){
 
     return(
 <>
   <div className=" about_hero">
+    <Ex_info/>
         <Header/>
         <div className="d-flex align-items-center justify-content-center box_">
             <h1 className="title">
@@ -64,7 +67,7 @@ function AboutHero(){
 
       
             <div className="row g-3  mt-4">
-                <div className="col-sm-6 w-100%">
+                <div className="col-sm-3 w-100%">
                   <div className="banner_content">
                     <h1 className="banner_content_title">Transparency</h1>
                     <p className="banner_content_paragraph">No hidden fees, no fine-print- just honest <br></br> service.</p>
@@ -72,11 +75,27 @@ function AboutHero(){
                   </div>
                 </div>
 
-                <div className="col-sm-6">
+                <div className="col-sm-3">
                 <div className="banner_content ">
                     <h1 className="banner_content_title">Security</h1>
                     <p className="banner_content_paragraph">Your financial safety is our non-negotiable priority. </p>
                  <img src={billPay} alt="bill payment image " />
+                  </div>
+                </div>
+
+                  <div className="col-sm-3 w-100%">
+                  <div className="banner_content">
+                    <h1 className="banner_content_title">Accessibility</h1>
+                    <p className="banner_content_paragraph">Financial tools should work for everyone, <br/> everywhere.</p>
+                 <img src={p2p} alt="p2p transaction pic" />
+                  </div>
+                </div>
+
+                  <div className="col-sm-3">
+                <div className="banner_content ">
+                    <h1 className="banner_content_title">Innovation</h1>
+                    <p className="banner_content_paragraph">We constantly evolve to serve you better. </p>
+                 <img src={bankLocker} alt="bill payment image " />
                   </div>
                 </div>
             </div>
@@ -88,21 +107,9 @@ function AboutHero(){
 
 
             <div className="row g-3 mt-4">
-                <div className="col-sm-6 w-100%">
-                  <div className="banner_content">
-                    <h1 className="banner_content_title">Accessibility</h1>
-                    <p className="banner_content_paragraph">Financial tools should work for everyone, <br/> everywhere.</p>
-                 <img src={p2p} alt="p2p transaction pic" />
-                  </div>
-                </div>
+              
 
-                <div className="col-sm-6">
-                <div className="banner_content ">
-                    <h1 className="banner_content_title">Innovation</h1>
-                    <p className="banner_content_paragraph">We constantly evolve to serve you better. </p>
-                 <img src={bankLocker} alt="bill payment image " />
-                  </div>
-                </div>
+              
             </div>
      
   </section>

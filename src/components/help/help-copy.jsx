@@ -7,6 +7,8 @@ import Header from '../header/header';
 import emailjs from "@emailjs/browser";
 
 import plus from '../../asset/plus.png';
+import Ex_info from '../exchange/exchange_info.jsx';
+
 
 const TermsAndConditions = () => (
     <div className="Terms " style={{ marginTop: '6rem' }}>
@@ -94,7 +96,7 @@ const TermsAndConditions = () => (
 
 const PrivacyPolicy = () => (
     <div className="Terms " style={{ marginTop: '6rem' }}>
-        <h1 className='mt-5 text start'>Terms and Conditions</h1>
+        <h1 className='mt-5 text start'>Privacy Policy</h1>
         <h2>Introduction</h2>
         <p className="mt-2 text-start">
         As a regulated money service business, we handle personal information of our customers with extreme care even going beyond our legal obligations. As a Pharste user, we take extra steps to ensure that customer data is kept very secured and not put to any unexpected use. We take very seriously our resolve to protect customer data and privacy and utilize customer information with transparency.
@@ -187,15 +189,15 @@ const FAQs = () => {
                 <div className={`faq-item ${activeIndex === 0 ? 'active' : ''}`} onClick={() => toggleFAQ(0)}>
                     <div className="d-flex align-items-center justify-content-space-around">
                         <img src={activeIndex === 0 ? dash : plus} className="toggle-icon" alt="" />
-                        <h2>How does Transmitex fulfil customer transactions?
+                        <h2>How does Pharste fulfil customer transactions?
                         </h2>
                     </div>
-                    {activeIndex === 0 && <p className="faq-content">At Transmitex, we believe in personalised service. For this reason, we keep an open line of communication on our whatsapp lines to support our customers till their transactions are completed.</p>}
+                    {activeIndex === 0 && <p className="faq-content">At Pharste, we believe in personalised service. For this reason, we keep an open line of communication on our whatsapp lines to support our customers till their transactions are completed.</p>}
                 </div>
                 <div className={`faq-item ${activeIndex === 1 ? 'active' : ''}`} onClick={() => toggleFAQ(1)}>
                     <div className="d-flex align-items-center justify-content-space-around">
                         <img src={activeIndex === 1 ? dash : plus} className="toggle-icon" alt="" />
-                        <h2>When a customer places an exchange order on the website, how does Transmitex fulfil the order?</h2>
+                        <h2>When a customer places an exchange order on the website, how does Pharste fulfil the order?</h2>
                     </div>
                     {activeIndex === 1 && <p className="faq-content">After we have received a customer’s exchange request, we encourage customers to reach us on whatsapp to receive updates on their order. We will also contact customers by email or whatsapp if we need more information or to give them an update on their transaction..</p>}
                 </div>
@@ -204,13 +206,13 @@ const FAQs = () => {
                         <img src={activeIndex === 2 ? dash : plus} className="toggle-icon" alt="" />
                         <h2>How long does it take to fulfil transaction?</h2>
                     </div>
-                    {activeIndex === 2 && <p className="faq-content">In the absence of any delays from our partners (banks, payment systems). Transmitex will fulfil all transactions within two hours of receipt of the funds.</p>}
+                    {activeIndex === 2 && <p className="faq-content">In the absence of any delays from our partners (banks, payment systems). Pharste will fulfil all transactions within two hours of receipt of the funds.</p>}
                 </div>
 
                 <div className={`faq-item ${activeIndex === 2 ? 'active' : ''}`} onClick={() => toggleFAQ(2)}>
                     <div className="d-flex align-items-center justify-content-space-around">
                         <img src={activeIndex === 2 ? dash : plus} className="toggle-icon" alt="" />
-                        <h2>I sent naira to the Transmitex Nigeria account but the whatsapp agent says it has not been received. What should I do?</h2>
+                        <h2>I sent naira to the Pharste Nigeria account but the whatsapp agent says it has not been received. What should I do?</h2>
                     </div>
                     {activeIndex === 2 && <p className="faq-content">In instances where naira is not received, we urge customers to contact their bank to ascertain the cause of the issue. We will do our best to support our customers should this occur..</p>}
                 </div>
@@ -235,9 +237,9 @@ const FAQs = () => {
                 <div className={`faq-item ${activeIndex === 2 ? 'active' : ''}`} onClick={() => toggleFAQ(2)}>
                     <div className="d-flex align-items-center justify-content-space-around">
                         <img src={activeIndex === 2 ? dash : plus} className="toggle-icon" alt="" />
-                        <h2>Does Transmitex handle money transfers to other countries aside Canada and Nigeria?</h2>
+                        <h2>Does Pharste handle money transfers to other countries aside Canada and Nigeria?</h2>
                     </div>
-                    {activeIndex === 2 && <p className="faq-content">Currently, Transmitex only handles money remittance to Nigeria and Canada. Money service for other countries will be rolled out in the near future.</p>}
+                    {activeIndex === 2 && <p className="faq-content">Currently, Pharste only handles money remittance to Nigeria and Canada. Money service for other countries will be rolled out in the near future.</p>}
                 </div>
             </div>
 
@@ -417,6 +419,7 @@ function HelpCopy() {
 
     return (
         <>
+                <Ex_info/>
 
             <div className=" container help mt-5">
                 < Header />

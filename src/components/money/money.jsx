@@ -10,7 +10,7 @@ import tab from "../../asset/tab_img.png";
 import protect from "../../asset/protect.png";
 import phone_bg from "../../asset/phone-bg.png";
 import big_chart from "../../asset/bg-chart.png";
-import bg from "../../asset/bg.png";
+import bg from "../../asset/container.png";
 import acc_setup_1 from "../../asset/one.png";
 import acc_setup_2 from "../../asset/two.png";
 import acc_setup_3 from "../../asset/three.png";
@@ -73,6 +73,19 @@ function Money() {
 
   return (
     <>
+     {/* Final Section */}
+      <div className="account_setup container-fluid">
+        <div className="testimonials-text animate-on-scroll">
+          <h1 className="testimonials-text">No Fees. One World.</h1>
+        </div>
+
+        <p className="animate-on-scroll">
+          Need to send money across the world? Do it with Pesa. Relocating? Get started with Pesa. <br />
+          You'll enjoy $0 fees on every transfer - no hidden costs or surprises.
+        </p>
+
+        <Exchange />
+      </div>
       {/* Trusted Section */}
 
       <div className=" animate-on-scroll  testimonials-text mt-4">
@@ -233,19 +246,7 @@ function Money() {
         </div>
       </div>
 
-      {/* Final Section */}
-      <div className="account_setup container-fluid">
-        <div className="testimonials-text animate-on-scroll">
-          <h1 className="testimonials-text">No Fees. One World.</h1>
-        </div>
-
-        <p className="animate-on-scroll">
-          Need to send money across the world? Do it with Pesa. Relocating? Get started with Pesa. <br />
-          You'll enjoy $0 fees on every transfer - no hidden costs or surprises.
-        </p>
-
-        <Exchange />
-      </div>
+     
     </>
   );
 }

@@ -20,6 +20,9 @@ import effort from '../../asset/effort.png';
 import card_1 from "../../asset/card_1.png";
 import card_2 from "../../asset/card_2.png";
 import card_3 from "../../asset/card_3.png";
+
+import Ex_info from '../exchange/exchange_info.jsx';
+
 function Hero(){
 
     useEffect(() => {
@@ -48,6 +51,7 @@ function Hero(){
 
         <>
         <div className="mt-5 feature-container  ">
+          <Ex_info/>
         <Header/>
 
             <h1 className='display-1 display-md-2 display-sm-4  fs-md-3 fs-sm-5' style={{marginTop:'5rem'}}>Fast, Secure and Hassle-Free <br/> Money Transfer </h1>

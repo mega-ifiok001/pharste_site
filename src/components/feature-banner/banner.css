@@ -23,7 +23,7 @@ font-size: 17px;
 line-height: 150%;
 letter-spacing: 0px;
 vertical-align: middle;
-color: #605D64;
+color: #605D64!important;
 }
 
 .banner-header h1{
@@ -67,7 +67,7 @@ text-align: start;
 font-size: 18px;
 line-height: 150%;
 letter-spacing: 0px;
-color:#322F35;
+color:#605D64;
 }
 
 

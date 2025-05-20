@@ -112,7 +112,7 @@ color:#737373;
 }
 
 
-@media screen and (max-width:425px){
+@media screen and (max-width:925px){
 
   .desktop_rate{
     display: none;
@@ -131,14 +131,18 @@ color:#737373;
 }
 
 .mobile_rate  .form-select {
-  width:30%;
+  width:100%!important;
 }
 
 .mobile_swap{
-  display:flex;
+  display:flex!important;
   width:100%;
   align-items:center!important;
-  justify-content:center;
+  justify-content:center!important;
+}
+
+.mobile_swap p{
+  height:100%!important;
 }
 
   .card-inner input {

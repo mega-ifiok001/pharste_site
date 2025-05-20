@@ -93,7 +93,7 @@ function Footer() {
               <h6><b className='text-white text-start'>Quick Links</b></h6>
               <ul>
                 <Link><li>Home</li></Link>
-                <Link><li>Features</li></Link>
+                <Link><li>Services</li></Link>
                 <Link><li >Pricing</li> </Link>
                 <Link><li>Blog</li></Link>
                 <Link><li>About </li></Link>

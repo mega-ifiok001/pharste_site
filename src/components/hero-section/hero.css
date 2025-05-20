@@ -102,10 +102,17 @@ vertical-align: middle;
   object-fit: contain;
 }
 
+
+
+
 /* Responsive Design */
 
 /* Tablets (max-width: 768px) */
 @media screen and (max-width: 768px) {
+
+  /* .home_flow{
+    margin-top:.7rem;
+  } */
   .hero_content{
     margin-top:17%;
   }

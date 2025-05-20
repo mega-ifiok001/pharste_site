@@ -1,23 +1,28 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./hero.css";
 // import Hero_bg from "../../asset/heroBg.png";
 import Header from '../../components/header/header.jsx'
 import Band from '../../asset/band.png'
 import Google from '../../asset/google.png';
 import Apple from '../../asset/apple.png';
+import Exchange from '../exchange/echange.jsx';
+import Ex_info from '../exchange/exchange_info.jsx';
 // import RoundImg from '../../asset/Container.png';
 function Hero() {
+ 
 
 
   return (
 
     <>
 
-      <div className="hero_container">
+      <div className="hero_container ">
+    <Ex_info/>
+
         <Header />
 
-        <div className="hero_content">
-          <img src={Band} className=" band_img" alt="band" />
+    
+            <div className="hero_content">
           <div className="hero_text">
             <h1>
               Take Control of <br />
@@ -48,6 +53,8 @@ function Hero() {
       </div>2
     </div> */}
         </div>
+          
+          
 
       </div>
 

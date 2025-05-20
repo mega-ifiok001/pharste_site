@@ -73,6 +73,7 @@ const CurrencyConverter = () => {
 
   return (
     <>
+ 
       <div className="container-md text-light min-vh-auto desktop_rate">
         <div className="row w-70 p-3 exc" style={{ background: '#000', borderRadius: '40px' }}>
           <div className="col-md-5 mb-4">
@@ -80,12 +81,15 @@ const CurrencyConverter = () => {
             <div className="card text-light p-3">
               <div className="card-inner d-flex">
                 <select
-                  className="form-select custom-select w-25"
+                  className="form-select custom-select w-100"
                   value={fromCurrency}
                   onChange={handleFromChange}
                 >
-                  <option value="NGN">🇳🇬 NGN</option>
-                  <option value="CAD">🇨🇦 CAD</option>
+                  <option value="CAD" className='!text-white'><span 
+                   style={{
+                  color:'white'
+                  }}>CAD</span></option>
+                  <option value="NGN"> NGN</option>
                 </select>
 
                 <input
@@ -119,8 +123,8 @@ const CurrencyConverter = () => {
                   value={toCurrency}
                   onChange={handleToChange}
                 >
-                  <option value="NGN">🇳🇬 NGN</option>
-                  <option value="CAD">🇨🇦 CAD</option>
+                  <option value="NGN"> NGN</option>
+                  <option value="CAD"> CAD</option>
                 </select>
                 <input
                   type="text"
@@ -166,44 +170,62 @@ const CurrencyConverter = () => {
         <h5 className="text-start">If you send</h5>
         <div className="card text-light p-3">
           <div className="card-inner d-flex">
-            <select className="form-select custom-select w-35" value={fromCurrency} onChange={handleFromChange}>
-              <option value="NGN">🇳🇬 NGN</option>
-              <option value="CAD">🇨🇦 CAD</option>
-            </select>
+                  <select
+                  className="form-select custom-select w-25"
+                  value={fromCurrency}
+                  onChange={handleFromChange}
+                >
+                <option value="CAD">CAD</option>
+                  <option value="NGN"> NGN</option>
+                </select>
 
-            <input
-              type="text"
-              className="form-control bg-dark text-light ms-3"
-              value={amount ? `${currencySymbols[fromCurrency]} ${amount}` : ''}
-              onChange={handleAmountChange}
-            />
-            <span>Balance: $24,890.00</span>
+                <input
+                  type="text"
+               placeholder={
+  rate !== null
+    ? `1 ${fromCurrency} = ${rate.toFixed(4)} ${toCurrency}`
+    : 'Enter Amount'
+}
+
+                  className="form-control bg-dark text-light ms-3"
+                  value={amount ? `${currencySymbols[fromCurrency]} ${amount}` : ''}
+                  onChange={handleAmountChange}
+                />
+            {/* <span>Balance: $24,890.00</span> */}
           </div>
         </div>
 
         <div className="mobile_swap mt-2">
-          <img src={Dropdown} className="img-fluid swap_img" alt="" />
+          {/* <img src={Dropdown} className="img-fluid swap_img" alt="" /> */}
           <p
             className="text-primary text-center mid"
-            style={{ background: '#080808', fontSize: '10px', width: '100%', borderRadius: '40px' }}
+            style={{ background: '#080808', fontSize: '16px', width: '100%', borderRadius: '40px', margin:"0", padding: '.7rem' }}
           >
-            {fromCurrency} 1 = {rate !== null ? rate.toFixed(4) : '...'} {toCurrency}
+                      NGN = {rate !== null ? rate.toFixed(4) : '...'} CAD
+
           </p>
         </div>
 
         <h5 className="grey-text mt-2">They will receive</h5>
         <div className="card text-light p-3">
           <div className="card-inner d-flex">
-            <select className="form-select custom-select w-35" value={toCurrency} onChange={handleToChange}>
-              <option value="CAD">🇨🇦 CAD</option>
-              <option value="NGN">🇳🇬 NGN</option>
-            </select>
-            <input
-              type="text"
-              className="form-control bg-dark text-light ms-3"
-              value={converted ? `${currencySymbols[toCurrency]} ${converted}` : ''}
-              readOnly
-            />
+           <select
+                  className="form-select custom-select w-35 p-2"
+                  value={toCurrency}
+                  onChange={handleToChange}
+                >
+                  <option value="NGN"> NGN</option>
+                  <option value="CAD"> CAD</option>
+                </select>
+                <input
+                  type="text"
+                  placeholder={
+                    rate !== null ? `${rate.toFixed(2)} ${toCurrency}` : 'Receiving Amount'
+                  }
+                  className="form-control bg-dark text-light ms-3"
+                  value={converted ? `${currencySymbols[toCurrency]} ${converted}` : ''}
+                  readOnly
+                />
           </div>
         </div>
 

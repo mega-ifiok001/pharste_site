@@ -92,7 +92,7 @@ const Testimonial = () => {
           .map((testimonial, index) => (
             <div className="testimonial-item" key={index}>
               <div className="testimonial_header">
-                <img src={testimonial.profile} alt={testimonial.author} />
+                {/* <img src={testimonial.profile} alt={testimonial.author} /> */}
                 <div className="profile_tag">
                   <h2>{testimonial.author}</h2>
                   <p>{testimonial.title}</p>

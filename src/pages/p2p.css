@@ -1,0 +1,22 @@
+.terms-container {
+        font-family
+: poppins;
+    font-weight: 500;
+    font-size: 14px!important;
+    line-height: 150%;
+    letter-spacing: 0px;
+    text-align: start!important;
+    color: #605D64!important;
+
+}
+
+.terms-container h2,
+.terms-container h3 {
+   font-size: 24px!important;
+   color:#000!important;
+
+}
+
+.terms-container ul li{
+    list-style: disc;
+}

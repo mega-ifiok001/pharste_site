@@ -26,7 +26,6 @@ function Header() {
             <li><a href="https://blog.pharste.com/" target="_blank" rel="noopener noreferrer">Blog</a></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/help">Help</Link></li>
-            <li><Link to="/P2P">P2P</Link></li>
           </ul>
 
           {/* Navigation End */}
@@ -66,7 +65,6 @@ function Header() {
 
             <li><Link to="/about">About</Link></li>
             <li><Link to="/help">Help</Link></li>
-            <li><Link to="/P2P">P2P</Link></li>
 
           </ul>
         </div>

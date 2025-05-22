@@ -80,7 +80,7 @@ function Money() {
         </div>
 
         <p className="animate-on-scroll">
-          Need to send money across the world? Do it with Pesa. Relocating? Get started with Pesa. <br />
+          Need to send money across the world? Do it with Pharste. Relocating? Get started with Pharste. <br />
           You'll enjoy $0 fees on every transfer - no hidden costs or surprises.
         </p>
 

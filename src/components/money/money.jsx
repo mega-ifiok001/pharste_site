@@ -10,7 +10,7 @@ import tab from "../../asset/tab_img.png";
 import protect from "../../asset/protect.png";
 import phone_bg from "../../asset/phone-bg.png";
 import big_chart from "../../asset/bg-chart.png";
-import bg from "../../asset/container.png";
+import bg from "../../asset/Container.png";
 import acc_setup_1 from "../../asset/one.png";
 import acc_setup_2 from "../../asset/two.png";
 import acc_setup_3 from "../../asset/three.png";

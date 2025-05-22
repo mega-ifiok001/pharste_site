@@ -38,30 +38,6 @@ const Ex_info=()=>{
  
  
  
-   useEffect(() => {
-     if (!amount || !rate) {
-       setConverted('');
-       return;
-     }
-     const result = parseFloat(amount) * rate;
-     setConverted(result.toFixed(2));
-   }, [amount, rate]);
- 
-   const handleAmountChange = (e) => {
-     const raw = e.target.value.replace(/[^\d.]/g, '');
-     setAmount(raw);
-   };
-   const handleFromChange = (e) => {
-     const newFrom = e.target.value;
-     setFromCurrency(newFrom);
- 
-     // Automatically switch toCurrency to the other currency
-     if (newFrom === 'NGN') setToCurrency('CAD');
-     else if (newFrom === 'CAD') setToCurrency('NGN');
-   };
- 
-   const handleToChange = (e) => setToCurrency(e.target.value);
- 
 
     return(
         <>

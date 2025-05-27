@@ -5,9 +5,9 @@ import "./money.css";
 import NotificationOne from "../../asset/notify.png";
 import notification_two from "../../asset/notification_two.png";
 import trustBg from "../../asset/banner-bg.png";
-import fine__person from "../../asset/fine_person.png";
+import fine__person from "../../asset/fine_person.jpeg";
 import tab from "../../asset/tab_img.png";
-import protect from "../../asset/protect.png";
+import protect from "../../asset/protect.jpeg";
 import phone_bg from "../../asset/phone-bg.png";
 import big_chart from "../../asset/bg-chart.png";
 import bg from "../../asset/Container.png";
@@ -18,11 +18,15 @@ import card_1 from "../../asset/card_1.png";
 import card_2 from "../../asset/card_2.png";
 import card_3 from "../../asset/card_3.png";
 import first from '../../asset/Background.png';
-import second from '../../asset/pro-tect.png';
-import third from '../../asset/more.png';
-import four from '../../asset/four.png';
+import second from '../../asset/protection.png';
+import third from '../../asset/third.png';
+import four from '../../asset/fourth.png';
 import six from '../../asset/six.png';
-
+import alertBar from "../../asset/alert.png";
+import notificationBar from "../../asset/notification-bar.png";
+import peer from '../../asset/peer.png';
+import bill_payment from '../../asset/bill-payment.png';
+import save_payment from '../../asset/save-bill.png';
 import Exchange from "../exchange/echange";
 
 function Money() {
@@ -89,7 +93,7 @@ function Money() {
       {/* Trusted Section */}
 
       <div className=" animate-on-scroll  testimonials-text mt-4">
-          <h1>Trusted by users across <br /> thirty countries</h1>
+          <h1>Trusted by users across <br /> continents</h1>
         </div>
         
       <div className="trust_container">
@@ -132,15 +136,20 @@ function Money() {
           <div className=" tab" style={{marginTop:'-1.7rem'}} >
             <div className="row  ">
               <div className="col-md-5 mt-3 from-left animate-on-scroll ">
-                {/* <div className="content">
+                <div className="content">
                   <h2>Send Money At The <br /> Speed Of Now</h2>
-                  <p>Transfer funds instantly to anyone, anywhere. What used to take days now happens in seconds.</p>
-                  <img src={tab} className="tab-img" alt="Tab Image" />
-                </div> */}
-                  <img src={first} className="img-fluid" alt="" />
+                  <p>Transfer funds instantly to anyone, anywhere.</p>
+                  <div className="img ">
+                    <div className="img_content">
+                         <img src={alertBar} className="" alt="send moey image " />
+                    <img src={notificationBar} className=""  alt="send moey image " />
+                 
+                    </div>
+                  </div>
+                </div>
 
               </div>
-              <div className="col-md-7 mt-3 from-right animate-on-scroll">
+              <div className="col-md-7 mt-3 from-right img animate-on-scroll">
                 <img src={fine__person} className="img-fluid" alt="Responsive Image" />
               </div>
             </div>
@@ -153,15 +162,20 @@ function Money() {
       <img src={protect} className="img-fluid" alt="Responsive Image" />
     </div>
     <div className="col-md-5 mt-3 from-right animate-on-scroll order-md-1">
-      {/* <div className="content">
+      <div className="content">
         <h2>Protection That Never <br /> Sleeps</h2>
         <p>
           Rest easy knowing your transactions are protected by
           military-grade encryption and advanced fraud monitoring.
-        </p>
-      </div> */}
 
-      <img src={second} className="img-fluid" alt="Tab Image" />
+        </p>
+            <div className="img">
+           <div className="img_content img_content_two">
+            <img src={second} className="img-fluid" alt="" />
+           </div>
+            </div>
+      </div>
+
 
     </div>
   </div>
@@ -171,13 +185,18 @@ function Money() {
           <div className="mt-3 tab">
             <div className="row">
               <div className="col-md-5 mt-3 from-left animate-on-scroll">
-                {/* <div className="content">
+                <div className="content">
                   <h2>More For You, Less For <br /> Fees</h2>
                   <p>
                     Say goodbye to hidden charges and confusing fee structures. Our transparent pricing means you'll always know exactly what you're paying.
                   </p>
-                </div> */}
-                <img src={third} className="img-fluid" alt="Tab Image" />
+                    <div className="img">
+           <div className="img_content img_content_two">
+            <img src={third} className="img-fluid" alt="" />
+           </div>
+            </div>
+                </div>
+
 
               </div>
               <div className="col-md-7 mt-3 from-right animate-on-scroll">
@@ -193,15 +212,19 @@ function Money() {
       <img src={bg} className="img-fluid" alt="Responsive Image" />
     </div>
     <div className="col-md-5 mt-3 from-right animate-on-scroll">
-    <img src={four} className=" img-fluid" alt="Tab Image" />
 
-      {/* <div className="content">
+      <div className="content">
         <h2>Grow Your Money <br /> Automatically</h2>
         <p>
           Set aside funds effortlessly with automated saving tools. Create goals,
           schedule regular transfers, and watch your savings grow.
         </p>
-      </div> */}
+            <div className="img">
+           <div className="img_content img_content_two">
+            <img src={four} className="img-fluid" alt="" />
+           </div>
+            </div>
+      </div>
     </div>
   </div>
 </div>
@@ -235,13 +258,43 @@ function Money() {
 
         <div className="row mt-3 container-fluid">
           <div className="col-md-4 mt-4 animate-on-scroll from-left">
-            <img src={card_1} alt="" className="img-fluid" />
+            <div className="content_features">
+                  <h2>P2P (Peer to Peer)</h2>
+                  <p>
+                Set your own exchange rates and match with others for better value - no middlemen just people helping people. </p>
+                    
+                  
+   <div className="img">
+           <div className="img_content img_content_two">
+                                <img src={peer} className="img-fluid" alt="Tab Image" />
+
+           </div>
+            </div>                     
+                </div>
           </div>
           <div className="col-md-4 mt-4 animate-on-scroll">
-            <img src={card_3} alt="" className="img-fluid" />
+             <div className="content_features">
+                  <h2>Bills Payment</h2>
+                  <p>The bills never stop. We get it. We make it easier, seamless and rewarding. </p>
+                      <div className="img">
+           <div className="img_content img_content_two">
+              <img src={bill_payment} className="img-fluid" alt="Tab Image" />
+
+           </div>
+            </div>
+                </div>
           </div>
           <div className="col-md-4 mt-4 animate-on-scroll from-right">
-            <img src={card_2} alt="" className="img-fluid" />
+             <div className="content_features">
+                  <h2>Savings</h2>
+                  <p>Be it a new phone or a new home, Pharset gives you the tool to save and earn big.  </p>
+   <div className="img">
+           <div className="img_content img_content_two">
+                               <img src={save_payment} className="img-fluid" alt="Tab Image" />
+
+           </div>
+            </div>
+                </div>
           </div>
         </div>
       </div>

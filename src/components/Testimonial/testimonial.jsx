@@ -25,7 +25,7 @@ const Testimonial = () => {
       stars: "⭐️⭐️⭐️⭐️⭐️",
       title: "Great exchange rates and no hidden fees!",
       text: "Pharste offers the best exchange rates I’ve seen, and I didn’t have to worry about hidden fees. What you see is what you get, and that’s a huge relief. I trust Pharste with all my transfers.",
-      author: "Ahmed K., Dubai",
+      author: "Ahmed K., Toronto",
       profile: ahmed,
     },
     {
@@ -46,7 +46,7 @@ const Testimonial = () => {
       stars: "⭐️⭐️⭐️⭐️⭐️",
       title: "A lifesaver for emergencies!",
       text: "Pharste came through for me during an emergency. I was able to send money to my sister in Lagos immediately, and she received it within minutes. This app is a lifesaver!",
-      author: "Ada E., Houston",
+      author: "Ada E., Porthacourt",
       profile: ada,
     },
     {
@@ -67,10 +67,10 @@ const Testimonial = () => {
       stars: "⭐️⭐️⭐️⭐️⭐️",
       title: "Best app for cross-border transfers!",
       text: "I’ve tried other platforms, but Pharste is by far the best for cross-border money transfers. The process is straightforward, and the app is incredibly secure. I’m a loyal customer now!",
-      author: "David N., Johannesburg",
+      author: "David N., calgary",
       profile: david,
     },
-  ];;
+  ];
 
   return (
 

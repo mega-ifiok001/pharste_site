@@ -22,15 +22,13 @@ function Hero() {
         <Header />
 
     
-            <div className="hero_content">
-          <div className="hero_text">
-            <h1>
-              Take Control of <br />
-              your finances
+            <div className="hero_content"> 
+          <div className="hero_text">  
+            <h1>   
+              Send Money Smarter. <br /> Faster. On Your Terms.
             </h1>
             <p>
-              The money app built for friends, families, and fearless <br />
-              transactions, no matter where they are in the world
+             Pharste makes international money transfers easy, transparent, commuity driven. whether you are sending money <br/> to loved or exchanging with peers, we put the power in your hands.
             </p>
           </div>
 

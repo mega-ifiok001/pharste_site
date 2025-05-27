@@ -18,7 +18,7 @@ function Footer() {
   return (
     <>
       <div className="container-fluid adder-content ">
-        <h1 className='footer-text'>Ready To Take Charge Of Your Finances</h1>
+        <h1 className='footer-text'>Take Charge Of Your Finances With Pharste</h1>
         <p> Taking charge of your finances starts with understanding
           your income and expenses</p>
 
@@ -60,7 +60,7 @@ function Footer() {
               <div className="court_1">
                 <h1>Head Office (Canada)</h1>
             <p>
-            Pharste Inc 3091 Dufferin Street,
+            Pharste Payment 3091 Dufferin Street,
                 North York, ON M6A 0C4
                       © 2025 Pharste
             </p>
@@ -105,7 +105,7 @@ function Footer() {
           <div className="">
           <div className="contact d-flex align-items-center mt-4 mx-1 "> 
                 <i className="fas fa-phone text-white"></i>
-                <p className='px-1 text-white'>+1 647 557 4718</p>
+                <p className='px-1 text-white'>+6479174197</p>
                 
               </div>
 

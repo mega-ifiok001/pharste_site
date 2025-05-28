@@ -58,10 +58,12 @@ function Hero(){
             <p>Experience seamless transactions with low fees & top-<br/>tier security.</p>
       
           <div className="hero_content_anim">
-             <img src={pop1} className='pop-1' alt="" />
-             <img src={pop2}  className='pop-2' alt="" />
-             <img src={pop3} className='pop-3' alt="" />
-             <img src={pop4} className='pop-4' alt="" />
+               <div className="pop-1 fade-in">What you can do with Pharste seamless remittance, send money from Canada to Nigeria: fast, affordable, hassle-free</div>
+  <div className="pop-2 fade-in delay-1">Peer to Peer Exchange. Trade currencies with real people, set your own rates, and save more, powered by our community</div>
+  <div className="pop-3 fade-in delay-2">Auto save with guaranteed interest, Set it, forget it, and grow it. Earn guaranteed returns.</div>
+  <div className="pop-4 fade-in delay-3">Pay Canadian bills from anywhere,  Even when abroad, your bills are covered.</div>
+
+            
              <img src={hands} className='hands_img' alt="" />
              <img src={screen} className='screen_img' alt="" />
           </div>

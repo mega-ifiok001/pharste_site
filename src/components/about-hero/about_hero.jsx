@@ -23,8 +23,7 @@ function AboutHero(){
             </h1>
 
             <p className="paragraph">
-            Pharste simplifies money movement, effortless, transparent, <br/> 
-             and instant transactions—anytime, anywhere.
+            Pharste is more than money app, it's a financial lifeline for the global african community.
             </p>
         </div>
   </div>

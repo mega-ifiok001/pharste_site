@@ -16,7 +16,7 @@ import '../../pages/p2p.css';
 
 const TermsAndConditions = () => (
     <div className="Terms " style={{ marginTop: '6rem' }}>
-        <h1 className='mt-5 text start'>Terms and Conditions</h1>
+        <h1 className='mt-5 text start'>Terms and Condition</h1>
         <h2>Introduction</h2>
         <p>
             In this client agreement, we, us and our refers to 12080133 Canada Incorporated dba <strong>Pharste</strong> along with her employees, directors, successors, and assigns. The terms ‘you’ and ‘your’ refer to persons who have signed up to utilize the services prescribed in this agreement. Pharste is a registered Money Service Business and is regulated by the Financial Transaction and Report Analysis Centre of Canada (FINTRAC) with registration number <strong>M22889301</strong> to deal in money transfer and foreign exchange transactions.<br />
@@ -254,163 +254,183 @@ const FAQs = () => {
 
 
 
+const P2p_main = () => (
+  <div className="feature-container">
+    <Ex_info />
+    <Header />
 
-
-const P2p_main = () => {
-  return (
-    <>
-      <div className="feature-container">
-        <Ex_info/>
-        <Header />
-
-        <div className="terms-container" style={{
-  padding: '2rem',
-  fontFamily: 'Poppins',
-  lineHeight: '1.7',
-  fontSize: '13.5px',
-  marginTop: '7rem'
-}}
->
-          <h2>Pharste P2P Terms of Use</h2>
-          <p className=' text-start' style={{
-            fontSize:'14px'
-          }}>
-            These Terms of Use ("Terms") govern your access to and use of the Peer-to-Peer ("P2P") trading services
-            provided by 12080133 Canada Inc. dba Pharste ("Pharste", "we", "our", or "us"). By accessing or using the
-            P2P platform, you agree to comply with and be bound by these Terms. If you do not agree with these Terms,
-            please refrain from using the service.
+    <div
+      className="terms-container"
+      style={{
+        padding: "2rem",
+        fontFamily: "Poppins",
+        lineHeight: "1.7",
+        fontSize: "13.5px",
+        marginTop: "7rem",
+      }}
+    >
+      <h2>Pharste P2P Terms of Use</h2>
+      <p className="text-start" style={{ fontSize: "14px" }}>
+        These Terms of Use ("Terms") govern your access to and use of the Peer-to-Peer ("P2P") trading services provided by 12080133 Canada Inc. dba Pharste ("Pharste", "we", "our", or "us"). By accessing or using the P2P platform, you agree to comply with and be bound by these Terms. If you do not agree with these Terms, please refrain from using the service.
+      </p>
+      <ol style={{ paddingLeft: "1.1em" }}>
+        <li>
+          <b>User Verification and Communication</b>
+          <p>
+            Before initiating any trade, ensure that your <b>registered email address and phone number</b> are valid and reachable. Pharste may use these details to verify your identity or contact you regarding a transaction.
           </p>
-
-          <h3>1. User Verification and Communication</h3>
-          <p  className=' text-start' style={{
-            fontSize:'14px'
-          }}>
-            Before initiating any trade, ensure that your registered email address and phone number are valid and
-            reachable. Pharste may use these details to verify your identity or contact you regarding a transaction.
-          </p>
-
-          <h3>2. Trade Initiation</h3>
+        </li>
+        <li>
+          <b>Trade Initiation</b>
+          <p className='text-start'>To begin a trade:</p>
           <ul>
-            <li>Select the naira as you wish to purchase from.</li>
+            <li>Select the naira ad you wish to purchase from.</li>
             <li>Carefully review the ad details including exchange rate, limits (minimum/maximum), and available balance.</li>
             <li>Use a calculator to confirm the Naira amount you expect to receive.</li>
           </ul>
-
-          <h3>3. Order Placement</h3>
+        </li>
+        <li>
+          <b>Order Placement</b>
           <ul>
             <li>Click on the ad and enter the Naira amount you intend to pay for in Canadian dollars (CAD).</li>
             <li>Note the amount of CAD to be sent, and the email address and name of the Naira seller.</li>
             <li>Send the CAD via Interac e-Transfer to the seller’s email.</li>
           </ul>
-
-          <h3>4. Interac Transfer Instructions</h3>
+        </li>
+        <li>
+          <b>Interac Transfer Instructions</b>
           <ul>
-            <li>
-              If the Interac email is not registered for auto-deposit, set a security question and answer. Enter the answer in
-              the designated field on the Pharste app.
-            </li>
-            <li>
-              If the email is registered for auto-deposit, no question is needed. However, input a placeholder password in the
-              same field for transaction tracking.
-            </li>
+            <li>If the Interac email is not registered for auto-deposit, set a security question and answer. Enter the answer in the designated field on the Pharste app.</li>
+            <li>If the email is registered for auto-deposit, no question is needed. However, input a placeholder password in the same field for transaction tracking.</li>
           </ul>
-
-          <h3>5. Payment Confirmation</h3>
+        </li>
+        <li>
+          <b>Payment Confirmation</b>
           <ul>
             <li>After transferring the CAD, click “Confirm Payment” on the Pharste platform.</li>
-            <li>
-              Only the naira seller can view the submitted password or answer and will use this to accept your payment and
-              release the Naira.
-            </li>
+            <li>Only the naira seller can view the submitted password or answer and will use this to accept your payment and release the Naira.</li>
           </ul>
-
-          <h3>6. Trade Timeframe</h3>
+        </li>
+        <li>
+          <b>Trade Timeframe</b>
           <ul>
-            <li>Buyers must send payment and confirm within 15 minutes of initiating a trade.</li>
+            <li>Buyers must send payment and confirm within 30 minutes of initiating a trade.</li>
             <li>If confirmation is not received within this time, the transaction will be automatically cancelled.</li>
             <li>Users with repeated cancellations may face restrictions on the platform.</li>
           </ul>
-
-          <h3>7. Transfer Guidelines</h3>
+        </li>
+        <li>
+          <b>Transfer Guidelines</b>
           <ul>
             <li>All transfers must originate from accounts that match the name and email registered with your Pharste account.</li>
             <li>Third-party transfers are strictly prohibited.</li>
-            <li>
-              If discrepancies arise (e.g., name mismatch), the seller is instructed not to release funds and must report the
-              incident to <a href="mailto:support@pharste.com" className='text-primary'>support@pharste.com</a>.
-            </li>
+            <li>If discrepancies arise (e.g., name mismatch), the seller is instructed not to release funds and must report the incident to <a href="mailto:support@pharste.com" className="text-primary">support@pharste.com</a>.</li>
           </ul>
-
-          <h3>8. Platform Fees</h3>
+        </li>
+        <li>
+          <b>Platform Fees</b>
           <ul>
             <li>A fee of $3 CAD naira equivalent is charged to both buyer and seller for each transaction.</li>
             <li>Sellers are charged per ad posted, and buyers are charged upon each transaction completion.</li>
           </ul>
-
-          <h3>9. Refund Policy</h3>
-          <p  className=' text-start' style={{
-            fontSize:'14px'
-          }}>
-            Pharste is committed to fairness and transparency in all transactions. Our refund policy outlines the conditions
-            under which platform fees and deposits are refundable.
+        </li>
+        <li>
+          <b>Refund Policy</b>
+          <p>
+            Pharste is committed to fairness and transparency in all transactions. Our refund policy outlines the conditions under which platform fees and deposits are refundable.
           </p>
           <ul>
             <li>
-              For sellers, once an ad is published, the following is deducted from their Pharste Naira wallet:
+              <b>For sellers:</b> Once an ad is published, the following is deducted from their Pharste Naira wallet:
               <ul>
                 <li>The Naira equivalent of $3 CAD (platform fee),</li>
                 <li>The Naira equivalent of the ad amount.</li>
               </ul>
-            </li>
-            <li>
-              If a seller cancels an ad before any transaction has taken place, both the $3 CAD fee and ad amount are fully
-              refunded.
-            </li>
-            <li>
+              If a seller cancels an ad before any transaction has taken place, the Naira equivalent of $3 CAD (platform fee) and the ad amount are fully refunded.
               Once a trade is successfully initiated on an ad, the $3 CAD platform fee becomes non-refundable.
+              If a trade is initiated for a part of the ad amount and after this, the seller changes the status of the ad to ‘completed’, the remaining amount in the ad is refunded to the seller's naira account.
             </li>
             <li>
-              If a trade is initiated for part of the ad amount, and the seller marks the ad as ‘completed’, the remaining
-              balance is refunded to the seller’s Naira account.
-            </li>
-            <li>
-              When a buyer initiates a trade:
+              <b>For buyers:</b> When a buyer initiates a trade on an ad, the following amounts are deducted from the buyer’s Pharste Naira wallet:
               <ul>
-                <li>The Naira equivalent of $3 CAD is deducted as a platform fee.</li>
-                <li>If the buyer exits without completing the trade, all funds are refunded.</li>
-                <li>If the buyer proceeds, the $3 CAD fee becomes non-refundable.</li>
+                <li>The Naira equivalent of $3 CAD (platform fee),</li>
+                <li>The Naira equivalent of $10 CAD (good-use deposit),</li>
+                <li>resulting in a total deduction equivalent to $13 CAD.</li>
               </ul>
+              If the buyer exits the ad without initiating a trade, the full amount is refunded.
+              If the buyer proceeds with the trade, the $3 CAD platform fee becomes non-refundable, and the $10 CAD good-use deposit is refunded upon trade completion.
             </li>
           </ul>
-          <p  className=' text-start' style={{
-            fontSize:'14px'
-          }}>
-            These measures ensure accountability and responsible use of the platform while covering operational costs related
-            to maintaining a secure P2P environment.
+          <br />
+          <p className='text-start'>
+            These measures ensure accountability and responsible use of the platform while covering operational costs related to maintaining a secure P2P environment.
           </p>
-
-          <h3>10. Internal Dollar Transfers</h3>
-          <p  className=' text-start'
-          style={{
-            fontSize:'14px'
-          }}>CAD must be sent directly to the seller’s bank via Interac, using the email listed on the ad.</p>
-
-          <h3>11. Dispute Resolution</h3>
-          <p  className=' text-start' style={{
-            fontSize:'14px'
-          }}>
-            In the event of an issue during a trade, users must promptly contact{' '}
-            <a href="mailto:support@pharste.com" className='text-primary'>support@pharste.com</a>. Pharste is committed to protecting all users and
-            ensuring a secure trading environment.
+        </li>
+        <li>
+          <b>Internal Dollar Transfers</b>
+          <ul>
+            <li>CAD must be sent directly to the seller’s bank via Interac, using the email listed on the ad.</li>
+            <li>If CAD is mistakenly sent within the Pharste app (wallet-to-wallet), the $10 good-use fee becomes non-refundable, covering internal transaction costs.</li>
+          </ul>
+        </li>
+        <li>
+          <b>Dispute Resolution</b>
+          <p className='text-start'>
+            In the event of an issue during a trade, users must promptly contact <a href="mailto:support@pharste.com" className="text-primary">support@pharste.com</a>. Pharste is committed to protecting all users and ensuring a secure trading environment.
           </p>
-        </div>
-        {/* <Footer/> */}
-      </div>
+        </li>
+      </ol>
 
+      <hr style={{ margin: "2.5em 0" }} />
 
-    </>
-  );
-};
+      <h2>About Us</h2>
+      <p>
+        At Pharste, we believe sending and managing money across borders should be simple, affordable, and empowering. Born out of the real challenges faced by immigrants and their families, Pharste is building the financial bridge between people and countries.
+        <br />
+        Our platform offers seamless international remittance, a community-powered peer-to-peer exchange, auto-saving with guaranteed interest, and Canadian bill payment solutions—all in one secure, easy-to-use app.
+        <br />
+        <b>What makes us different?</b> We give our users the power to set their own exchange rates, connect directly with others, and grow their savings—all while enjoying transparency, security, and control.
+      </p>
+
+      <h3>Our Mission</h3>
+      <p>
+        To empower the African diaspora with seamless, secure, and community-driven financial tools that make cross-border money movement simpler, smarter, and more affordable.
+      </p>
+
+      <h3>Vision Statement</h3>
+      <p>
+        To lead the future of inclusive finance by providing borderless, affordable, and people-first solutions that connect underserved communities to the global economy.
+      </p>
+
+      <h3>Why Choose Pharste?</h3>
+      <ul>
+        <li><b>Built for the Diaspora:</b> We understand the real challenges of sending money home—because we’ve lived them. Pharste is designed with your needs in mind.</li>
+        <li><b>Peer-to-Peer Power:</b> Set your own exchange rates and trade directly with others. No hidden fees. No middlemen. Just control, community, and savings.</li>
+        <li><b>Guaranteed Interest Savings:</b> Our auto-save feature helps you grow your money effortlessly—with guaranteed returns.</li>
+        <li><b>Fast, Reliable Remittance:</b> Send money from Canada to Nigeria in seconds. Track every step. No stress. No guesswork.</li>
+        <li><b>All-in-One Financial Hub:</b> From bill payments in Canada to savings and transfers—you get everything in one simple app.</li>
+      </ul>
+      <p className='text-start'>
+        Pharste is more than a money app—it’s a financial lifeline for the global African community.
+      </p>
+
+      <h3>Our Core Values</h3>
+      <ol>
+        <li><b>Trust:</b> We build and earn trust by being transparent, secure, and consistent—your money is safe with us.</li>
+        <li><b>Community:</b> We believe in the power of people helping people. Our peer-to-peer platform is rooted in collaboration and connection.</li>
+        <li><b>Empowerment:</b> We give our users more control over how their money moves—because financial freedom starts with choice.</li>
+        <li><b>Innovation:</b> We use technology to solve real-world problems, creating smarter and simpler ways to send, save, and exchange money.</li>
+        <li><b>Inclusion:</b> Everyone deserves access to fair and flexible financial tools. We’re here for immigrants, students, entrepreneurs, and families alike.</li>
+        <li><b>Integrity:</b> We hold ourselves to the highest standards of compliance, accountability, and ethics—always.</li>
+      </ol>
+
+      <h3>Creating Impact Together</h3>
+      <p className='text-start'>
+        At Pharste, we’re not just moving money—we’re moving lives forward. Every transaction helps build a stronger, more connected diaspora community. By giving people control over how they send, save, and exchange funds, we’re creating real financial inclusion—together.
+      </p>
+    </div>
+  </div>
+);
 
 
 
@@ -559,7 +579,7 @@ const ContactUs = () => {
 
 const Sidebar = ({ setSelectedContent }) => (
     <div className="sidebar">
-        <button onClick={() => setSelectedContent('terms')}>Terms and Conditions</button>
+        <button onClick={() => setSelectedContent('terms')}>Terms and Condition</button>
         <button onClick={() => setSelectedContent('privacy')}>Privacy Policy</button>
         <button onClick={() => setSelectedContent('faqs')}>FAQs</button>
         <button onClick={() => setSelectedContent('p2p')}>P2P</button>

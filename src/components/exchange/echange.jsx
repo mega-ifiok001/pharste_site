@@ -184,18 +184,19 @@ const CurrencyConverter = () => {
                   <option value="NGN"> NGN</option>
                 </select>
 
-                <input
-                  type="text"
-               placeholder={
-  rate !== null
-    ? `1 ${fromCurrency} = ${rate.toFixed(4)} ${toCurrency}`
-    : 'Enter Amount'
-}
-
-                  className="form-control bg-dark text-light ms-3"
-                  value={amount ? `${currencySymbols[fromCurrency]} ${amount}` : ''}
-                  onChange={handleAmountChange}
-                />
+                 <input
+  type="text"
+  placeholder={
+    rate !== null
+      ? fromCurrency === "NGN"
+        ? `NGN ${(1 / rate).toLocaleString(undefined, { maximumFractionDigits: 2 })} - CAD 1`
+        : `CAD 1 - NGN ${(rate).toLocaleString(undefined, { maximumFractionDigits: 2 })}`
+      : "Enter Amount"
+  }
+  className="form-control bg-dark text-light ms-3"
+  value={amount ? `${currencySymbols[fromCurrency]} ${amount}` : ''}
+  onChange={handleAmountChange}
+/>
             {/* <span>Balance: $24,890.00</span> */}
           </div>
         </div>

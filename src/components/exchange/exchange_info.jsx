@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 const Ex_info = () => {
-  const [fromCurrency, setFromCurrency] = useState('NGN');
-  const [toCurrency, setToCurrency] = useState('CAD');
-  const [rate, setRate] = useState(null);
-  const [exchangeData, setExchangeData] = useState({});
+  const [ngnToCadRate, setNgnToCadRate] = useState(null);
   const [cadToNgnRate, setCadToNgnRate] = useState(null);
 
   useEffect(() => {
@@ -14,33 +11,28 @@ const Ex_info = () => {
         const json = await res.json();
 
         if (json.status && json.data) {
-          setExchangeData(json.data);
-
-          // Set general rate based on selected currencies
-          const rateValue = json.data[fromCurrency]?.[toCurrency];
-          console.log(`${fromCurrency} → ${toCurrency} rate:`, rateValue);
-
-          if (rateValue != null) setRate(rateValue);
-          else setRate(null);
-
-          // Set CAD to NGN rate for the marquee
+          // CAD to NGN
           const cadToNgn = json.data['CAD']?.['NGN'];
-          setCadToNgnRate(cadToNgn || null);
+          // NGN to CAD
+          const ngnToCad = json.data['NGN']?.['CAD'];
+
+          // If only one direction exists, calculate the other
+          setCadToNgnRate(cadToNgn || (ngnToCad ? 1 / ngnToCad : null));
+          setNgnToCadRate(ngnToCad || (cadToNgn ? 1 / cadToNgn : null));
         }
       } catch (error) {
-        console.error('Failed to fetch exchange rate:', error);
-        setRate(null);
         setCadToNgnRate(null);
+        setNgnToCadRate(null);
       }
     };
 
     fetchExchangeRate();
-  }, [fromCurrency, toCurrency]);
+  }, []);
 
   return (
     <>
       <marquee
-        className="text-center "
+        className="text-center"
         style={{
           background: '#c8cce5',
           position: 'fixed',
@@ -53,10 +45,16 @@ const Ex_info = () => {
         }}
       >
         <b>
-          Today's Rate: 1 CAD is Selling for{' '}
-          {cadToNgnRate !== null
-            ? ` NGN ${cadToNgnRate.toLocaleString(undefined, { maximumFractionDigits: 2 })}`
-            : '...'}
+          Today's Rate:&nbsp;
+          {ngnToCadRate !== null && cadToNgnRate !== null ? (
+            <>
+              NGN&nbsp;
+              {Math.round(1 / ngnToCadRate).toLocaleString()} = 1 CAD,&nbsp;&nbsp;
+              CAD 1 = NGN&nbsp;{Math.round(cadToNgnRate).toLocaleString()}
+            </>
+          ) : (
+            '...'
+          )}
         </b>
       </marquee>
     </>

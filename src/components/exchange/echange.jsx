@@ -92,18 +92,19 @@ const CurrencyConverter = () => {
                   <option value="NGN"> NGN</option>
                 </select>
 
-                <input
-                  type="text"
-               placeholder={
-  rate !== null
-    ? `1 ${fromCurrency} = ${rate.toFixed(4)} ${toCurrency}`
-    : 'Enter Amount'
-}
-
-                  className="form-control bg-dark text-light ms-3"
-                  value={amount ? `${currencySymbols[fromCurrency]} ${amount}` : ''}
-                  onChange={handleAmountChange}
-                />
+         <input
+  type="text"
+  placeholder={
+    rate !== null
+      ? fromCurrency === "NGN"
+        ? `NGN ${(1 / rate).toLocaleString(undefined, { maximumFractionDigits: 2 })} - CAD 1`
+        : `CAD 1 - NGN ${(rate).toLocaleString(undefined, { maximumFractionDigits: 2 })}`
+      : "Enter Amount"
+  }
+  className="form-control bg-dark text-light ms-3"
+  value={amount ? `${currencySymbols[fromCurrency]} ${amount}` : ''}
+  onChange={handleAmountChange}
+/>
 
                 {/* <span>Balance: $24,890.00</span> */}
               </div>
@@ -126,15 +127,19 @@ const CurrencyConverter = () => {
                   <option value="NGN"> NGN</option>
                   <option value="CAD"> CAD</option>
                 </select>
-                <input
-                  type="text"
-                  placeholder={
-                    rate !== null ? `${rate.toFixed(2)} ${toCurrency}` : 'Receiving Amount'
-                  }
-                  className="form-control bg-dark text-light ms-3"
-                  value={converted ? `${currencySymbols[toCurrency]} ${converted}` : ''}
-                  readOnly
-                />
+              <input
+  type="text"
+  placeholder={
+    rate !== null && fromCurrency === "CAD"
+      ? `1 CAD = NGN ${rate.toLocaleString(undefined, { maximumFractionDigits: 2 })}`
+      : rate !== null && fromCurrency === "NGN"
+      ? `1 CAD = NGN ${(1 / rate).toLocaleString(undefined, { maximumFractionDigits: 2 })}`
+      : 'Receiving Amount'
+  }
+  className="form-control bg-dark text-light ms-3"
+  value={converted ? `${currencySymbols[toCurrency]} ${converted}` : ''}
+  readOnly
+/>
               </div>
             </div>
           </div>
@@ -151,7 +156,7 @@ const CurrencyConverter = () => {
               marginBottom: '4rem',
             }}
           >
-            NGN = {rate !== null ? rate.toFixed(4) : '...'} CAD
+       NGN ${(1 / rate).toLocaleString(undefined, { maximumFractionDigits: 0 })} = 1 CAD
           </p>
 
           <div className="rate_charge">

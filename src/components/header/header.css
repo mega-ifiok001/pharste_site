@@ -1,12 +1,12 @@
 /* General Styles */
 .desktop_menu_container {
-    position: fixed; /* Keeps the navbar fixed at the top */
-    top: 2rem; /* Floats the navbar 2rem away from the top */
-    left: 50%; /* Centers the navbar horizontally */
-    transform: translateX(-50%); /* Adjusts the position to center */
-    max-width: 75%; /* Sets the width to 70% */
-    z-index: 1000; /* Ensures it's above other content */
-    background-color:#14373D;
+    position: fixed; 
+    top: 2rem; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    max-width: 75%; 
+    z-index: 1000; 
+    background-color:#2D35E9;
     color: white;
     box-shadow: 1px  1px  20px 2px rgba(162, 161, 161, 0.792);
     border-radius: 8px; /* Adds rounded corners for a modern look */

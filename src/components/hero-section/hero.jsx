@@ -7,9 +7,10 @@ import Google from '../../asset/google.png';
 import Apple from '../../asset/apple.png';
 import Exchange from '../exchange/echange.jsx';
 import Ex_info from '../exchange/exchange_info.jsx';
+import {Typewriter} from 'react-simple-typewriter';
 // import RoundImg from '../../asset/Container.png';
 function Hero() {
- 
+ const [showText, setShowText] = useState(false);
 
 
   return (
@@ -19,18 +20,34 @@ function Hero() {
       <div className="hero_container ">
     <Ex_info/>
 
+    <div className="overlay"></div>
+
         <Header />
 
     
-            <div className="hero_content"> 
-          <div className="hero_text">  
-            <h1>   
-              Send Money Smarter. <br /> Faster. On Your Terms.
-            </h1>
-            <p>
-             Pharste makes international money transfers easy, transparent, commuity driven. whether you are sending money <br/> to loved or exchanging with peers, we put the power in your hands.
-            </p>
-          </div>
+
+<div className="hero_content">
+ <div className="hero_text">
+        <h1 style={{ whiteSpace: 'pre-line' }}>
+          <Typewriter
+            words={['Send Money Smarter.\nFaster. On Your Terms.']}
+            loop={false}
+            cursor
+            cursorStyle="|"
+            typeSpeed={60}
+            deleteSpeed={0}
+            delaySpeed={10000}
+            onType={() => setShowText(true)}
+          />
+        </h1>
+
+        <p className={`fade-text ${showText ? 'show' : ''}`}>
+          Pharste makes international money transfers easy, transparent, and community driven. <br />
+          Whether you are sending money to loved ones or exchanging with peers, we put <br />
+          the power in your hands.
+        </p>
+      </div>
+
 
           <div className="download_btn">
             <a href="

@@ -207,7 +207,8 @@ const CurrencyConverter = () => {
             className="text-primary text-center mid"
             style={{ background: '#080808', fontSize: '16px', width: '100%', borderRadius: '40px', margin:"0", padding: '.7rem' }}
           >
-                      NGN = {rate !== null ? rate.toFixed(4) : '...'} CAD
+                        NGN ${(1 / rate).toLocaleString(undefined, { maximumFractionDigits: 0 })} = 1 CAD
+
 
           </p>
         </div>
@@ -223,15 +224,19 @@ const CurrencyConverter = () => {
                   <option value="NGN"> NGN</option>
                   <option value="CAD"> CAD</option>
                 </select>
-                <input
-                  type="text"
-                  placeholder={
-                    rate !== null ? `${rate.toFixed(2)} ${toCurrency}` : 'Receiving Amount'
-                  }
-                  className="form-control bg-dark text-light ms-3"
-                  value={converted ? `${currencySymbols[toCurrency]} ${converted}` : ''}
-                  readOnly
-                />
+                   <input
+  type="text"
+  placeholder={
+    rate !== null && fromCurrency === "CAD"
+      ? `1 CAD = NGN ${rate.toLocaleString(undefined, { maximumFractionDigits: 2 })}`
+      : rate !== null && fromCurrency === "NGN"
+      ? `1 CAD = NGN ${(1 / rate).toLocaleString(undefined, { maximumFractionDigits: 2 })}`
+      : 'Receiving Amount'
+  }
+  className="form-control bg-dark text-light ms-3"
+  value={converted ? `${currencySymbols[toCurrency]} ${converted}` : ''}
+  readOnly
+/>
           </div>
         </div>
 

@@ -141,9 +141,9 @@ function Money() {
                   <p>Transfer funds instantly to anyone, anywhere.</p>
                   <div className="img ">
                     <div className="img_content">
-                         <img src={alertBar} className="" alt="send moey image " />
-                    <img src={notificationBar} className=""  alt="send moey image " />
-                 
+                         <img src={alertBar} className="first__img" alt="send moey image " />
+                    <img src={notificationBar} className="main__img"  alt="send moey image " />
+                      
                     </div>
                   </div>
                 </div>
@@ -170,8 +170,8 @@ function Money() {
 
         </p>
             <div className="img">
-           <div className="img_content img_content_two">
-            <img src={second} className="img-fluid" alt="" />
+           <div className="img_content ">
+            < img src={second} className="img-fluid main__img" alt="" />
            </div>
             </div>
       </div>
@@ -191,8 +191,8 @@ function Money() {
                     Say goodbye to hidden charges and confusing fee structures. Our transparent pricing means you'll always know exactly what you're paying.
                   </p>
                     <div className="img">
-           <div className="img_content img_content_two">
-            <img src={third} className="img-fluid" alt="" />
+           <div className="img_content ">
+            <img src={third} className="img-fluid main__img" alt="" />
            </div>
             </div>
                 </div>
@@ -200,7 +200,7 @@ function Money() {
 
               </div>
               <div className="col-md-7 mt-3 from-right animate-on-scroll">
-                <img src={big_chart} className="img-fluid" alt="Responsive Image" />
+                <img src={big_chart} className="img-fluid " alt="Responsive Image" />
               </div>
             </div>
           </div>
@@ -220,8 +220,8 @@ function Money() {
           schedule regular transfers, and watch your savings grow.
         </p>
             <div className="img">
-           <div className="img_content img_content_two">
-            <img src={four} className="img-fluid" alt="" />
+           <div className="img_content ">
+            <img src={four} className="img-fluid main__img" alt="" />
            </div>
             </div>
       </div>

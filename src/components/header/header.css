@@ -64,20 +64,22 @@ li{
   
   /* Navigation End */
   .nav-end .get_app_btn {
-    background-color: #2D35E9;
+    background-color: #fff;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     font-size: 1rem;
+    transition: .6s ease all;
   }
   
   .nav-end .get_app_btn a {
-    color: white;
+    color: #2D35E9!important;
     text-decoration: none;
+    font-weight: bold;
   }
   
   .nav-end .get_app_btn:hover {
-    background-color: #2D35E9;
+    background-color: #cdd0ff;
   }
   
   /* Hamburger Menu (Hidden on Desktop) */

@@ -21,7 +21,7 @@ const CurrencyConverter = () => {
   useEffect(() => {
     const fetchExchangeRate = async () => {
       try {
-        const res = await fetch('https://api.coderigi.co/api/rates');
+        const res = await fetch('https://api.pharste.com/api/rates');
         const json = await res.json();
 
         if (json.status && json.data) {

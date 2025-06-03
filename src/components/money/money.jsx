@@ -9,7 +9,7 @@ import fine__person from "../../asset/fine_person.jpeg";
 import tab from "../../asset/tab_img.png";
 import protect from "../../asset/protect.jpeg";
 import phone_bg from "../../asset/phone-bg.png";
-import big_chart from "../../asset/bg-chart.png";
+import big_chart from "../../asset/bg-chart.jpeg";
 import bg from "../../asset/Container.png";
 import acc_setup_1 from "../../asset/one.png";
 import acc_setup_2 from "../../asset/two.png";

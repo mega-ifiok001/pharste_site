@@ -45,14 +45,13 @@
   align-items:center;
 }
 
-input{
-}
-
+/* input{
+} */
+/* 
 .card-inner input::placeholder{
-  color:#fff;
-}
+} */
 
-input:focus{
+input:focus input::-ms-value{
   border:none!important;
   outline:none!important;
 }

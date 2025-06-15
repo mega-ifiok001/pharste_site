@@ -44,7 +44,9 @@ function Footer() {
         <div className="row">
           <div className="col-md-6">
             <img src={footerLogo} className='img-fluid' alt="footer logo" />
-            <p>Pharste is a global fintech company revolutionizing international money remittance. We empower individuals and businesses to send and receive funds across borders with speed, transparency, and security..</p>
+            <p>Pharste payments is registered and regualated in canada by the Financial Transactions and Report Analysis Center 
+              of Canada (FINTRAC) as a Money Service business with registration number M22889301
+            </p>
 
 
                   

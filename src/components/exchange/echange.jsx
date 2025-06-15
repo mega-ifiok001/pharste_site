@@ -93,13 +93,14 @@ const CurrencyConverter = () => {
                 </select>
 
          <input
-  type="text"
+  type="text" 
   placeholder={
-    rate !== null
-      ? fromCurrency === "NGN"
-        ? `NGN ${(1 / rate).toLocaleString(undefined, { maximumFractionDigits: 2 })} - CAD 1`
-        : `CAD 1 - NGN ${(rate).toLocaleString(undefined, { maximumFractionDigits: 2 })}`
-      : "Enter Amount"
+    // rate !== null
+    //   ? fromCurrency === "NGN"
+    //     ? `NGN ${(1 / rate).toLocaleString(undefined, { maximumFractionDigits: 2 })} - CAD 1`
+    //     : `CAD 1 - NGN ${(rate).toLocaleString(undefined, { maximumFractionDigits: 2 })}`
+    //   : 
+      "Enter Amount"
   }
   className="form-control bg-dark text-light ms-3"
   value={amount ? `${currencySymbols[fromCurrency]} ${amount}` : ''}
@@ -130,11 +131,12 @@ const CurrencyConverter = () => {
               <input
   type="text"
   placeholder={
-    rate !== null && fromCurrency === "CAD"
-      ? `1 CAD = NGN ${rate.toLocaleString(undefined, { maximumFractionDigits: 2 })}`
-      : rate !== null && fromCurrency === "NGN"
-      ? `1 CAD = NGN ${(1 / rate).toLocaleString(undefined, { maximumFractionDigits: 2 })}`
-      : 'Receiving Amount'
+    // rate !== null && fromCurrency === "CAD"
+    //   ? `1 CAD = NGN ${rate.toLocaleString(undefined, { maximumFractionDigits: 2 })}`
+    //   : rate !== null && fromCurrency === "NGN"
+    //   ? `1 CAD = NGN ${(1 / rate).toLocaleString(undefined, { maximumFractionDigits: 2 })}`
+    //   :
+       'Receiving Amount'
   }
   className="form-control bg-dark text-light ms-3"
   value={converted ? `${currencySymbols[toCurrency]} ${converted}` : ''}
@@ -187,11 +189,12 @@ const CurrencyConverter = () => {
                  <input
   type="text"
   placeholder={
-    rate !== null
-      ? fromCurrency === "NGN"
-        ? `NGN ${(1 / rate).toLocaleString(undefined, { maximumFractionDigits: 2 })} - CAD 1`
-        : `CAD 1 - NGN ${(rate).toLocaleString(undefined, { maximumFractionDigits: 2 })}`
-      : "Enter Amount"
+    // rate !== null
+    //   ? fromCurrency === "NGN"
+    //     ? `NGN ${(1 / rate).toLocaleString(undefined, { maximumFractionDigits: 2 })} - CAD 1`
+    //     : `CAD 1 - NGN ${(rate).toLocaleString(undefined, { maximumFractionDigits: 2 })}`
+    //   :
+       "Enter Amount"
   }
   className="form-control bg-dark text-light ms-3"
   value={amount ? `${currencySymbols[fromCurrency]} ${amount}` : ''}
@@ -227,11 +230,12 @@ const CurrencyConverter = () => {
                    <input
   type="text"
   placeholder={
-    rate !== null && fromCurrency === "CAD"
-      ? `1 CAD = NGN ${rate.toLocaleString(undefined, { maximumFractionDigits: 2 })}`
-      : rate !== null && fromCurrency === "NGN"
-      ? `1 CAD = NGN ${(1 / rate).toLocaleString(undefined, { maximumFractionDigits: 2 })}`
-      : 'Receiving Amount'
+    // rate !== null && fromCurrency === "CAD"
+    //   ? `1 CAD = NGN ${rate.toLocaleString(undefined, { maximumFractionDigits: 2 })}`
+    //   : rate !== null && fromCurrency === "NGN"
+    //   ? `1 CAD = NGN ${(1 / rate).toLocaleString(undefined, { maximumFractionDigits: 2 })}`
+    //   :
+       'Receiving Amount'
   }
   className="form-control bg-dark text-light ms-3"
   value={converted ? `${currencySymbols[toCurrency]} ${converted}` : ''}
